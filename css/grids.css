@@ -1,0 +1,20 @@
+/*?
+Referred to https://jonitrythall.com/flexbox-cheatsheet for information on flexboxes
+/*/
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-container.cart-item{
+  align-content: space-around;
+}
+
+.customer-contact .flex-item{
+  margin-right: 10rem;
+}

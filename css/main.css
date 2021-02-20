@@ -1,0 +1,433 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+body {
+  font-family: "Tahoma", sans-serif;
+  padding: 2rem;
+  background-color: #242424;
+  color: white;
+}
+
+header{
+  background-color: #991C06;
+  padding: 1.5rem;
+}
+
+header h1{
+  color: white;
+}
+
+.element {
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2.5rem;
+  border-left: 4px solid white;
+  overflow: auto;
+}
+
+nav{
+  margin-bottom: 2rem;
+}
+
+nav a{
+  margin: 0.5rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  font-size: 1.15rem;
+  background-color: #EEE;
+  color: #171717;
+  padding: 0.5rem;
+  display: block;
+}
+
+img{
+  max-width: 50rem;
+}
+
+.float-left{
+  float:left;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.in-text-link{
+  color: #991C06;
+  font-weight: bold;
+}
+
+.in-text-link:hover{
+  color:#F28507;
+}
+
+.in-text-link:focus{
+  color:#171717;
+}
+
+/* button-submit made with help from https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button*/
+.button-submit{
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #991C06;
+  border: none;
+  color: white;
+  padding: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.5rem;
+  margin-left: 0rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+
+}
+
+.button-submit:hover{
+  background-color: #F28507;
+}
+
+.button-submit:focus{
+  text-decoration: underline;
+}
+
+.button-reset{
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  color: #171717;
+  padding: 0.65rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.65rem;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+
+.button-reset:hover{
+  background-color: #991C06;
+  color: white;
+}
+
+.button-reset:focus{
+  text-decoration: underline;
+}
+
+.text-input-label{
+  font-weight: bold;
+}
+
+.text-input-field{
+  display: block;
+  outline: none;
+  background: #FFF;
+  margin-top:10px;
+  padding: 6px;
+  border: 2px solid #171717;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+
+.text-input-field:hover{
+  border: 2px solid #991C06;
+}
+
+.text-input-field:focus{
+  border: 2.8px solid #991C06;
+}
+
+.button-radio{
+  margin-bottom: 0.9rem;
+}
+
+.button-radio-group{
+  font-size: 1.2rem;
+}
+
+.button-radio-label:hover{
+  cursor:pointer;
+  font-weight: bold;
+}
+
+.image-link{
+  max-width: 13rem;
+  transition-property: max-width;
+  transition-duration: 0.8s;
+  background-color: #F28507;
+}
+
+.image-link:hover{
+  max-width: 14rem;
+}
+
+.nav-image-anchor{
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+.nav-image-anchor:focus{
+  border: 6px solid #171717;
+}
+
+/* .header-image{
+  float:left;
+} */
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  color: #171717;
+  padding: 0.65rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+nav .button-nav {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #171717;
+  color: white;
+  padding: 0.65rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover{
+  background-color: #991C06;
+  color: white;
+}
+
+header .button-nav:hover{
+  background-color: #F28507;
+}
+
+.button-nav:focus {
+  text-decoration: underline;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+a{
+  font-size: 1.15rem;
+}
+
+h1{
+  background-color:#991C06;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+  background-color: #171717;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 1.15rem;
+  margin-top: 0;
+  margin-right: 2rem;
+  max-width: 60rem;
+  margin-bottom: 1.5rem;
+}
+
+.bolded-text{
+  font-weight: bold;
+}
+
+.italic-text{
+  font-style: italic;
+}
+
+li{
+  font-size: 1.15rem;
+  max-width: 60rem;
+  margin-bottom: 1.1rem;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+.customer-payment{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.customer-payment .flex-item{
+  font-size: 1.2rem;
+}
+
+#checkout-cart{
+  margin-bottom: 4rem;
+}
+
+.cart-list img{
+  max-width: 12rem;
+  margin: 2rem;
+
+  /* border: 2px solid #171717; */
+}
+
+.cart-list li{
+  /* border: 1px solid #050505; */
+  overflow: auto;
+  background-color: #F2F2F2;
+}
+
+.cart-list p, .cart-list label{
+  color: #171717;
+}
+
+.cart-item-price{
+  font-weight: bold;
+}
+
+.cart-info{
+  padding: 1rem;
+  padding-right: 0;
+}
+
+.button-remove{
+  margin-top: 1.5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+#cart-total-price{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.service-list{
+    margin-bottom: 3rem;
+}
+
+.service-list img{
+  max-width: 40rem;
+  margin-right: 7rem;
+  margin-top: 3rem;
+}
+
+.service-list p{
+  max-width: 45rem;
+}
+.product-list{
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.product-list img{
+  max-width: 25rem;
+  margin-right: 7rem;
+  padding-top: 2rem;
+}
+
+.box{
+  padding: 5rem;
+}
+
+.red{
+  background-color: #991C06;
+}
+
+.grey{
+  background-color: #242424;
+}
+
+.white{
+  background-color: white;
+}
+
+.black{
+  background-color: #171717;
+}
+
+.orange{
+  background-color: #F28507;
+}
+
+.color-text{
+  padding-left: 2rem;
+}
+
+
+/*
+Media Queries
+*/
+
+@media (max-width:47em){
+
+.service-list img, .product-list img{
+  max-width: 75vw;
+}
+
+p{
+  margin-bottom: 3rem;
+}
+
+}
+
+@media (max-width: 460px){
+  body{
+    padding: 0;
+  }
+
+  p{
+    margin-right: 0;
+  }
+
+  .element{
+    padding-left: 0.8rem;
+  }
+
+  .service-list img, .product-list img{
+    max-width: 85vw;
+  }
+
+  .cart-list{
+    padding-left: 0.5rem;
+  }
+
+  .cart-list img{
+    margin: 0.5rem;
+  }
+
+}

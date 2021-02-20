@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>COOKIN - Product Listing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="flex-container header-image">
+          <a href=index.html class="nav-image-anchor flex-item"> <img class="image-link" src="img/grill-logo.png" alt="BBQ Restaurant Logo"> </a>
+        </div>
+
+        <div>
+          <h1>COOKIN: BBQ Restaurant - Style Guide</h1>
+
+          <nav>
+            <div class="flex-container">
+              <a href="index.html#interactive_elements" class="button-nav">Interactive Elements</a>
+              <a href="index.html#text_elements" class="button-nav">Text Elements</a>
+              <a href="index.html#combined_elements" class="button-nav">Combined Elements</a>
+              <a href="index.html#company-branding" class="button-nav">Company Branding</a>
+              <a href="index.html#branding-components" class="button-nav">Branding Components</a>
+              <a href="product-listing.html" class="button-nav">Product List Template</a>
+              <a href="checkout-template.html" class="button-nav">Checkout Template</a>
+              <a href="index.html#citations" class="button-nav">Citations</a>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+
+    <h2>Checkout</h2>
+
+    <form>
+    <section id="checkout-cart" class="element">
+      <h3>Checkout Cart</h3>
+
+        <ul class="cart-list">
+          <li>
+            <!-- Information about number input type learned from https://www.w3schools.com/html/html_form_input_types.asp -->
+            <div class="flex-container cart-item">
+              <img src="img/bbq-sauce.png" alt="Homemade Barbeque Sauce">
+              <div class="cart-info">
+                <a href=# class="in-text-link"> <h4> Homemade Barbeque Sauce </h4> </a>
+                <p class="cart-item-price"> $5.99 </p>
+                <label for="item-1">Quantity</label>
+                <input type="number" id="item-1" name="item-1" min="1" max="4">
+                <a href=# class="button-remove in-text-link">Remove item</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+          <div class="flex-container cart-item">
+            <img src="img/patty.jpg" alt="Beef Patty">
+            <div class="cart-info">
+              <a href=# class="in-text-link"> <h4> Packaged Beef Patty </h4> </a>
+              <p class="cart-item-price"> $25.99 </p>
+              <label for="item-2">Quantity</label>
+              <input type="number" id="item-2" name="item-2" min="1" max="4">
+              <a href=# class="button-remove in-text-link">Remove item</a>
+            </div>
+          </div>
+          </li>
+        </ul>
+
+        <h4> Total Price: </h4>
+        <p id="cart-total-price">$31.98</p>
+    </section>
+
+    <section class="element">
+      <h3> Payment Information </h3>
+
+        <h4> Shipping Information </h4>
+        <div class="customer-contact flex-container">
+
+          <div class="flex-item ">
+            <label for="text-input-field-fname" class="text-input-label">First Name:</label>
+            <input type="text" class="text-input-field" name="text-input-field-fname" id="text-input-field-fname">
+          </div>
+
+          <div class="flex-item">
+            <label for="text-input-field-lname" class="text-input-label">Last Name:</label>
+            <input type="text" class="text-input-field" name="text-input-field-lname" id="text-input-field-lname">
+          </div>
+
+          <!-- Information about email input type retrieved from https://www.w3schools.com/html/html_form_input_types.asp -->
+          <div class="flex-item">
+            <label for="text-input-field-email" class="text-input-label">E-mail:</label>
+            <input type="email" class="text-input-field" name="text-input-field-email" id="text-input-field-email">
+          </div>
+
+        </div>
+
+        <div class="customer-contact flex-container">
+          <div class="flex-item">
+            <label for="text-input-field-address" class="text-input-label">Address: </label>
+            <input type="text" class="text-input-field" name="text-input-field-address" id="text-input-field-address">
+          </div>
+
+          <div class="flex-item">
+            <label for="text-input-field-country" class="text-input-label">Country: </label>
+            <input type="text" class="text-input-field" name="text-input-field-country" id="text-input-field-country">
+          </div>
+
+          <div class="flex-item">
+            <label for="text-input-field-province" class="text-input-label">Province: </label>
+            <input type="text" class="text-input-field" name="text-input-field-province" id="text-input-field-province">
+          </div>
+        </div>
+
+        <div class="customer-contact flex-container">
+          <div class="flex-item">
+            <label for="text-input-field-city" class="text-input-label">City: </label>
+            <input type="text" class="text-input-field" name="text-input-field-city" id="text-input-field-city">
+          </div>
+
+          <div class="flex-item">
+            <label for="text-input-field-city" class="text-input-label">Postal code: </label>
+            <input type="text" class="text-input-field" name="text-input-field-postal" id="text-input-field-postal">
+          </div>
+        </div>
+    </section>
+
+    <section class="element">
+      <h3> Select Payment Method </h3>
+
+      <div class="customer-payment">
+
+        <div class="flex-item">
+          <input type=radio class="button-radio" name="radio-button-payment" id="button-radio-credit">
+          <label for="button-radio-credit" class="button-radio-label">Credit Card</label>
+        </div>
+
+        <div class="flex-item">
+          <input type=radio class="button-radio" name="radio-button-payment" id="button-radio-debit">
+          <label for="button-radio-debit" class="button-radio-label">Debit Card</label>
+        </div>
+
+        <div class="flex-item">
+          <input type=radio class="button-radio" name="radio-button-payment" id="button-radio-paypal">
+          <label for="button-radio-paypal" class="button-radio-label">PayPal</label>
+        </div>
+      </div>
+    </section>
+
+    <input type="submit" class="button-submit">
+    <input type="reset" class="button-reset">
+
+    </form>
+  </body>
+
+</html>
