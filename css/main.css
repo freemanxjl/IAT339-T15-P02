@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 
 *{
@@ -62,7 +62,7 @@ p{
 
 /* Referenced from https://www.w3schools.com/howto/howto_css_placeholder.asp */
 ::placeholder{
-  color: #a5a39d; 
+  color: #a5a39d;
 }
 
 fieldset{
