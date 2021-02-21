@@ -1,0 +1,240 @@
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* MAIN NAVBAR (HEADER) ELEMENTS */
+
+/* Used only for style guide to simulate <header> element */
+.main-header{
+    background-color: #8ac6bf;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  
+.header-title{
+    font-family: nunito, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #f9f9f9;
+    vertical-align: middle;
+    display: inline;
+    position: relative;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+/* Logo beside title */
+.header-icon{
+    vertical-align: middle;
+    max-width: 3.5rem;
+    display: inline;
+    position: relative;
+    left: 0.5rem;
+}
+
+/* Wrapper to hold header items and pulls them to the right side */
+.header-item-wrapper{
+    float: right;
+    margin: 1.25rem 2rem 0 0;
+}
+
+/* Styling for links in header */
+.header-link{
+    margin: 0 0.25rem 0 0.25rem;
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* For mobile hamburger navbar */
+
+/* Container to hold all components of side-navbar in mobile */
+.mobile-navbar{
+    display: inline;
+}
+
+/* Button to open mobile navbar */
+/* Button image is from https://material.io/resources/icons/ */
+.hamburger-button{
+    background-image: url("https://www.sfu.ca/~fla54/iat339/p1/images/menu-white-18dp.svg");
+    background-size: 2.5rem 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: none;
+    position: relative;
+    top: 0.75rem;
+    right: 1rem;
+    float: right;
+    cursor: pointer;
+}
+
+/* Actual menu that drops down and reveals content from side navbar */
+.dropdown-menu{
+    display: none;
+    width: fit-content;
+    margin-top: -1.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+/* Wrapper to group elements so we can align them properly using flexbox */
+.dropdown-wrapper{
+    margin: 1rem;
+}
+
+/* Logic to display dropdown when hamburger menu is hovered, with javascript we can make this a button press instead */
+/* We are using flex-direction row as there are problems in mobile currently using columns that are difficult to solve */
+.mobile-navbar:hover .dropdown-menu, .mobile-navbar:active .dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* PRODUCT LISTING ELEMENT */
+
+/* Shadow styling from https://www.w3schools.com/css/css3_shadows_box.asp */
+.product-container{
+    max-width: 15rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-link{
+    display: block;
+}
+
+.product-title, .product-price, .product-short-desc{
+    padding: 0 1rem 0 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.product-short-desc{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.product-title{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.product-price{
+    font-size: 1rem;
+}
+
+.product-more-info{
+    margin: 0.5rem 0 1.5rem 1rem;
+    display: block;
+    width: fit-content;
+}
+
+.product-container .submit-button{
+    width: -webkit-fill-available;
+    width: -moz-available;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* PAYMENT CHECKOUT ELEMENTS */
+
+.payment-form-container{
+    background-color: #f4f1e9;
+    padding: 2.5rem;
+    max-width: 60rem;
+}
+
+.form-security-num{
+    max-width: 4rem;
+}
+
+/* CHECKOUT CART ELEMENTS */
+
+.checkout-container{
+    background-color: #f4f1e9;
+    padding: 2.5rem;
+    max-width: 60rem;
+}
+
+.checkout-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.checkout-item-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.checkout-item-title{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.checkout-item-wrapper .form-input{
+    max-width: 4.5rem;
+}
+
+.checkout-item-wrapper .form-label{
+    margin-top: 1.25rem;
+}
+
+.checkout-subtotal, .checkout-taxes, .checkout-fulltotal{
+    font-weight: 600;
+}
+
+/* Media Queries */
+
+@media( max-width: 1100px ){
+    /* Below 1100px, header items are replaced with the mobile hamburger menu */
+    .header-item-wrapper{
+        display: none;
+    }
+
+    /* Only display hamburger button when screen is smaller than 1100px */
+    .hamburger-button{
+        display: block;
+    }
+
+    /* Additionally make each link display block instead of inline */
+    .header-link{
+        display: block;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
+
+@media( max-width: 608px){
+    .product-container{
+        max-width: 10rem;
+        padding: 0.5rem;
+    }
+
+    .product-short-desc{
+        display: none;
+    }
+
+    .product-title{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media(max-width: 540px){
+    .checkout-item{
+        flex-direction: column;
+    }
+}

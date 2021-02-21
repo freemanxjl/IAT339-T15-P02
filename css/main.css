@@ -1,0 +1,107 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: poppins, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  background-color: #f4f1e9;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: nunito, sans-serif;
+  font-weight: 900;
+  max-width: 40rem;
+  line-height: 2.5rem;
+}
+
+h1{ font-size: 2rem; }
+h2{ font-size: 1.5rem; }
+h3{ font-size: 1.25rem; }
+h4{ font-size: 1.1rem; }
+h5{ font-size: 0.9rem; }
+h6{ font-size: 0.8rem; }
+
+a{
+  color: #8ac6bf;
+  font-size: 0.95rem;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+li{
+  line-height: 1.4rem;
+}
+
+code{
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+header{
+  background-color: #8ac6bf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 1rem;
+  z-index: 1000;
+}
+
+p{
+  max-width: 40rem;
+  line-height: 1.8rem;
+}
+
+/* Referenced from https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::placeholder{
+  color: #a5a39d; 
+}
+
+fieldset{
+  border: none;
+}
+
+figure{
+  margin: 2rem;
+}
+
+figcaption{
+  max-width: 35rem;
+}
+
+/* Classes Styling */
+.element{
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+/* Footprint graphic for h2 */
+.footprint-icon{
+  width: 2rem;
+  position: relative;
+  top: 6px;
+  z-index: -1;
+}
+
+/* Media Queries */
+
+@media( max-width: 372px){
+  header{
+    padding-bottom: 0.5rem;
+  }
+
+  p{
+    max-width: 100%;
+  }
+
+}
