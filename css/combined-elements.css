@@ -6,17 +6,18 @@
 
 /* Used only for style guide to simulate <header> element */
 .main-header{
-    background-color: #8ac6bf;
+    background-color: #991C06;
     width: 100%;
     padding-left: 1rem;
   }
 
 .header-title{
-    font-family: nunito, sans-serif;
-    font-weight: 900;
-    font-size: 1.6rem;
+    font-family: poplar-std, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
-    color: #f9f9f9;
+    color: #FFFFFF;
     vertical-align: middle;
     display: inline;
     position: relative;
@@ -27,10 +28,12 @@
 /* Logo beside title */
 .header-icon{
     vertical-align: middle;
-    max-width: 3.5rem;
+    max-width: 2.5rem;
     display: inline;
     position: relative;
     left: 0.5rem;
+    top: 0.5rem;
+    background-color: #F28507;
 }
 
 /* Wrapper to hold header items and pulls them to the right side */
@@ -42,7 +45,7 @@
 /* Styling for links in header */
 .header-link{
     margin: 0 0.25rem 0 0.25rem;
-    color: #f9f9f9;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1rem;
 }

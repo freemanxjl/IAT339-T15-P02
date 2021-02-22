@@ -4,7 +4,8 @@
 
 body{
     padding: 8rem 4rem 2rem 20rem;
-    background-color: #f9f9f9;
+    background-color: #811921;
+    /* background-image: linear-gradient(#811921, #000000 15%); */
 }
 
 /* Styling for the colored circles */
@@ -65,7 +66,7 @@ body{
 
 /* Container for the intro section at the top */
 .intro-container{
-    margin-bottom: 3rem;
+    margin-bottom: 20rem;
 }
 
 /* Stylized paragraph for text below title */
@@ -78,7 +79,7 @@ body{
 
 /* Styling for the navbar on the left-hand side of the screen */
 .side-navbar{
-    background-color: #f4f1e9;
+    background-color: #811921;
     padding: 1rem 1rem 0 1rem;
     position: fixed;
     top: 50px;
