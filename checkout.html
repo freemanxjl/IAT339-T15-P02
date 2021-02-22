@@ -53,7 +53,7 @@
         <a class="button-nav button-md submit-button" href="#">Apple Pay</a>
 
         <form>
-          <div class="form-container">
+          <div class="form-container flex-container">
             <span class="form-wrapper">
               <label class="form-label" for="card-number">Card number</label>
               <input class="form-input" type="text" id="card-number" maxlength="16"/>
@@ -91,7 +91,6 @@
               </span>
             </fieldset>
           </div>
-
           <div class=form-container>
             <span class="form-wrapper">
               <label class="form-label" for="first-name">First name</label>
@@ -102,7 +101,30 @@
               <input class="form-input" type="text" id="last-name"/>
             </span>
           </div>
-
+          <div class="flex-container form-container">
+            <span class="form-wrapper">
+              <label for="text-input-field-address" class="form-label">Address: </label>
+              <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
+            </span>
+            <span class="form-wrapper">
+              <label for="text-input-field-country" class="form-label">Country: </label>
+              <input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country">
+            </span>
+            <span class="form-wrapper">
+              <label for="text-input-field-province" class="form-label">Province: </label>
+              <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
+            </span>
+          </div>
+          <div class="flex-container form-container">
+            <span class="form-wrapper">
+              <label for="text-input-field-city" class="form-label">City: </label>
+              <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
+            </span>
+            <span class="form-wrapper">
+              <label for="text-input-field-city" class="form-label">Postal code: </label>
+              <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
+            </span>
+          </div>
           <div class="form-submit-container">
             <p>You will have a chance to review your order before it is placed</p>
             <input class="button-nav button-md submit-button" type="submit" value="Continue"/>

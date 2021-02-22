@@ -32,6 +32,37 @@ transition-duration: 0.8s
   background-image: none;
 }
 
+a{
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+a:hover{
+  color: #F28507;
+}
+
+.submit-button:hover{
+  background-color: #F28507;
+  border-color: #F28507;
+}
+
+.reset-button:hover{
+  background-color: #991C06;
+  border-color: white;
+  color: white;
+}
+
+fieldset.form-wrapper{
+  margin-top: 0.2rem;
+}
+
+fieldset legend{
+  display: relative;
+  top: 10rem;
+}
+
+
+
 /*/
 Media Queries
 /*/
