@@ -12,11 +12,10 @@
   }
 
 .header-title{
-    font-family: poplar-std, sans-serif;
+    font-family: oswald, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    text-decoration: none;
     color: #FFFFFF;
     vertical-align: middle;
     display: inline;
@@ -46,7 +45,6 @@
 .header-link{
     margin: 0 0.25rem 0 0.25rem;
     color: #FFFFFF;
-    text-decoration: none;
     font-size: 1rem;
 }
 
