@@ -1,0 +1,74 @@
+.header-icon{
+transition-property: max-width;
+transition-duration: 0.8s
+}
+
+.header-icon:hover{
+  max-width: 4.5rem;
+}
+
+.header-link{
+  transition-property: border-bottom-color;
+  padding-bottom: 0.8rem;
+  transition-duration: 0.3s;
+  border-bottom: 3px solid rgba(255,255,255,0);
+}
+
+.header-link:hover{
+  border-bottom-color: rgba(255,255,255,1);
+}
+
+.cart-button{
+  transition-property: border-color;
+  transition-duration: 0.3s;
+  border: 3px solid rgba(255,255,255,0);
+}
+
+.cart-button:hover{
+  border-color: rgba(255,255,255,1);
+}
+
+.cart-button{
+  background-image: none;
+}
+
+a{
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+a:hover{
+  color: #F28507;
+}
+
+.submit-button:hover{
+  background-color: #F28507;
+  border-color: #F28507;
+}
+
+.reset-button:hover{
+  background-color: #991C06;
+  border-color: white;
+  color: white;
+}
+
+fieldset.form-wrapper{
+  margin-top: 0.2rem;
+}
+
+fieldset legend{
+  display: relative;
+  top: 10rem;
+}
+
+
+
+/*/
+Media Queries
+/*/
+
+@media( max-width: 1100px ){
+  .header-link{
+    padding-bottom: 0;
+  }
+}

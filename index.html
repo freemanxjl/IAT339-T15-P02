@@ -6,8 +6,8 @@
 
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Tamooki Style Guide</title>
+
+    <title>COOKIN Style Guide</title>
 
     <!-- normalize.css obtained from previous exercise in IAT 235 -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="css/interactive-elements.css">
     <link rel="stylesheet" href="css/combined-elements.css">
     <link rel="stylesheet" href="css/style-guide.css">
-    
+    <link rel="stylesheet" href="css/merge-style.css">
+
     <!-- External CSS -->
-    
+
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/jwz1ygb.css">
 
@@ -26,8 +27,8 @@
   <body>
 
     <header>
-      <a href="#"><img class="header-icon" src="images/tamooki.svg" alt="Site Logo"/></a>
-      <a href="#" class="header-title">Tamooki Style Guide</a>
+      <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+      <a href="#" class="header-title">COOKIN Style Guide</a>
 
       <div class="mobile-navbar">
         <span class="hamburger-button"></span>
@@ -73,27 +74,27 @@
       </nav>
     </div>
 
-    <h1>Welcome to the Tamooki Style Guide</h1>
+    <h1>Welcome to the COOKIN Style Guide</h1>
 
     <div class="intro-container">
       <p class="intro-caption">Here you will find common elements on the Tamooki website to help build and create a more consistent and concise site</p>
-  
+
       <section>
         <h2><img class="footprint-icon" src="images/footprint-1.svg" alt=""/> What does the company do, or offer?</h2>
-        <p>Tamooki is a cafe bakery that specializes in cookies and serves an assortment of drinks. We also offer a calm and quiet space for customers to relax or work. Our site is used by users to browse and order from the menu. After ordering, customers can choose either to pick-up directly from the store or have their order delivered</p>
+        <p>COOKIN is a restaurant which seats people on specially made tables featuring a barbeque grill. Customers buy prepped meats and vegetables to cook using the grills on their table.
+        Customers can make reservations for tables. People also have the option to buy the prepped food to take home. It's exactly like kbbq but with American food such as burgers, wings, etc instead</p>
       </section>
-  
+
       <section>
         <h2><img class="footprint-icon" src="images/footprint-2.svg" alt=""/> Who is the company to potential customers?</h2>
-  
-        <p>A local comfy cafe that specializes in unique cookie flavours and has a fun and colourful atmosphere</p>
-        <p>A target customer would be young adults who enjoy trying trendy new or experimental foods. Someone who is always on the search for food to try and especially likes to take photos of everything they eat</p>
+
+        <p>The brand's persona will be somewhat informal but still professional so it is suitable for most audiences. No overly casual or country jargon/speak. Stay proffesional but accessible to retain as many users as possible.</p>
       </section>
-  
+
       <section>
         <h2><img class="footprint-icon" src="images/footprint-1.svg" alt=""/> Why might this company entice someone to purchase a product or service?</h2>
-  
-        <p>Unique flavours to differentiate from similar shops and to cater to a younger demographic. As well, a colorful and playful branding and aesthetics will entice customers. Lastly, there are few dedicated cookie shops in Vancouver - most serve a variety of baked goods instead </p>
+
+        <p>This restaurant would bring people in for a unique eating experience, good food and a great time to spend with people. Also gives people the barbeque experience for people who cannot have a barbeque in their own home.</p>
       </section>
     </div>
 
@@ -161,7 +162,7 @@
         <h4>Rendered element:</h4>
         <a class="button-nav button-md reset-button" href="#">Reset Button</a>
         <a class="button-nav button-md submit-button" href="#">Submit Button</a>
-        
+
       </section>
 
 
@@ -465,6 +466,31 @@
                 &lt;/span&gt;<br/>
               &lt;/div&gt;<br/>
               <br/>
+              &lt;div class="flex-container form-container"&gt;<br/>
+                &lt;span class="form-wrapper"&gt;<br/>
+                  &lt;label for="text-input-field-address" class="form-label"&gt;Address: &lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address"&gt;<br/>
+                &lt;/span&gt;<br/>
+                &lt;span class="form-wrapper"&gt;<br/>
+                  &lt;label for="text-input-field-country" class="form-label"&gt;Country: &lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country"&gt;<br/>
+                &lt;/span&gt;<br/>
+                &lt;span class="form-wrapper"&gt;<br/>
+                  &lt;label for="text-input-field-province" class="form-label"&gt;Province: &lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province"&gt;<br/>
+                &lt;/span&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="flex-container form-container"&gt;<br/>
+                &lt;span class="form-wrapper"&gt;<br/>
+                  &lt;label for="text-input-field-city" class="form-label"&gt;City: &lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city"&gt;<br/>
+                &lt;/span&gt;<br/>
+                &lt;span class="form-wrapper"&gt;<br/>
+                  &lt;label for="text-input-field-city" class="form-label"&gt;Postal code: &lt;/label&gt;<br/>
+                  &lt;input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal"&gt;<br/>
+                &lt;/span&gt;<br/>
+              &lt;/div&gt;<br/>
+              <br/>
               &lt;div class="form-submit-wrapper"&gt;<br/>
                 &lt;p&gt;You will have a chance to review your order before it is placed&lt;/p&gt;<br/>
                 &lt;input class="button-nav button-md submit-button" type="submit" value="Continue"/&gt;<br/>
@@ -502,8 +528,8 @@
                 <legend class="form-label">Expiration date and security number</legend>
                 <span class="form-wrapper">
 
-                  <!-- 
-                    Select element referenced from: 
+                  <!--
+                    Select element referenced from:
                     https://www.w3schools.com/tags/tag_select.asp
                     https://stackoverflow.com/questions/8605516/default-select-option-as-blank
                   -->
@@ -537,6 +563,31 @@
               <span class="form-wrapper">
                 <label class="form-label" for="last-name">Last name</label>
                 <input class="form-input" type="text" id="last-name"/>
+              </span>
+            </div>
+
+            <div class="flex-container form-container">
+              <span class="form-wrapper">
+                <label for="text-input-field-address" class="form-label">Address: </label>
+                <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
+              </span>
+              <span class="form-wrapper">
+                <label for="text-input-field-country" class="form-label">Country: </label>
+                <input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country">
+              </span>
+              <span class="form-wrapper">
+                <label for="text-input-field-province" class="form-label">Province: </label>
+                <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
+              </span>
+            </div>
+            <div class="flex-container form-container">
+              <span class="form-wrapper">
+                <label for="text-input-field-city" class="form-label">City: </label>
+                <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
+              </span>
+              <span class="form-wrapper">
+                <label for="text-input-field-city" class="form-label">Postal code: </label>
+                <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
               </span>
             </div>
 
@@ -665,47 +716,47 @@
           <p>#a5a39d</p>
         </div>
       </section>
-  
+
       <section class="element">
         <h3>Art Direction</h3>
-  
+
         <p>Tamooki was imagined with first in mind, what sort of style did we want to go for. We knew the main color of the site would be blue. From there, we experimented with wavy patterns that resembled ocean waves but they were difficult to implement using the current tools. Although, from this process it was clear that the style we wanted was elements to have a round design. As we kept building onto this idea for Tamooki, we realized we wanted our brand to have a fun, relaxing, and colourful art direction. Our main inspiration at this point was Animal Crossing. The vibrant colors and tone was everything we were looking for. From there, we looked at similar sites such as Nookazon to draw further inspiration</p>
         <figure>
           <img class="image-md" src="images/art-direction-nookazon.png" alt="Nookazon Art Direction"/>
           <figcaption>Nookazon website we took inspiration from to help create our art direction</figcaption>
         </figure>
-  
+
         <figure>
           <img class="image-md" src="images/art-direction-nookazon-2.png" alt="Nookazon Art Direction 2"/>
           <figcaption>Another image of the Nookazon website</figcaption>
         </figure>
-  
+
         <figure>
           <img class="image-md" src="images/art-direction-AC.png" alt="Animal Crossing Art Direction"/>
           <figcaption>An image of Animal Crossing with the combination of blues, browns, greens, and pinks that we liked</figcaption>
         </figure>
-  
+
         <figure>
           <img class="image-md" src="images/art-direction-AC-2.png" alt="Animal Crossing Art Direction 2"/>
           <figcaption>Another image of Animal Crossing, the vibrant greens, reds, and browns were colors we liked. As well, the atmosphere here is quite relaxing which is something we wanted for our site</figcaption>
         </figure>
-  
+
         <figure>
           <img class="image-md" src="images/art-direction-AC-3.png" alt="Animal Crossing Art Direction 3"/>
           <figcaption>Another image of Animal Crossing, the sort of beautiful aesthetics from the gradient in the sky is an element we would like to incorporate somehow into our site.</figcaption>
         </figure>
-  
+
         <p>Below are patterns that I'm looking for. Wavy, uniform patterns</p>
-  
+
         <figure>
           <img class="image-sm" src="images/uniform-art-direction.png" alt="Uniform Pattern"/>
         </figure>
-  
+
         <figure>
           <img class="image-sm" src="images/uniform-art-direction-2.png" alt="Uniform Pattern"/>
         </figure>
       </section>
-      
+
     </section>
 
     <section id="citations">
