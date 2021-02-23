@@ -12,7 +12,7 @@ body{
   font-size: 1rem;
   font-weight: 300;
   background-color: #811921;
-  background-image: url('../images/red-black-background.png');
+  /* background-image: url('../images/red-black-background.png'); */
   background-position: bottom;
   background-repeat: no-repeat;
 }

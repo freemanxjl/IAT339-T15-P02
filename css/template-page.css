@@ -1,9 +1,5 @@
 /* Styling for the template pages */
 
-body{
-    padding: 8rem 7rem 2rem 7rem;
-}
-
 .cart-button{
     width: 2rem;
     height: 2rem;
@@ -16,6 +12,25 @@ body{
 
 .cart-button:hover{
     border-color: rgba(255,255,255,1);
+}
+
+.service-list img{
+    margin: 2rem 2rem 1rem 1rem;
+}
+
+.service-list-container{
+    background-image: url('../images/red-black-background.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 8rem 7rem 25rem 7rem;
+    margin-bottom: -1.1rem;
+}
+
+.product-list-container{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding-bottom: 2.5rem;
+    padding: 2rem 7rem 2rem 7rem;
 }
 
 /* Media Queries */
@@ -40,16 +55,26 @@ body{
     .flex-container .checkout-container{
         order: 1;
     }
-}
 
-@media( max-width: 800px){
-    body{
-        padding: 8rem 2rem 2rem 2rem;
+    .service-list h3{
+        order: 1;
+    }
+
+    .service-list img{
+        order: 2;
+    }
+
+    .service-list p{
+        order: 3;
     }
 }
 
-@media( max-width: 460px){
-    body{
-        padding: 8rem 1rem 2rem 1rem;
+@media( max-width: 800px){
+    .service-list-container{
+        padding: 8rem 2rem 25rem 2rem;
+    }
+
+    .product-list-container{
+        padding: 2rem 2rem 5rem 2rem;
     }
 }

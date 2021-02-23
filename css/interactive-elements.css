@@ -40,10 +40,12 @@
 /* Styling for the submit button */
 .submit-button {
     background-color: #1c90c5;
+    border: 0.15rem solid #1c90c5;
 }
 
 .submit-button:hover, .submit-button:focus{
     background-color: #5cc8fa;
+    border-color: #5cc8fa;
     color: #FFFFFF;
 }
 
