@@ -11,15 +11,17 @@ body{
   font-family: poppins, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  /* background-color: #811921; */
+  background-color: #811921;
+  background-image: url('../images/red-black-background.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: bitter, sans-serif;
-  /* letter-spacing: 0.22rem; */
   font-weight: 700;
   max-width: 40rem;
-  /* line-height: 2.5rem; */
+  margin: 1rem 0 1rem 0;
 }
 
 h1{ font-size: 2.8rem; }
@@ -37,10 +39,13 @@ a{
   font-weight: 500;
   word-wrap: break-word;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
 }
 
-/* a:focus, a:hover{
-} */
+a:hover{
+  color: #F28507;
+}
 
 li{
   line-height: 1.4rem;
@@ -66,7 +71,7 @@ header{
 }
 
 p{
-  max-width: 40rem;
+  max-width: 45rem;
   line-height: 1.8rem;
 }
 
@@ -77,6 +82,15 @@ p{
 
 fieldset{
   border: none;
+}
+
+fieldset.form-wrapper{
+  margin-top: 0.2rem;
+}
+
+fieldset legend{
+  display: relative;
+  top: 10rem;
 }
 
 figure{
@@ -95,15 +109,41 @@ figcaption{
   border-top-color: black;
 }
 
-/* Footprint graphic for h2 */
+/* Footprint graphic for h2
 .footprint-icon{
   width: 2rem;
   position: relative;
   top: 6px;
   z-index: -1;
+} */
+
+.main-content{
+  padding-left: 5rem;
+  max-width: 65rem;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex-container-p02{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* Media Queries */
+
+@media( max-width: 700px){
+  .main-content{
+      padding: 2rem 2rem 0 2rem;
+  }
+}
 
 @media( max-width: 372px){
   header{

@@ -74,714 +74,718 @@
       </nav>
     </div>
 
-    <h1>Welcome to the COOKIN Style Guide</h1>
-
     <div class="intro-container">
+      <h1>Welcome to the COOKIN Style Guide</h1>
       <p class="intro-caption">Here you will find common elements on the Tamooki website to help build and create a more consistent and concise site</p>
 
       <section>
-        <h2><img class="footprint-icon" src="images/footprint-1.svg" alt=""/> What does the company do, or offer?</h2>
+        <h2>What does the company do, or offer?</h2>
         <p>COOKIN is a restaurant which seats people on specially made tables featuring a barbeque grill. Customers buy prepped meats and vegetables to cook using the grills on their table.
         Customers can make reservations for tables. People also have the option to buy the prepped food to take home. It's exactly like kbbq but with American food such as burgers, wings, etc instead</p>
       </section>
 
       <section>
-        <h2><img class="footprint-icon" src="images/footprint-2.svg" alt=""/> Who is the company to potential customers?</h2>
+        <h2>Who is the company to potential customers?</h2>
 
         <p>The brand's persona will be somewhat informal but still professional so it is suitable for most audiences. No overly casual or country jargon/speak. Stay proffesional but accessible to retain as many users as possible.</p>
       </section>
 
       <section>
-        <h2><img class="footprint-icon" src="images/footprint-1.svg" alt=""/> Why might this company entice someone to purchase a product or service?</h2>
+        <h2>Why might this company entice someone to purchase a product or service?</h2>
 
         <p>This restaurant would bring people in for a unique eating experience, good food and a great time to spend with people. Also gives people the barbeque experience for people who cannot have a barbeque in their own home.</p>
       </section>
     </div>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+    <div class="main-content">
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
 
-      <section class="element">
-        <h3>In-text Link</h3>
+        <section class="element">
+          <h3>In-text Link</h3>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;This is a link&lt;/a&gt;</code>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;This is a link&lt;/a&gt;</code>
 
-        <h4>Rendered element:</h4>
-        <a href="#">This is a link</a>
+          <h4>Rendered element:</h4>
+          <a href="#">This is a link</a>
+
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+
+          <h3>Navigation Link</h3>
+          <p>A Navigation Link is a button that when clicked will navigate to another page</p>
+          <p>By default, each button element will be a small button if no size is assigned. Button sizes are split into small, medium, and large and can be assigned by using the following CSS selectors:</p>
+          <ul>
+            <li>.button-sm -> Small Button</li>
+            <li>.button-md -> Medium Button</li>
+            <li>.button-lg -> Large Button</li>
+          </ul>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a class="button-nav button-sm" href="#"&gt;Default Button&lt;/a&gt;<br/>
+            &lt;a class="button-nav button-md" href="#"&gt;Default Button&lt;/a&gt;<br/>
+            &lt;a class="button-nav button-lg" href="#"&gt;Default Button&lt;/a&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav button-sm" href="#">Default Button</a>
+          <a class="button-nav button-md" href="#">Default Button</a>
+          <a class="button-nav button-lg" href="#">Default Button</a>
+
+        </section>
+
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3>
+          <p>A Submit/Reset Button is a button that when clicked will perform an action. They are a special type of Navigation Button thus they also use the same sizing stylings</p>
+          <p>When hovered, these functional buttons do not have any animations when hovered to differentiate from Navigation Link buttons</p>
+
+          <h4>CSS selector:</h4>
+          <p>.submit-button .reset-button</p>
+          <h4>CSS combined element selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a class="button-nav button-md submit-button" href="#"&gt;Submit Button&lt;/a&gt;<br/>
+            &lt;a class="button-nav button-md reset-button" href="#"&gt;Reset Button&lt;/a&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav button-md reset-button" href="#">Reset Button</a>
+          <a class="button-nav button-md submit-button" href="#">Submit Button</a>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.form-label .form-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;label class="form-label" for="form-input"&gt;This is a label&lt;/label&gt;<br/>
+            &lt;input class="form-input" type="text" id="form-input"/&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <label class="form-label" for="form-input">This is a label</label>
+          <input class="form-input" type="text" id="form-input" placeholder="Placeholder"/>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.form-radio-label</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/&gt;<br/>
+            &lt;label class="form-radio-label" for="form-radio-one"&gt;This is a radio button&lt;/label&gt;<br/>
+            &lt;type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/&gt;<br/>
+            &lt;label class="form-radio-label" for="form-radio-two"&gt;This is also a radio button&lt;/label&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <!-- Referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
+          <input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/>
+          <label class="form-radio-label" for="form-radio-one">This is a radio button</label>
+          <input type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/>
+          <label class="form-radio-label" for="form-radio-two">This is also a radio button</label>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <p>An Image as a Link is a &lt;img&gt; element nested within an &lt;a&gt; element</p>
+          <p>Images have four different sizes and must have a size associated with them. Images can be assigned by using the following CSS selectors:</p>
+          <ul>
+            <li>.image-xs -> Extra Small Image</li>
+            <li>.image-sm -> Small Image</li>
+            <li>.image-md -> Medium Image</li>
+            <li>.image-lg -> Large Image</li>
+          </ul>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/&gt;&lt;/a&gt;</code>
+
+          <!-- Image used is made by me -->
+          <h4>Rendered element:</h4>
+          <a href="#"><img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/></a>
+
+        </section>
+
 
       </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
-      <!-- Default Button styling section -->
-      <section class="element">
 
-        <h3>Navigation Link</h3>
-        <p>A Navigation Link is a button that when clicked will navigate to another page</p>
-        <p>By default, each button element will be a small button if no size is assigned. Button sizes are split into small, medium, and large and can be assigned by using the following CSS selectors:</p>
-        <ul>
-          <li>.button-sm -> Small Button</li>
-          <li>.button-md -> Medium Button</li>
-          <li>.button-lg -> Large Button</li>
-        </ul>
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <section class="element">
+          <h3>Headings</h3>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;a class="button-nav button-sm" href="#"&gt;Default Button&lt;/a&gt;<br/>
-          &lt;a class="button-nav button-md" href="#"&gt;Default Button&lt;/a&gt;<br/>
-          &lt;a class="button-nav button-lg" href="#"&gt;Default Button&lt;/a&gt;
-        </code>
+          <h4>Sample code:</h4>
+          <code>
+            &lt;h1&gt;This is an h1&lt;/h1&gt;<br/>
+            &lt;h2&gt;This is an h2&lt;/h2&gt;<br/>
+            &lt;h3&gt;This is an h3&lt;/h3&gt;<br/>
+            &lt;h4&gt;This is an h4&lt;/h4&gt;<br/>
+          </code>
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav button-sm" href="#">Default Button</a>
-        <a class="button-nav button-md" href="#">Default Button</a>
-        <a class="button-nav button-lg" href="#">Default Button</a>
+          <h4>Rendered element:</h4>
+          <h1>This is an h1</h1>
+          <h2>This is an h2</h2>
+          <h3>This is an h3</h3>
+          <h4>This is an h4</h4>
 
-      </section>
+        </section>
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <p>A Submit/Reset Button is a button that when clicked will perform an action. They are a special type of Navigation Button thus they also use the same sizing stylings</p>
-        <p>When hovered, these functional buttons do not have any animations when hovered to differentiate from Navigation Link buttons</p>
+        <section class="element">
+          <h3>Paragraphs</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.submit-button .reset-button</p>
-        <h4>CSS combined element selector:</h4>
-        <p>.button-nav</p>
+          <!-- Lorem ipsum generated from https://loremipsum.io/generator/ -->
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.&lt;/p&gt;<br/>
+          </code>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;a class="button-nav button-md submit-button" href="#"&gt;Submit Button&lt;/a&gt;<br/>
-          &lt;a class="button-nav button-md reset-button" href="#"&gt;Reset Button&lt;/a&gt;
-        </code>
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.</p>
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav button-md reset-button" href="#">Reset Button</a>
-        <a class="button-nav button-md submit-button" href="#">Submit Button</a>
+        </section>
 
-      </section>
+        <section class="element">
+          <h3>Numbered Lists</h3>
 
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol&gt;<br/>
+              &lt;li&gt;Element 1&lt;li/&gt;<br/>
+              &lt;li&gt;Element 2&lt;li/&gt;<br/>
+              &lt;li&gt;Element 3&lt;li/&gt;<br/>
+              &lt;li&gt;Element 4&lt;li/&gt;<br/>
+            &lt;/ol&gt;
+          </code>
 
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
+          <h4>Rendered element:</h4>
+          <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+          </ol>
 
-        <h4>CSS selector:</h4>
-        <p>.form-label .form-input</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;label class="form-label" for="form-input"&gt;This is a label&lt;/label&gt;<br/>
-          &lt;input class="form-input" type="text" id="form-input"/&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <label class="form-label" for="form-input">This is a label</label>
-        <input class="form-input" type="text" id="form-input" placeholder="Placeholder"/>
+        </section>
 
       </section>
-
-
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.form-radio-label</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/&gt;<br/>
-          &lt;label class="form-radio-label" for="form-radio-one"&gt;This is a radio button&lt;/label&gt;<br/>
-          &lt;type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/&gt;<br/>
-          &lt;label class="form-radio-label" for="form-radio-two"&gt;This is also a radio button&lt;/label&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <!-- Referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
-        <input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/>
-        <label class="form-radio-label" for="form-radio-one">This is a radio button</label>
-        <input type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/>
-        <label class="form-radio-label" for="form-radio-two">This is also a radio button</label>
-
-      </section>
-
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-        <p>An Image as a Link is a &lt;img&gt; element nested within an &lt;a&gt; element</p>
-        <p>Images have four different sizes and must have a size associated with them. Images can be assigned by using the following CSS selectors:</p>
-        <ul>
-          <li>.image-xs -> Extra Small Image</li>
-          <li>.image-sm -> Small Image</li>
-          <li>.image-md -> Medium Image</li>
-          <li>.image-lg -> Large Image</li>
-        </ul>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;&lt;img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/&gt;&lt;/a&gt;</code>
-
-        <!-- Image used is made by me -->
-        <h4>Rendered element:</h4>
-        <a href="#"><img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/></a>
-
-      </section>
-
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+      <!-- // TEXT ELEMENTS SECTION -->
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
 
-      <section class="element">
-        <h3>Headings</h3>
+        <section class="element">
+          <h3>Main Navigation</h3>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;h1&gt;This is an h1&lt;/h1&gt;<br/>
-          &lt;h2&gt;This is an h2&lt;/h2&gt;<br/>
-          &lt;h3&gt;This is an h3&lt;/h3&gt;<br/>
-          &lt;h4&gt;This is an h4&lt;/h4&gt;<br/>
-        </code>
+          <h4>CSS selector:</h4>
+          <p>.main-header, .header-icon, .header-title, .header-item-wrapper, .header-link</p>
 
-        <h4>Rendered element:</h4>
-        <h1>This is an h1</h1>
-        <h2>This is an h2</h2>
-        <h3>This is an h3</h3>
-        <h4>This is an h4</h4>
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="main-header"&gt;<br/>
+              &lt;a href="#"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Site Logo"&gt;&lt;/a&gt;<br/>
+              &lt;p class="header-title"&gt;COOKIN&lt;/p&gt;<br/>
+              &lt;nav class="header-item-wrapper&gt;<br/>
+                &lt;a class="header-link"&gt;Link 1&lt;a/&gt;<br/>
+                &lt;a class="header-link"&gt;Link 2&lt;a/&gt;<br/>
+                &lt;a class="header-link"&gt;Link 3&lt;a/&gt;<br/>
+                &lt;a class="header-link"&gt;Link 4&lt;a/&gt;<br/>
+              &lt;/nav&gt;
 
-      </section>
+              &lt;div class="mobile-navbar"&gt;<br/>
+                &lt;span class="dropdown-button"&gt;&lt;/span&gt;<br/>
+                &lt;nav class="dropdown-menu"&gt;<br/>
+                  &lt;div class="dropdown-wrapper"&gt;<br/>
+                    &lt;a class="header-link" href="#"&gt;Link 1&lt;/a&gt;<br/>
+                    &lt;a class="header-link" href="#"&gt;Link 2&lt;/a&gt;<br/>
+                    &lt;a class="header-link" href="#"&gt;Link 3&lt;/a&gt;<br/>
+                    &lt;a class="header-link" href="#"&gt;Link 4&lt;/a&gt;<br/>
+                  &lt;/div&gt;<br/>
+                &lt;/nav&gt;<br/>
+              &lt;/div&gt;<br/>
+            &lt;/div&gt;
+          </code>
 
-      <section class="element">
-        <h3>Paragraphs</h3>
+          <!-- Code at the moment is not efficient as header-link items need to appear twice -->
+          <!-- NOTE: <div class="main-header"> is used instead of <header> as current header is
+              styled with position: fixed, on real site it should use <header> instead -->
+          <h4>Rendered element:</h4>
+          <div class="main-header">
+            <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+            <a href="#" class="header-title">COOKIN</a>
 
-        <!-- Lorem ipsum generated from https://loremipsum.io/generator/ -->
-        <h4>Sample code:</h4>
-        <code>
-          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.&lt;/p&gt;<br/>
-        </code>
-
-        <h4>Rendered element:</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.</p>
-
-      </section>
-
-      <section class="element">
-        <h3>Numbered Lists</h3>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;ol&gt;<br/>
-            &lt;li&gt;Element 1&lt;li/&gt;<br/>
-            &lt;li&gt;Element 2&lt;li/&gt;<br/>
-            &lt;li&gt;Element 3&lt;li/&gt;<br/>
-            &lt;li&gt;Element 4&lt;li/&gt;<br/>
-          &lt;/ol&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <ol>
-          <li>Element 1</li>
-          <li>Element 2</li>
-          <li>Element 3</li>
-          <li>Element 4</li>
-        </ol>
-
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-
-      <section class="element">
-        <h3>Main Navigation</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.main-header, .header-icon, .header-title, .header-item-wrapper, .header-link</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;div class="main-header"&gt;<br/>
-            &lt;img class="header-icon" src="images/tamooki.svg" alt="Site Logo"&gt;<br/>
-            &lt;p class="header-title"&gt;Tamooki&lt;/p&gt;<br/>
-            &lt;nav class="header-item-wrapper&gt;<br/>
-              &lt;a class="header-link"&gt;Link 1&lt;a/&gt;<br/>
-              &lt;a class="header-link"&gt;Link 2&lt;a/&gt;<br/>
-              &lt;a class="header-link"&gt;Link 3&lt;a/&gt;<br/>
-              &lt;a class="header-link"&gt;Link 4&lt;a/&gt;<br/>
-            &lt;/nav&gt;
-
-            &lt;div class="mobile-navbar"&gt;<br/>
-              &lt;span class="dropdown-button"&gt;&lt;/span&gt;<br/>
-              &lt;nav class="dropdown-menu"&gt;<br/>
-                &lt;div class="dropdown-wrapper"&gt;<br/>
-                  &lt;a class="header-link" href="#"&gt;Link 1&lt;/a&gt;<br/>
-                  &lt;a class="header-link" href="#"&gt;Link 2&lt;/a&gt;<br/>
-                  &lt;a class="header-link" href="#"&gt;Link 3&lt;/a&gt;<br/>
-                  &lt;a class="header-link" href="#"&gt;Link 4&lt;/a&gt;<br/>
-                &lt;/div&gt;<br/>
-              &lt;/nav&gt;<br/>
-            &lt;/div&gt;<br/>
-          &lt;/div&gt;
-        </code>
-
-        <!-- Code at the moment is not efficient as header-link items need to appear twice -->
-        <!-- NOTE: <div class="main-header"> is used instead of <header> as current header is
-             styled with position: fixed, on real site it should use <header> instead -->
-        <h4>Rendered element:</h4>
-        <div class="main-header">
-          <img class="header-icon" src="images/tamooki.svg" alt="Site Logo"/>
-          <a href="#" class="header-title">Tamooki</a>
-
-          <nav class="header-item-wrapper">
-            <a class="header-link" href="#">Link 1</a>
-            <a class="header-link" href="#">Link 2</a>
-            <a class="header-link" href="#">Link 3</a>
-            <a class="header-link" href="#">Link 4</a>
-          </nav>
-
-          <div class="mobile-navbar">
-            <span class="hamburger-button"></span>
-            <nav class="dropdown-menu">
-              <div class="dropdown-wrapper">
-                <a class="header-link" href="#">Link 1</a>
-                <a class="header-link" href="#">Link 2</a>
-                <a class="header-link" href="#">Link 3</a>
-                <a class="header-link" href="#">Link 4</a>
-              </div>
+            <nav class="header-item-wrapper">
+              <a class="header-link" href="#">Link 1</a>
+              <a class="header-link" href="#">Link 2</a>
+              <a class="header-link" href="#">Link 3</a>
+              <a class="header-link" href="#">Link 4</a>
             </nav>
+
+            <div class="mobile-navbar">
+              <span class="hamburger-button"></span>
+              <nav class="dropdown-menu">
+                <div class="dropdown-wrapper">
+                  <a class="header-link" href="#">Link 1</a>
+                  <a class="header-link" href="#">Link 2</a>
+                  <a class="header-link" href="#">Link 3</a>
+                  <a class="header-link" href="#">Link 4</a>
+                </div>
+              </nav>
+            </div>
           </div>
-        </div>
 
-      </section>
+        </section>
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
+        <section class="element">
+          <h3>Product/Service Listing</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.product-container .product-thumbnail .product-title .product-price .product-short-desc .product-more-info</p>
+          <h4>CSS selector:</h4>
+          <p>.product-container .product-thumbnail .product-title .product-price .product-short-desc .product-more-info</p>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;article class="product-container"&gt;<br/>
-            &lt;a href="#"&gt;&lt;img class="image-xl product-thumbnail" src="images/matcha-cookies.png"/&gt;&lt;/a&gt;<br/>
-            &lt;p class="product-title"&gt;Product Title&lt;/p&gt;<br/>
-            &lt;p class="product-price"&gt;$0.00&lt;/p&gt;<br/>
-            &lt;p class="product-short-desc"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;<br/>
-          &lt;/article&gt;
-        </code>
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="flex-container-product product-list"&gt;<br/>
+            &lt;img src="img/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce"&gt;<br/>
+            &lt;div&gt;<br/>
+            &lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;<br/>
+            &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. &lt;/p&gt;<br/>
+            &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas &lt;/p&gt;<br/>
+            &lt;a href=# class="button-nav"&gt;More Information&lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/div&gt;
+          </code>
 
-        <h4>Rendered element:</h4>
-        <article class="product-container">
-          <a href="#"><img class="image-xl product-thumbnail" src="images/matcha-cookies.png" alt="Sample image"/></a>
-          <h2 class="product-title">Product Title</h2>
-          <p class="product-price">$0.00</p>
-          <p class="product-short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a class="product-more-info" href="#">More Info</a>
-        </article>
-
-      </section>
-
-      <!-- div is used instead of section for the "payment-form-container" as section requires a header element.
-           I wanted to include an h1 but the w3 validator would give me a warning, if I made it an h2 then I would
-           have to adjust all the sizings manually through classes which I didn't want
-       -->
-      <section class="element">
-        <h3>Payment Form</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.payment-form-container .form-wrapper</p>
-        <h5>CSS combined element selector</h5>
-        <p>.button-nav .submit-button .form-label, .form-radio-label, .form-input</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;div class="payment-form-container"&gt;<br/>
-            &lt;h1&gt;Payment Form&lt;/h1&gt;
-            <br/>
-            &lt;h2&gt;How would you like to pick up?&lt;/h2&gt;<br/>
-            &lt;input type="radio" id="pick-up" name="form-pickup" value="pick-up"/&gt;<br/>
-            &lt;label class="form-radio-label" for="pick-up"&gt;Pick up in store&lt;/label&gt;<br/>
-            &lt;type="radio" id="delivery" name="form-pick-up" value="delivery"/&gt;<br/>
-            &lt;label class="form-radio-label" for="delivery"&gt;Delivery&lt;/label&gt;<br/>
-            <br/>
-            &lt;h2&gt;How would you like to pay?&lt;/h2&gt;<br/>
-            &lt;a class="button-nav button-md submit-button" href="#"&gt;Credit / Debit Cards&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-md submit-button" href="#"&gt;PayPal&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-md submit-button" href="#"&gt;Google Pay&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-md submit-button" href="#"&gt;Apple Pay&lt;/a&gt;<br/>
-            <br/>
-            &lt;form&gt;<br/>
-              &lt;div class="form-container"&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label class="form-label" for="card-number"&gt;Card number&lt;/label&gt;<br/>
-                  &lt;input class="form-input" type="text" id="card-number" maxlength="16"/&gt;<br/>
-                &lt;/span&gt;<br/>
-                <br/>
-                &lt;fieldset class="form-wrapper"&gt;<br/>
-                  &lt;legend class="form-label"&gt;Expiration date and security number&lt;/legend&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;select class="form-input form-select" name="expiry-month" id="expiry-month"&gt;<br/>
-                      &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
-                      &lt;option value="01"&gt;01&lt;/option&gt;<br/>
-                      &lt;option value="02"&gt;--&lt;/option&gt;<br/>
-                      &lt;option value="03"&gt;12&lt;/option&gt;<br/>
-                    &lt;/select&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  <br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;select class="form-input form-select" name="expiry-year" id="expiry-year"&gt;<br/>
-                      &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
-                      &lt;option value="2021"&gt;2021&lt;/option&gt;<br/>
-                      &lt;option value="2022"&gt;--&lt;/option&gt;<br/>
-                      &lt;option value="2046"&gt;2046&lt;/option&gt;<br/>
-                    &lt;/select&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  <br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                &lt;fieldset&gt;
-              &lt;/div&gt;<br/>
-              <br/>
-              &lt;div class="form-container"&gt;
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label class="form-label" for="first-name"&gt;First Name&lt;/label&gt;<br/>
-                  &lt;input class="form-input" type="text" id="first-name"/&gt;<br/>
-                &lt;/span&gt;
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label class="form-label" for="last-name"&gt;Last Name&lt;/label&gt;<br/>
-                  &lt;input class="form-input" type="text" id="last-name"/&gt;<br/>
-                &lt;/span&gt;<br/>
-              &lt;/div&gt;<br/>
-              <br/>
-              &lt;div class="flex-container form-container"&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label for="text-input-field-address" class="form-label"&gt;Address: &lt;/label&gt;<br/>
-                  &lt;input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address"&gt;<br/>
-                &lt;/span&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label for="text-input-field-country" class="form-label"&gt;Country: &lt;/label&gt;<br/>
-                  &lt;input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country"&gt;<br/>
-                &lt;/span&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label for="text-input-field-province" class="form-label"&gt;Province: &lt;/label&gt;<br/>
-                  &lt;input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province"&gt;<br/>
-                &lt;/span&gt;<br/>
-              &lt;/div&gt;<br/>
-              &lt;div class="flex-container form-container"&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label for="text-input-field-city" class="form-label"&gt;City: &lt;/label&gt;<br/>
-                  &lt;input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city"&gt;<br/>
-                &lt;/span&gt;<br/>
-                &lt;span class="form-wrapper"&gt;<br/>
-                  &lt;label for="text-input-field-city" class="form-label"&gt;Postal code: &lt;/label&gt;<br/>
-                  &lt;input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal"&gt;<br/>
-                &lt;/span&gt;<br/>
-              &lt;/div&gt;<br/>
-              <br/>
-              &lt;div class="form-submit-wrapper"&gt;<br/>
-                &lt;p&gt;You will have a chance to review your order before it is placed&lt;/p&gt;<br/>
-                &lt;input class="button-nav button-md submit-button" type="submit" value="Continue"/&gt;<br/>
-              &lt;/div&gt;<br/>
-            &lt;/form&gt;<br/>
-          &lt;/div&gt;
-        </code>
-
-        <!-- Radio inputs referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
-        <h4>Rendered element:</h4>
-        <div class="payment-form-container">
-
-          <h2>How would you like to pick up?</h2>
-          <input type="radio" id="pick-up" name="form-pick-up" value="pick-up"/>
-          <label class="form-radio-label" for="pick-up">Pick up in store</label>
-          <input type="radio" id="delivery" name="form-pick-up" value="delivery"/>
-          <label class="form-radio-label" for="delivery">Delivery</label>
-
-          <h2>How would you like to pay?</h2>
-          <a class="button-nav button-md submit-button" href="#">Credit / Debit Cards</a>
-          <a class="button-nav button-md submit-button" href="#">PayPal</a>
-          <a class="button-nav button-md submit-button" href="#">Google Pay</a>
-          <a class="button-nav button-md submit-button" href="#">Apple Pay</a>
-
-          <form>
-            <div class="form-container">
-              <span class="form-wrapper">
-                <label class="form-label" for="card-number">Card number</label>
-                <input class="form-input" type="text" id="card-number" maxlength="16"/>
-              </span>
-
-              <!-- Fieldset element referenced from: https://stackoverflow.com/questions/9004307/two-input-fields-inside-one-label-->
-
-              <fieldset class="form-wrapper">
-                <legend class="form-label">Expiration date and security number</legend>
-                <span class="form-wrapper">
-
-                  <!--
-                    Select element referenced from:
-                    https://www.w3schools.com/tags/tag_select.asp
-                    https://stackoverflow.com/questions/8605516/default-select-option-as-blank
-                  -->
-
-                  <select class="form-input" name="expiry-month" id="expiry-month">
-                    <option disabled selected value>--</option>
-                    <option value="01">01</option>
-                    <option value="02">...</option>
-                    <option value="03">12</option>
-                  </select>
-                </span>
-                <span class="form-wrapper">
-                  <select class="form-input" name="expiry-year" id="expiry-year">
-                    <option disabled selected value>----</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">...</option>
-                    <option value="2046">2046</option>
-                  </select>
-                </span>
-                <span class="form-wrapper">
-                  <input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"/>
-                </span>
-              </fieldset>
-            </div>
-
-            <div class=form-container>
-              <span class="form-wrapper">
-                <label class="form-label" for="first-name">First name</label>
-                <input class="form-input" type="text" id="first-name"/>
-              </span>
-              <span class="form-wrapper">
-                <label class="form-label" for="last-name">Last name</label>
-                <input class="form-input" type="text" id="last-name"/>
-              </span>
-            </div>
-
-            <div class="flex-container form-container">
-              <span class="form-wrapper">
-                <label for="text-input-field-address" class="form-label">Address: </label>
-                <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
-              </span>
-              <span class="form-wrapper">
-                <label for="text-input-field-country" class="form-label">Country: </label>
-                <input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country">
-              </span>
-              <span class="form-wrapper">
-                <label for="text-input-field-province" class="form-label">Province: </label>
-                <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
-              </span>
-            </div>
-            <div class="flex-container form-container">
-              <span class="form-wrapper">
-                <label for="text-input-field-city" class="form-label">City: </label>
-                <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
-              </span>
-              <span class="form-wrapper">
-                <label for="text-input-field-city" class="form-label">Postal code: </label>
-                <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
-              </span>
-            </div>
-
+          <h4>Rendered element:</h4>
+          <div class="flex-container-product product-list">
+            <img class="image-sm" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce">
             <div>
-              <p>You will have a chance to review your order before it is placed</p>
-              <input class="button-nav button-md submit-button" type="submit" value="Continue"/>
+              <h3>Homemade Barbeque Sauce</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas </p>
+              <a href=# class="button-nav">More Information</a>
             </div>
-          </form>
-        </div>
+
+        </section>
+
+        <!-- div is used instead of section for the "payment-form-container" as section requires a header element.
+            I wanted to include an h1 but the w3 validator would give me a warning, if I made it an h2 then I would
+            have to adjust all the sizings manually through classes which I didn't want
+        -->
+        <section class="element">
+          <h3>Payment Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.payment-form-container .form-wrapper</p>
+          <h5>CSS combined element selector</h5>
+          <p>.button-nav .submit-button .form-label, .form-radio-label, .form-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="payment-form-container"&gt;<br/>
+              &lt;h1&gt;Payment Form&lt;/h1&gt;
+              <br/>
+              &lt;h2&gt;How would you like to pick up?&lt;/h2&gt;<br/>
+              &lt;input type="radio" id="pick-up" name="form-pickup" value="pick-up"/&gt;<br/>
+              &lt;label class="form-radio-label" for="pick-up"&gt;Pick up in store&lt;/label&gt;<br/>
+              &lt;type="radio" id="delivery" name="form-pick-up" value="delivery"/&gt;<br/>
+              &lt;label class="form-radio-label" for="delivery"&gt;Delivery&lt;/label&gt;<br/>
+              <br/>
+              &lt;h2&gt;How would you like to pay?&lt;/h2&gt;<br/>
+              &lt;a class="button-nav button-md submit-button" href="#"&gt;Credit / Debit Cards&lt;/a&gt;<br/>
+              &lt;a class="button-nav button-md submit-button" href="#"&gt;PayPal&lt;/a&gt;<br/>
+              &lt;a class="button-nav button-md submit-button" href="#"&gt;Google Pay&lt;/a&gt;<br/>
+              &lt;a class="button-nav button-md submit-button" href="#"&gt;Apple Pay&lt;/a&gt;<br/>
+              <br/>
+              &lt;form&gt;<br/>
+                &lt;div class="form-container"&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label class="form-label" for="card-number"&gt;Card number&lt;/label&gt;<br/>
+                    &lt;input class="form-input" type="text" id="card-number" maxlength="16"/&gt;<br/>
+                  &lt;/span&gt;<br/>
+                  <br/>
+                  &lt;fieldset class="form-wrapper"&gt;<br/>
+                    &lt;legend class="form-label"&gt;Expiration date and security number&lt;/legend&gt;<br/>
+                    &lt;span class="form-wrapper"&gt;<br/>
+                      &lt;select class="form-input form-select" name="expiry-month" id="expiry-month"&gt;<br/>
+                        &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
+                        &lt;option value="01"&gt;01&lt;/option&gt;<br/>
+                        &lt;option value="02"&gt;--&lt;/option&gt;<br/>
+                        &lt;option value="03"&gt;12&lt;/option&gt;<br/>
+                      &lt;/select&gt;<br/>
+                    &lt;/span&gt;<br/>
+                    <br/>
+                    &lt;span class="form-wrapper"&gt;<br/>
+                      &lt;select class="form-input form-select" name="expiry-year" id="expiry-year"&gt;<br/>
+                        &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
+                        &lt;option value="2021"&gt;2021&lt;/option&gt;<br/>
+                        &lt;option value="2022"&gt;--&lt;/option&gt;<br/>
+                        &lt;option value="2046"&gt;2046&lt;/option&gt;<br/>
+                      &lt;/select&gt;<br/>
+                    &lt;/span&gt;<br/>
+                    <br/>
+                    &lt;span class="form-wrapper"&gt;<br/>
+                      &lt;input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"&gt;<br/>
+                    &lt;/span&gt;<br/>
+                  &lt;fieldset&gt;
+                &lt;/div&gt;<br/>
+                <br/>
+                &lt;div class="form-container"&gt;
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label class="form-label" for="first-name"&gt;First Name&lt;/label&gt;<br/>
+                    &lt;input class="form-input" type="text" id="first-name"/&gt;<br/>
+                  &lt;/span&gt;
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label class="form-label" for="last-name"&gt;Last Name&lt;/label&gt;<br/>
+                    &lt;input class="form-input" type="text" id="last-name"/&gt;<br/>
+                  &lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                <br/>
+                &lt;div class="flex-container form-container"&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label for="text-input-field-address" class="form-label"&gt;Address: &lt;/label&gt;<br/>
+                    &lt;input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address"&gt;<br/>
+                  &lt;/span&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label for="text-input-field-country" class="form-label"&gt;Country: &lt;/label&gt;<br/>
+                    &lt;input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country"&gt;<br/>
+                  &lt;/span&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label for="text-input-field-province" class="form-label"&gt;Province: &lt;/label&gt;<br/>
+                    &lt;input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province"&gt;<br/>
+                  &lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="flex-container form-container"&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label for="text-input-field-city" class="form-label"&gt;City: &lt;/label&gt;<br/>
+                    &lt;input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city"&gt;<br/>
+                  &lt;/span&gt;<br/>
+                  &lt;span class="form-wrapper"&gt;<br/>
+                    &lt;label for="text-input-field-city" class="form-label"&gt;Postal code: &lt;/label&gt;<br/>
+                    &lt;input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal"&gt;<br/>
+                  &lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                <br/>
+                &lt;div class="form-submit-wrapper"&gt;<br/>
+                  &lt;p&gt;You will have a chance to review your order before it is placed&lt;/p&gt;<br/>
+                  &lt;input class="button-nav button-md submit-button" type="submit" value="Continue"/&gt;<br/>
+                &lt;/div&gt;<br/>
+              &lt;/form&gt;<br/>
+            &lt;/div&gt;
+          </code>
+
+          <!-- Radio inputs referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
+          <h4>Rendered element:</h4>
+          <div class="payment-form-container">
+
+            <h2>How would you like to pick up?</h2>
+            <input type="radio" id="pick-up" name="form-pick-up" value="pick-up"/>
+            <label class="form-radio-label" for="pick-up">Pick up in store</label>
+            <input type="radio" id="delivery" name="form-pick-up" value="delivery"/>
+            <label class="form-radio-label" for="delivery">Delivery</label>
+
+            <h2>How would you like to pay?</h2>
+            <a class="button-nav button-md submit-button" href="#">Credit / Debit Cards</a>
+            <a class="button-nav button-md submit-button" href="#">PayPal</a>
+            <a class="button-nav button-md submit-button" href="#">Google Pay</a>
+            <a class="button-nav button-md submit-button" href="#">Apple Pay</a>
+
+            <form>
+              <div class="form-container">
+                <span class="form-wrapper">
+                  <label class="form-label" for="card-number">Card number</label>
+                  <input class="form-input" type="text" id="card-number" maxlength="16"/>
+                </span>
+
+                <!-- Fieldset element referenced from: https://stackoverflow.com/questions/9004307/two-input-fields-inside-one-label-->
+
+                <fieldset class="form-wrapper">
+                  <legend class="form-label">Expiration date and security number</legend>
+                  <span class="form-wrapper">
+
+                    <!--
+                      Select element referenced from:
+                      https://www.w3schools.com/tags/tag_select.asp
+                      https://stackoverflow.com/questions/8605516/default-select-option-as-blank
+                    -->
+
+                    <select class="form-input" name="expiry-month" id="expiry-month">
+                      <option disabled selected value>--</option>
+                      <option value="01">01</option>
+                      <option value="02">...</option>
+                      <option value="03">12</option>
+                    </select>
+                  </span>
+                  <span class="form-wrapper">
+                    <select class="form-input" name="expiry-year" id="expiry-year">
+                      <option disabled selected value>----</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">...</option>
+                      <option value="2046">2046</option>
+                    </select>
+                  </span>
+                  <span class="form-wrapper">
+                    <input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"/>
+                  </span>
+                </fieldset>
+              </div>
+
+              <div class=form-container>
+                <span class="form-wrapper">
+                  <label class="form-label" for="first-name">First name</label>
+                  <input class="form-input" type="text" id="first-name"/>
+                </span>
+                <span class="form-wrapper">
+                  <label class="form-label" for="last-name">Last name</label>
+                  <input class="form-input" type="text" id="last-name"/>
+                </span>
+              </div>
+
+              <div class="flex-container form-container">
+                <span class="form-wrapper">
+                  <label for="text-input-field-address" class="form-label">Address: </label>
+                  <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
+                </span>
+                <span class="form-wrapper">
+                  <label for="text-input-field-country" class="form-label">Country: </label>
+                  <input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country">
+                </span>
+                <span class="form-wrapper">
+                  <label for="text-input-field-province" class="form-label">Province: </label>
+                  <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
+                </span>
+              </div>
+              <div class="flex-container form-container">
+                <span class="form-wrapper">
+                  <label for="text-input-field-city" class="form-label">City: </label>
+                  <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
+                </span>
+                <span class="form-wrapper">
+                  <label for="text-input-field-city" class="form-label">Postal code: </label>
+                  <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
+                </span>
+              </div>
+
+              <div>
+                <p>You will have a chance to review your order before it is placed</p>
+                <input class="button-nav button-md submit-button" type="submit" value="Continue"/>
+              </div>
+            </form>
+          </div>
+
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.checkout-container .checkout-item-wrapper .checkout-item-title .checkout-item-price .checkout-subtotal .checkout-taxes .checkout-fulltotal</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="checkout-container&gt;<br/>
+              &lt;article class="checkout-item"&gt;<br/>
+                &lt;img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/&gt;<br/>
+                &lt;div class="checkout-item-wrapper"&gt;<br/>
+                  &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
+                  &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
+                  &lt;a class="button-nav button-sm reset-button" href="#"&gt;Remove from Cart&lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="checkout-item-wrapper"&gt;<br/>
+                  &lt;label class="form-label" for="item-quantity"&gt;Quantity&lt;/label&gt;<br/>
+                  &lt;input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/&gt;<br/>
+                &lt;/div&gt;<br/>
+              &lt;/article&gt;<br/>
+              &lt;hr/&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-subtotal"&gt;Subtotal:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-taxes"&gt;Taxes (GST/HST):&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-fulltotal"&gt;Total amount:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="checkout-container">
+            <article class="checkout-item">
+              <img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/>
+              <div class="checkout-item-wrapper">
+                <h2 class="checkout-item-title">Product Title</h2>
+                <p class="checkout-item-price">$0.00</p>
+                <a class="button-nav button-sm reset-button" href="#">Remove from Cart</a>
+              </div>
+              <div class="checkout-item-wrapper">
+                <label class="form-label" for="item-quantity">Quantity</label>
+                <input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/>
+              </div>
+            </article>
+            <hr/>
+            <p><span class="checkout-subtotal">Subtotal:</span> $0.00</p>
+            <p><span class="checkout-taxes">Taxes (GST/HST):</span> $0.00</p>
+            <p><span class="checkout-fulltotal">Total amount:</span> $0.00</p>
+          </div>
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+      <section id="brand-components">
+        <h2>Brand Components</h2>
+
+        <section class="element">
+          <h3>Fonts</h3>
+          <h1>Header 1, Nunito</h1>
+          <h2>Header 2, Nunito</h2>
+          <h3>Header 3, Nunito</h3>
+          <h4>Header 4, Nunito</h4>
+          <h2 class="checkout-item-title">Product Title, Poppins</h2>
+          <p>Body, Poppins</p>
+        </section>
+
+        <!-- Names generated using https://coolors.co/ -->
+        <section class="element">
+          <h3>Color Pallettes</h3>
+          <h4>Primary Colors</h4>
+          <div class="pallete-wrapper">
+            <div class="color-pallete primary-turq"></div>
+            <p class="pallete-title">Middle Blue Green</p>
+            <p>#8ac6bf</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete primary-yellow"></div>
+            <p class="pallete-title">Safety Yellow</p>
+            <p>#f1d302</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete primary-brown"></div>
+            <p class="pallete-title">Brown Sugar</p>
+            <p>#b07156</p>
+          </div>
+          <h4>Secondary Colors</h4>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-red"></div>
+            <p class="pallete-title">Upsdell Red</p>
+            <p>#b8232f</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-black"></div>
+            <p class="pallete-title">Black</p>
+            <p>#000000</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-white"></div>
+            <p class="pallete-title">Cultured</p>
+            <p>#f9f9f9</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-off-white"></div>
+            <p class="pallete-title">Floral White</p>
+            <p>#f4f1e9</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-grey"></div>
+            <p class="pallete-title">Pale Silver</p>
+            <p>#b9b3a4</p>
+          </div>
+          <div class="pallete-wrapper">
+            <div class="color-pallete secondary-dark-grey"></div>
+            <p class="pallete-title">Quick Silver</p>
+            <p>#a5a39d</p>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3>Art Direction</h3>
+
+          <p>Tamooki was imagined with first in mind, what sort of style did we want to go for. We knew the main color of the site would be blue. From there, we experimented with wavy patterns that resembled ocean waves but they were difficult to implement using the current tools. Although, from this process it was clear that the style we wanted was elements to have a round design. As we kept building onto this idea for Tamooki, we realized we wanted our brand to have a fun, relaxing, and colourful art direction. Our main inspiration at this point was Animal Crossing. The vibrant colors and tone was everything we were looking for. From there, we looked at similar sites such as Nookazon to draw further inspiration</p>
+          <figure>
+            <img class="image-md" src="images/art-direction-nookazon.png" alt="Nookazon Art Direction"/>
+            <figcaption>Nookazon website we took inspiration from to help create our art direction</figcaption>
+          </figure>
+
+          <figure>
+            <img class="image-md" src="images/art-direction-nookazon-2.png" alt="Nookazon Art Direction 2"/>
+            <figcaption>Another image of the Nookazon website</figcaption>
+          </figure>
+
+          <figure>
+            <img class="image-md" src="images/art-direction-AC.png" alt="Animal Crossing Art Direction"/>
+            <figcaption>An image of Animal Crossing with the combination of blues, browns, greens, and pinks that we liked</figcaption>
+          </figure>
+
+          <figure>
+            <img class="image-md" src="images/art-direction-AC-2.png" alt="Animal Crossing Art Direction 2"/>
+            <figcaption>Another image of Animal Crossing, the vibrant greens, reds, and browns were colors we liked. As well, the atmosphere here is quite relaxing which is something we wanted for our site</figcaption>
+          </figure>
+
+          <figure>
+            <img class="image-md" src="images/art-direction-AC-3.png" alt="Animal Crossing Art Direction 3"/>
+            <figcaption>Another image of Animal Crossing, the sort of beautiful aesthetics from the gradient in the sky is an element we would like to incorporate somehow into our site.</figcaption>
+          </figure>
+
+          <p>Below are patterns that I'm looking for. Wavy, uniform patterns</p>
+
+          <figure>
+            <img class="image-sm" src="images/uniform-art-direction.png" alt="Uniform Pattern"/>
+          </figure>
+
+          <figure>
+            <img class="image-sm" src="images/uniform-art-direction-2.png" alt="Uniform Pattern"/>
+          </figure>
+        </section>
 
       </section>
 
-      <section class="element">
-        <h3>Checkout Cart</h3>
+      <section id="citations">
+        <h2>Citations</h2>
 
-        <h4>CSS selector:</h4>
-        <p>.checkout-container .checkout-item-wrapper .checkout-item-title .checkout-item-price .checkout-subtotal .checkout-taxes .checkout-fulltotal</p>
+        <ul>
+          <li>Pinhorn, Johnny. Designer. Kale, Ninad. Designer. 2014. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/poppins">https://fonts.adobe.com/fonts/poppins</a></li>
+          <li>Adams, Vernon. Designer. 2017. <strong>Nunito [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/nunito">https://fonts.adobe.com/fonts/nunito</a></li>
+          <li>Liu, Freeman. Designer. 2021. <strong>matcha-cookies [Image]</strong>. Created by me</li>
+          <li>Liu, Freeman. Designer. 2021. <strong>red-velvet-cookies [Image]</strong>. Created by me</li>
+          <li>Liu, Freeman. Designer. 2021. <strong>moogi-logo [Image]</strong>. Created by me</li>
+          <li>Liu, Freeman. Designer. 2021. <strong>footprint [Image]</strong>. Created by me</li>
+          <li>Material Design. Designer. 2021. <strong>menu-white-18dp [Image]</strong>. Retrieved from <a href="https://material.io/resources/icons/">https://material.io/resources/icons/</a></li>
+          <li>Material Design. Designer. 2021. <strong>shopping_cart-white-18dp [Image]</strong>. Retrieved from <a href="https://material.io/resources/icons/">https://material.io/resources/icons/</a></li>
+          <li>Gault, Matthew. Writer. 2020. <strong>art-direction-AC [Image]</strong>. Retrieved from <a href="https://time.com/5804599/animal-crossing-new-horizons-review/">https://time.com/5804599/animal-crossing-new-horizons-review/</a></li>
+          <li>Greenwald, Will. Writer. 2020. <strong>art-direction-AC-2 [Image]</strong>. Retrieved from <a href="https://www.pcmag.com/reviews/animal-crossing-new-horizons-for-nintendo-switch">https://www.pcmag.com/reviews/animal-crossing-new-horizons-for-nintendo-switch</a></li>
+          <li>Parkin, Simon. Writer. 2020. <strong>art-direction-AC-3 [Image]</strong>. Retrieved from <a href="https://www.newyorker.com/culture/culture-desk/finding-connection-during-quarantine-with-animal-crossing-new-horizons">https://www.newyorker.com/culture/culture-desk/finding-connection-during-quarantine-with-animal-crossing-new-horizons</a></li>
+          <li>Luu, Daniel. Designer. 2020. <strong>art-direction-nookazon [Image]</strong>. Retrieved from <a href="https://nookazon.com/">https://nookazon.com/</a></li>
+          <li>Luu, Daniel. Designer. 2020. <strong>art-drection-nookazon-2 [Image]</strong>. Retrieved from <a href="https://nookazon.com/">https://nookazon.com/</a></li>
+          <li>Alemon. Designer. 2021. <strong>uniform-art-direction [Image]</strong>. Retrieved from <a href="https://www.vectorstock.com/royalty-free-vector/simple-blue-seamless-wavy-line-pattern-vector-22500202">https://www.vectorstock.com/royalty-free-vector/simple-blue-seamless-wavy-line-pattern-vector-22500202</a></li>
+          <li>Meereewee, Anuwat. Designer. 2021. <strong>uniform-art-direction-2 [Image]</strong>. Retrieved from <a href="https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style">https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style</a></li>
+        </ul>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;div class="checkout-container&gt;<br/>
-            &lt;article class="checkout-item"&gt;<br/>
-              &lt;img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/&gt;<br/>
-              &lt;div class="checkout-item-wrapper"&gt;<br/>
-                &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
-                &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
-                &lt;a class="button-nav button-sm reset-button" href="#"&gt;Remove from Cart&lt;/a&gt;<br/>
-              &lt;/div&gt;<br/>
-              &lt;div class="checkout-item-wrapper"&gt;<br/>
-                &lt;label class="form-label" for="item-quantity"&gt;Quantity&lt;/label&gt;<br/>
-                &lt;input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/&gt;<br/>
-              &lt;/div&gt;<br/>
-            &lt;/article&gt;<br/>
-            &lt;hr/&gt;<br/>
-            &lt;p&gt;&lt;span class="checkout-subtotal"&gt;Subtotal:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-            &lt;p&gt;&lt;span class="checkout-taxes"&gt;Taxes (GST/HST):&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-            &lt;p&gt;&lt;span class="checkout-fulltotal"&gt;Total amount:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-          &lt;/div&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <div class="checkout-container">
-          <article class="checkout-item">
-            <img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/>
-            <div class="checkout-item-wrapper">
-              <h2 class="checkout-item-title">Product Title</h2>
-              <p class="checkout-item-price">$0.00</p>
-              <a class="button-nav button-sm reset-button" href="#">Remove from Cart</a>
-            </div>
-            <div class="checkout-item-wrapper">
-              <label class="form-label" for="item-quantity">Quantity</label>
-              <input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/>
-            </div>
-          </article>
-          <hr/>
-          <p><span class="checkout-subtotal">Subtotal:</span> $0.00</p>
-          <p><span class="checkout-taxes">Taxes (GST/HST):</span> $0.00</p>
-          <p><span class="checkout-fulltotal">Total amount:</span> $0.00</p>
-        </div>
       </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-    <section id="brand-components">
-      <h2>Brand Components</h2>
-
-      <section class="element">
-        <h3>Fonts</h3>
-        <h1>Header 1, Nunito</h1>
-        <h2>Header 2, Nunito</h2>
-        <h3>Header 3, Nunito</h3>
-        <h4>Header 4, Nunito</h4>
-        <h2 class="checkout-item-title">Product Title, Poppins</h2>
-        <p>Body, Poppins</p>
-      </section>
-
-      <!-- Names generated using https://coolors.co/ -->
-      <section class="element">
-        <h3>Color Pallettes</h3>
-        <h4>Primary Colors</h4>
-        <div class="pallete-wrapper">
-          <div class="color-pallete primary-turq"></div>
-          <p class="pallete-title">Middle Blue Green</p>
-          <p>#8ac6bf</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete primary-yellow"></div>
-          <p class="pallete-title">Safety Yellow</p>
-          <p>#f1d302</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete primary-brown"></div>
-          <p class="pallete-title">Brown Sugar</p>
-          <p>#b07156</p>
-        </div>
-        <h4>Secondary Colors</h4>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-red"></div>
-          <p class="pallete-title">Upsdell Red</p>
-          <p>#b8232f</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-black"></div>
-          <p class="pallete-title">Black</p>
-          <p>#000000</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-white"></div>
-          <p class="pallete-title">Cultured</p>
-          <p>#f9f9f9</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-off-white"></div>
-          <p class="pallete-title">Floral White</p>
-          <p>#f4f1e9</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-grey"></div>
-          <p class="pallete-title">Pale Silver</p>
-          <p>#b9b3a4</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-dark-grey"></div>
-          <p class="pallete-title">Quick Silver</p>
-          <p>#a5a39d</p>
-        </div>
-      </section>
-
-      <section class="element">
-        <h3>Art Direction</h3>
-
-        <p>Tamooki was imagined with first in mind, what sort of style did we want to go for. We knew the main color of the site would be blue. From there, we experimented with wavy patterns that resembled ocean waves but they were difficult to implement using the current tools. Although, from this process it was clear that the style we wanted was elements to have a round design. As we kept building onto this idea for Tamooki, we realized we wanted our brand to have a fun, relaxing, and colourful art direction. Our main inspiration at this point was Animal Crossing. The vibrant colors and tone was everything we were looking for. From there, we looked at similar sites such as Nookazon to draw further inspiration</p>
-        <figure>
-          <img class="image-md" src="images/art-direction-nookazon.png" alt="Nookazon Art Direction"/>
-          <figcaption>Nookazon website we took inspiration from to help create our art direction</figcaption>
-        </figure>
-
-        <figure>
-          <img class="image-md" src="images/art-direction-nookazon-2.png" alt="Nookazon Art Direction 2"/>
-          <figcaption>Another image of the Nookazon website</figcaption>
-        </figure>
-
-        <figure>
-          <img class="image-md" src="images/art-direction-AC.png" alt="Animal Crossing Art Direction"/>
-          <figcaption>An image of Animal Crossing with the combination of blues, browns, greens, and pinks that we liked</figcaption>
-        </figure>
-
-        <figure>
-          <img class="image-md" src="images/art-direction-AC-2.png" alt="Animal Crossing Art Direction 2"/>
-          <figcaption>Another image of Animal Crossing, the vibrant greens, reds, and browns were colors we liked. As well, the atmosphere here is quite relaxing which is something we wanted for our site</figcaption>
-        </figure>
-
-        <figure>
-          <img class="image-md" src="images/art-direction-AC-3.png" alt="Animal Crossing Art Direction 3"/>
-          <figcaption>Another image of Animal Crossing, the sort of beautiful aesthetics from the gradient in the sky is an element we would like to incorporate somehow into our site.</figcaption>
-        </figure>
-
-        <p>Below are patterns that I'm looking for. Wavy, uniform patterns</p>
-
-        <figure>
-          <img class="image-sm" src="images/uniform-art-direction.png" alt="Uniform Pattern"/>
-        </figure>
-
-        <figure>
-          <img class="image-sm" src="images/uniform-art-direction-2.png" alt="Uniform Pattern"/>
-        </figure>
-      </section>
-
-    </section>
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>Pinhorn, Johnny. Designer. Kale, Ninad. Designer. 2014. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/poppins">https://fonts.adobe.com/fonts/poppins</a></li>
-        <li>Adams, Vernon. Designer. 2017. <strong>Nunito [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/nunito">https://fonts.adobe.com/fonts/nunito</a></li>
-        <li>Liu, Freeman. Designer. 2021. <strong>matcha-cookies [Image]</strong>. Created by me</li>
-        <li>Liu, Freeman. Designer. 2021. <strong>red-velvet-cookies [Image]</strong>. Created by me</li>
-        <li>Liu, Freeman. Designer. 2021. <strong>moogi-logo [Image]</strong>. Created by me</li>
-        <li>Liu, Freeman. Designer. 2021. <strong>footprint [Image]</strong>. Created by me</li>
-        <li>Material Design. Designer. 2021. <strong>menu-white-18dp [Image]</strong>. Retrieved from <a href="https://material.io/resources/icons/">https://material.io/resources/icons/</a></li>
-        <li>Material Design. Designer. 2021. <strong>shopping_cart-white-18dp [Image]</strong>. Retrieved from <a href="https://material.io/resources/icons/">https://material.io/resources/icons/</a></li>
-        <li>Gault, Matthew. Writer. 2020. <strong>art-direction-AC [Image]</strong>. Retrieved from <a href="https://time.com/5804599/animal-crossing-new-horizons-review/">https://time.com/5804599/animal-crossing-new-horizons-review/</a></li>
-        <li>Greenwald, Will. Writer. 2020. <strong>art-direction-AC-2 [Image]</strong>. Retrieved from <a href="https://www.pcmag.com/reviews/animal-crossing-new-horizons-for-nintendo-switch">https://www.pcmag.com/reviews/animal-crossing-new-horizons-for-nintendo-switch</a></li>
-        <li>Parkin, Simon. Writer. 2020. <strong>art-direction-AC-3 [Image]</strong>. Retrieved from <a href="https://www.newyorker.com/culture/culture-desk/finding-connection-during-quarantine-with-animal-crossing-new-horizons">https://www.newyorker.com/culture/culture-desk/finding-connection-during-quarantine-with-animal-crossing-new-horizons</a></li>
-        <li>Luu, Daniel. Designer. 2020. <strong>art-direction-nookazon [Image]</strong>. Retrieved from <a href="https://nookazon.com/">https://nookazon.com/</a></li>
-        <li>Luu, Daniel. Designer. 2020. <strong>art-drection-nookazon-2 [Image]</strong>. Retrieved from <a href="https://nookazon.com/">https://nookazon.com/</a></li>
-        <li>Alemon. Designer. 2021. <strong>uniform-art-direction [Image]</strong>. Retrieved from <a href="https://www.vectorstock.com/royalty-free-vector/simple-blue-seamless-wavy-line-pattern-vector-22500202">https://www.vectorstock.com/royalty-free-vector/simple-blue-seamless-wavy-line-pattern-vector-22500202</a></li>
-        <li>Meereewee, Anuwat. Designer. 2021. <strong>uniform-art-direction-2 [Image]</strong>. Retrieved from <a href="https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style">https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style</a></li>
-      </ul>
-
-    </section>
-
+    </div>
 
 
   </body>

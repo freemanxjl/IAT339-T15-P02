@@ -1,22 +1,21 @@
 /* Styling for the template pages */
 
 body{
-    padding: 8rem 14rem 2rem 14rem;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    padding: 8rem 7rem 2rem 7rem;
 }
 
 .cart-button{
-    background-image: url("https://www.sfu.ca/~fla54/iat339/p1/images/shopping_cart-white-18dp.svg");
-    background-size: 2rem 2rem;
     width: 2rem;
     height: 2rem;
     cursor: pointer;
     display: block;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    border: 3px solid rgba(255,255,255,0);
+}
+
+.cart-button:hover{
+    border-color: rgba(255,255,255,1);
 }
 
 /* Media Queries */
