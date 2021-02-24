@@ -69,9 +69,6 @@ body{
 .intro-container{
     padding: 5rem 5rem 30rem 5rem;
     background-color: #811921;
-    background-image: url('../images/red-black-background.png');
-    background-repeat: repeat-x;
-    background-position: bottom;
     color: #000000;
 }
 
@@ -126,16 +123,9 @@ body{
 
 @media( max-width: 700px){
     .intro-container{
-        background-image: url('../images/red-black-mobile-background.png');
         padding: 2rem 1.5rem 25rem 1.5rem;
     }
 }
-
-/* @media( max-width: 666px ){
-    body{
-        margin: 8rem 0 2rem 0;
-    }
-} */
 
 @media( max-width: 372px){
     .intro-caption{

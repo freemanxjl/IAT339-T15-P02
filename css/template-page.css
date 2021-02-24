@@ -19,9 +19,6 @@
 }
 
 .service-list-container{
-    background-image: url('../images/red-black-background.png');
-    background-repeat: repeat-x;
-    background-position: bottom;
     padding: 8rem 7rem 25rem 7rem;
     margin-bottom: -1.1rem;
 }
@@ -29,8 +26,16 @@
 .product-list-container{
     background-color: #000000;
     color: #FFFFFF;
-    padding-bottom: 2.5rem;
-    padding: 2rem 7rem 2rem 7rem;
+    padding: 2rem 7rem 2.5rem 7rem;
+}
+
+.checkout-header-container{
+    padding: 8rem 7rem 0 7rem;
+    margin-bottom: 2rem;
+}
+
+.checkout-payment-container{
+    padding: 2rem 7rem 2.5rem 7rem;
 }
 
 /* Media Queries */
@@ -75,6 +80,14 @@
     }
 
     .product-list-container{
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    .checkout-header-container{
+        padding: 8rem 2rem 0 2rem;
+    }
+
+    .checkout-payment-container{
         padding: 2rem 2rem 5rem 2rem;
     }
 }
