@@ -27,42 +27,37 @@ body{
 }
 
 /* Colors for our pallete */
-.primary-turq{
-    background-color: #8ac6bf;
+.primary-red{
+    background-color: #811921;
 }
 
-.primary-yellow{
-    background-color: #f1d302;
+.primary-white{
+    background-color: #FFFFFF;
 }
 
-.primary-brown{
-    background-color: #b07156;
-}
-
-.secondary-red{
-    background-color: #b8232f;
-}
-
-.secondary-black{
+.primary-black{
     background-color: #000000;
+    border: 0.25rem solid #FFFFFF;
 }
+
+.secondary-orange{
+    background-color: #f28507;
+}  
+
+.secondary-blue{
+    background-color: #1c90c5;
+}  
 
 .secondary-white{
     background-color: #f9f9f9;
-    border: 0.25rem solid #b9b3a4;
 }
 
 .secondary-off-white{
     background-color: #f4f1e9;
-    border: 0.25rem solid #b9b3a4;
 }
 
 .secondary-grey{
     background-color: #b9b3a4;
-}
-
-.secondary-dark-grey{
-    background-color: #a5a39d;
 }
 
 /* Container for the intro section at the top */
