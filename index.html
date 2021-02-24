@@ -322,33 +322,58 @@
                 &lt;a class="header-link"&gt;Link 4&lt;a/&gt;<br/>
               &lt;/nav&gt;
 
-              &lt;div class="mobile-navbar"&gt;<br/>
-                &lt;span class="dropdown-button"&gt;&lt;/span&gt;<br/>
-                &lt;nav class="dropdown-menu"&gt;<br/>
-                  &lt;div class="dropdown-wrapper"&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Link 1&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Link 2&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Link 3&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Link 4&lt;/a&gt;<br/>
-                  &lt;/div&gt;<br/>
-                &lt;/nav&gt;<br/>
-              &lt;/div&gt;<br/>
-            &lt;/div&gt;
-          </code>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/&gt;&lt;/a&gt;</br>
+          &lt;a href="#" class="header-title"&gt;COOKIN&lt;/a&gt;</br>
+          &lt;nav class="header-item-wrapper"&gt;</br>
+            &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;</br>
+            &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;</br>
+            &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;</br>
+            &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;</br>
+            &lt;a href=#&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"&gt;</br>
+          &lt;/nav&gt;</br>
+          </br>
+          &lt;div class="mobile-navbar"&gt;</br>
+            &lt;span class="hamburger-button"&gt;&lt;/span&gt;</br>
+            &lt;nav class="dropdown-menu"&gt;</br>
+              &lt;div class="dropdown-wrapper"&gt;</br>
+                  &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;</br>
+                  &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;</br>
+                  &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;</br>
+                  &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;</br>
+                  &lt;span class="cart-button"&gt;&lt;/span&gt;</br>
+              &lt;/div&gt;</br>
+            &lt;/nav&gt;</br>
+          &lt;/div&gt;</br>
+        </code>
 
-          <!-- Code at the moment is not efficient as header-link items need to appear twice -->
-          <!-- NOTE: <div class="main-header"> is used instead of <header> as current header is
-              styled with position: fixed, on real site it should use <header> instead -->
-          <h4>Rendered element:</h4>
-          <div class="main-header">
-            <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-            <a href="#" class="header-title">COOKIN</a>
+        <!-- Code at the moment is not efficient as header-link items need to appear twice -->
+        <!-- NOTE: <div class="main-header"> is used instead of <header> as current header is
+             styled with position: fixed, on real site it should use <header> instead -->
+        <h4>Rendered element:</h4>
+        <div class="main-header">
+          <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+          <a href="#" class="header-title">COOKIN</a>
 
-            <nav class="header-item-wrapper">
-              <a class="header-link" href="#">Link 1</a>
-              <a class="header-link" href="#">Link 2</a>
-              <a class="header-link" href="#">Link 3</a>
-              <a class="header-link" href="#">Link 4</a>
+          <nav class="header-item-wrapper">
+            <a class="header-link" href="#">About</a>
+            <a class="header-link" href="#">Contact</a>
+            <a class="header-link" href="#">Menu</a>
+            <a class="header-link" href="#">Home</a>
+            <!-- <span class="cart-button"></span> --> <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon">
+          </nav>
+
+          <div class="mobile-navbar">
+            <span class="hamburger-button"></span>
+            <nav class="dropdown-menu">
+              <div class="dropdown-wrapper">
+                  <a class="header-link" href="#">About</a>
+                  <a class="header-link" href="#">Contact</a>
+                  <a class="header-link" href="#">Menu</a>
+                  <a class="header-link" href="#">Home</a>
+                  <span class="cart-button"></span>
+              </div>
             </nav>
 
             <div class="mobile-navbar">
@@ -681,6 +706,57 @@
           </div>
         </section>
 
+      <!-- Names generated using https://coolors.co/ -->
+      <section class="element">
+        <h3>Color Pallettes</h3>
+        <h4>Primary Colors</h4>
+        <div class="pallete-wrapper">
+          <div class="color-pallete primary-red"></div>
+          <p class="pallete-title">Merlot</p>
+          <p>#811921</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete primary-white"></div>
+          <p class="pallete-title">White</p>
+          <p>#FFFFFF</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete primary-black"></div>
+          <p class="pallete-title">Black</p>
+          <p>#000000</p>
+        </div>
+        <h4>Secondary Colors</h4>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-orange"></div>
+          <p class="pallete-title">Tahiti Gold</p>
+          <p>#F28507</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-grey"></div>
+          <p class="pallete-title">Pale Silver</p>
+          <p>#b9b3a4</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-white"></div>
+          <p class="pallete-title">Cultured</p>
+          <p>#f9f9f9</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-off-white"></div>
+          <p class="pallete-title">Floral White</p>
+          <p>#f4f1e9</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-grey"></div>
+          <p class="pallete-title">Pale Silver</p>
+          <p>#b9b3a4</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-dark-grey"></div>
+          <p class="pallete-title">Quick Silver</p>
+          <p>#a5a39d</p>
+        </div>
+      </section>
         <section class="element">
           <h3>Art Direction</h3>
 
@@ -690,36 +766,37 @@
             <figcaption>Nookazon website we took inspiration from to help create our art direction</figcaption>
           </figure>
 
-          <figure>
-            <img class="image-md" src="images/art-direction-nookazon-2.png" alt="Nookazon Art Direction 2"/>
-            <figcaption>Another image of the Nookazon website</figcaption>
-          </figure>
+        <p>COOKIN's artstyle and direction is inspired by western country design patterns. For example, large, capitalized text in bold serif font, thick black lines, and silhouettes. The color scheme features warm colors and a lot of black and white usage to keep up with the barbeque and country aesthetic. However, we dont want to be stuck in the past, we take modern liberties to make the site sleek and user friendly. To make the site feel more unique, we incorporated a brush stroke aesthetic. This is a little nod to the original inspiration of the company as a Korean barbeque restaurant, but with American food. This aesthetic also lets us create those thick black lines we want for that western country aesthetic too. For inspiration, we looked towards designs that also tried to have a western country aesthetic such as barbeque sauce logos, other barbeque restaurants and country imagery</p>
+        <figure>
+          <img class="image-md" src="images/country-side-bbq-logo.png" alt="Country Side Barbeque logo"/>
+          <figcaption>Logo from a barbeque restaurant.</figcaption>
+        </figure>
 
-          <figure>
-            <img class="image-md" src="images/art-direction-AC.png" alt="Animal Crossing Art Direction"/>
-            <figcaption>An image of Animal Crossing with the combination of blues, browns, greens, and pinks that we liked</figcaption>
-          </figure>
+        <figure>
+          <img class="image-md" src="images/country-side-sauce-logo.jpg" alt="Country Side Barbeque Sauce logo"/>
+          <figcaption>Logo from a barbeque sauce, notice its color scheme, and font.</figcaption>
+        </figure>
 
-          <figure>
-            <img class="image-md" src="images/art-direction-AC-2.png" alt="Animal Crossing Art Direction 2"/>
-            <figcaption>Another image of Animal Crossing, the vibrant greens, reds, and browns were colors we liked. As well, the atmosphere here is quite relaxing which is something we wanted for our site</figcaption>
-          </figure>
+        <figure>
+          <img class="image-md" src="images/bullseye-bbq-sauce.png" alt="Bullseye BBQ sauce container"/>
+          <figcaption>Another example of a barbeque sauce having a country aesthetic.</figcaption>
+        </figure>
 
-          <figure>
-            <img class="image-md" src="images/art-direction-AC-3.png" alt="Animal Crossing Art Direction 3"/>
-            <figcaption>Another image of Animal Crossing, the sort of beautiful aesthetics from the gradient in the sky is an element we would like to incorporate somehow into our site.</figcaption>
-          </figure>
+        <figure>
+          <img class="image-md" src="images/gyukaku-logo.png" alt="Japanese BBQ Restaurant Gyukaku Restaurant"/>
+          <figcaption>The logo for Gyu-kaku, a japanese barbeque restaurant where the paint brush idea was inspired from.</figcaption>
+        </figure>
 
-          <p>Below are patterns that I'm looking for. Wavy, uniform patterns</p>
+        <figure>
+          <img class="image-sm" src="images/modern-bbq-logo.jpg" alt="Modern BBQ logo vector"/>
+          <figcaption>A modern logo for a barbeque location. It keeps a thick serif font and keeps a limited color scheme.</figcaption>
+        </figure>
 
-          <figure>
-            <img class="image-sm" src="images/uniform-art-direction.png" alt="Uniform Pattern"/>
-          </figure>
+        <p>Below are patterns that we're looking for. Black brush strokes.</p>
 
-          <figure>
-            <img class="image-sm" src="images/uniform-art-direction-2.png" alt="Uniform Pattern"/>
-          </figure>
-        </section>
+        <figure>
+          <img class="image-md" src="images/brush-strokes.jpg" alt="Brush stroke pattern"/>
+        </figure>
       </section>
 
       <section id="citations">
@@ -743,8 +820,18 @@
           <li>Meereewee, Anuwat. Designer. 2021. <strong>uniform-art-direction-2 [Image]</strong>. Retrieved from <a href="https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style">https://www.vecteezy.com/vector-art/600288-ocean-waves-in-a-simple-cartoon-style</a></li>
         </ul>
 
-      </section>
-    </div>
+      <ul>
+        <li>Pinhorn, Johnny. Designer. Kale, Ninad. Designer. 2014. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/poppins">https://fonts.adobe.com/fonts/poppins</a></li>
+        <li>Adams, Vernon. Designer. 2017. <strong>Nunito [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/nunito">https://fonts.adobe.com/fonts/nunito</a></li>
+        <li>Liu, Freeman. Designer. 2021. <strong>matcha-cookies [Image]</strong>. Created by me</li>
+        <li>Enola99d. Designer. 2019. <strong>Vintage Grill Barbeque Logo Design [Image]</strong></li> Retrieved from <a href="https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm">https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm</a>
+        <li>Country Side BBQ. Company. n.d. <strong>Country Side Barbeque Logo [Image]</strong> Retrieved from <a href="http://www.countrysidebbq.net/menus.php">http://www.countrysidebbq.net/menus.php</a></li>
+        <li>COUNTRYSIDE BBQ Sauce. Company. n.d. <strong>COUNTRYSIDE BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.algona.org/list/member/countryside-bbq-sauce-80">https://www.algona.org/list/member/countryside-bbq-sauce-80</a></li>
+        <li>Bull's Eye. Company. 2021. <strong>Bull's Eye Original BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.bullseyebbq.com/uk/our-products/Bulls-Eye-Original-BBQ-Sauce/76011025">https://www.bullseyebbq.com/uk/our-products/Bulls-Eye-Original-BBQ-Sauce/76011025</a></li>
+        <li>Gyu-kaku. Company. n.d. <strong>Gyu-kaku Japanese BBQ [Image]</strong> Retrieved from <a href="https://www.gyu-kaku.com/">https://www.gyu-kaku.com/</a></li>
+        <li>Enola99d. Designer. 2016. <strong>Vintage Retro Rustic BBQ Grill, Barbecue, Barbeque Label Stamp Logo [Image]</strong> Retrieved from <a href="https://www.shutterstock.com/image-vector/vintage-retro-rustic-bbq-grill-barbecue-1306559512">https://www.shutterstock.com/image-vector/vintage-retro-rustic-bbq-grill-barbecue-1306559512</a></li>
+        <li>intellson. Designer. 2020. <strong>lack set paint, ink brush, brush strokes, brushes, lines, frames, box, grungy. grungy brushes collection. brush stroke paint boxes on white background [Image]</strong> Retreived from <a href="https://www.freepik.com/premium-vector/black-set-paint-ink-brush-brush-strokes-brushes-lines-frames-box-grungy-grungy-brushes-collection-brush-stroke-paint-boxes-white-background_8197427.htm">https://www.freepik.com/premium-vector/black-set-paint-ink-brush-brush-strokes-brushes-lines-frames-box-grungy-grungy-brushes-collection-brush-stroke-paint-boxes-white-background_8197427.htm</a></li>
+      </ul>
 
 
   </body>
