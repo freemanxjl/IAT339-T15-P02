@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
 
 .header-title{
@@ -45,6 +45,21 @@
     max-width: 4.5rem;
 }
 
+/* Shopping cart button found on the right of navbar */
+.cart-button{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: block;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    border: 3px solid rgba(255,255,255,0);
+}
+
+.cart-button:hover{
+    border-color: rgba(255,255,255,1);
+}
+
 /* Wrapper to hold header items and pulls them to the right side */
 .header-item-wrapper{
     float: right;
@@ -55,7 +70,7 @@
 .header-link{
     margin: 0 0.25rem 0 0.25rem;
     color: #FFFFFF;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition-property: border-bottom-color;
     padding-bottom: 0.8rem;
     transition-duration: 0.3s;
@@ -101,6 +116,10 @@
     margin: 1rem;
 }
 
+.dropdown-menu h2, .dropdown-menu h3{
+    font-size: 1.5rem;
+}
+
 /* Logic to display dropdown when hamburger menu is hovered, with javascript we can make this a button press instead */
 /* We are using flex-direction row as there are problems in mobile currently using columns that are difficult to solve */
 .mobile-navbar:hover .dropdown-menu, .mobile-navbar:active .dropdown-menu{
@@ -126,6 +145,11 @@
 
 .form-security-num{
     max-width: 4rem;
+}
+
+.payment-method .form-wrapper{
+    display: block;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 /* CHECKOUT CART ELEMENTS */
@@ -169,13 +193,25 @@
 
 /* Media Queries */
 
+/* 1100+ px */
+@media( min-width: 1100px){
+    /* Display cart button on the right for non-mobile */
+    .cart-button{
+        float: right;
+        position: relative;
+        bottom: 0.5rem;
+        left: 0.7rem;
+    }
+}
+
+/* 0 - 1100px */
 @media( max-width: 1100px ){
-    /* Below 1100px, header items are replaced with the mobile hamburger menu */
+    /* Header items are replaced with the mobile hamburger menu */
     .header-item-wrapper{
         display: none;
     }
 
-    /* Only display hamburger button when screen is smaller than 1100px */
+    /* Displays hamburger button on mobile */
     .hamburger-button{
         display: block;
     }
@@ -185,16 +221,13 @@
         display: block;
         margin: 0.5rem 0 0.5rem 0;
     }
-}
 
-/* Media Queries */
-
-@media( max-width: 1100px ){
     .header-link{
-      padding-bottom: 0;
-    }
+        padding-bottom: 0;
+      }
 }
 
+/* 0 - 540px */
 @media(max-width: 540px){
     .checkout-item{
         flex-direction: column;

@@ -12,7 +12,6 @@ body{
   font-size: 1rem;
   font-weight: 300;
   background-color: #811921;
-  /* background-image: url('../images/red-black-background.png'); */
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -26,10 +25,10 @@ h1, h2, h3, h4, h5, h6{
 
 h1{ font-size: 2.8rem; }
 h2{ font-size: 2.2rem; }
-h3{ font-size: 2rem; }
-h4{ font-size: 1.9rem; }
-h5{ font-size: 1.8rem; }
-h6{ font-size: 1.7rem; }
+h3{ font-size: 1.8rem; }
+h4{ font-size: 1.6rem; }
+h5{ font-size: 1.4rem; }
+h6{ font-size: 1.2rem; }
 
 a{
   color: #FFFFFF;
@@ -80,19 +79,6 @@ p{
   color: #a5a39d;
 }
 
-fieldset{
-  border: none;
-}
-
-fieldset.form-wrapper{
-  margin-top: 0.2rem;
-}
-
-fieldset legend{
-  display: relative;
-  top: 10rem;
-}
-
 figure{
   margin: 2rem;
 }
@@ -108,14 +94,6 @@ figcaption{
   border-top-style: solid;
   border-top-color: black;
 }
-
-/* Footprint graphic for h2
-.footprint-icon{
-  width: 2rem;
-  position: relative;
-  top: 6px;
-  z-index: -1;
-} */
 
 .main-content{
   padding-left: 5rem;
@@ -135,6 +113,12 @@ figcaption{
   align-content: flex-start;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.brush-background{
+  background-image: url('../images/red-black-background.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 /* Media Queries */

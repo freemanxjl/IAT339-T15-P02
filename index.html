@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/interactive-elements.css">
     <link rel="stylesheet" href="css/combined-elements.css">
     <link rel="stylesheet" href="css/style-guide.css">
-    <link rel="stylesheet" href="css/merge-style.css">
 
     <!-- External CSS -->
 
@@ -74,9 +73,9 @@
       </nav>
     </div>
 
-    <div class="intro-container">
+    <div class="intro-container brush-background">
       <h1>Welcome to the COOKIN Style Guide</h1>
-      <p class="intro-caption">Here you will find common elements on the Tamooki website to help build and create a more consistent and concise site</p>
+      <p class="intro-caption">Here you will find common elements on the COOKIN website to help build and create a more consistent and concise site</p>
 
       <section>
         <h2>What does the company do, or offer?</h2>
@@ -221,11 +220,11 @@
           </ul>
 
           <h4>Sample code:</h4>
-          <code>&lt;a href="#"&gt;&lt;img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/&gt;&lt;/a&gt;</code>
+          <code>&lt;a href="#"&gt;&lt;img class="image-xs" src="images/bbq-sauce.png" alt="BBQ Sauce Thumbnail"/&gt;&lt;/a&gt;</code>
 
           <!-- Image used is made by me -->
           <h4>Rendered element:</h4>
-          <a href="#"><img class="image-xs" src="images/matcha-cookies.png" alt="Illustration of a cat head"/></a>
+          <a href="#"><img class="image-xs" src="images/bbq-sauce.png" alt="BBQ Sauce Thumbnail"/></a>
 
         </section>
 
@@ -319,7 +318,7 @@
             &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;</br>
             &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;</br>
             &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;</br>
-            &lt;a href=#&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"&gt;</br>
+            &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;</br>
           &lt;/nav&gt;</br>
           </br>
           &lt;div class="mobile-navbar"&gt;</br>
@@ -330,7 +329,7 @@
                   &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;</br>
                   &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;</br>
                   &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;</br>
-                  &lt;span class="cart-button"&gt;&lt;/span&gt;</br>
+                  &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;</br>
               &lt;/div&gt;</br>
             &lt;/nav&gt;</br>
           &lt;/div&gt;</br>
@@ -341,37 +340,26 @@
              styled with position: fixed, on real site it should use <header> instead -->
         <h4>Rendered element:</h4>
         <div class="main-header">
-          <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-          <a href="#" class="header-title">COOKIN</a>
-
-          <nav class="header-item-wrapper">
-            <a class="header-link" href="#">About</a>
-            <a class="header-link" href="#">Contact</a>
-            <a class="header-link" href="#">Menu</a>
-            <a class="header-link" href="#">Home</a>
-            <!-- <span class="cart-button"></span> --> <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon">
-          </nav>
-
-          <div class="mobile-navbar">
-            <span class="hamburger-button"></span>
-            <nav class="dropdown-menu">
-              <div class="dropdown-wrapper">
-                  <a class="header-link" href="#">About</a>
-                  <a class="header-link" href="#">Contact</a>
-                  <a class="header-link" href="#">Menu</a>
-                  <a class="header-link" href="#">Home</a>
-                  <span class="cart-button"></span>
-              </div>
+            <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+            <a href="#" class="header-title">COOKIN</a>
+      
+            <nav class="header-item-wrapper">
+              <a class="header-link" href="#">About</a>
+              <a class="header-link" href="#">Contact</a>
+              <a class="header-link" href="#">Menu</a>
+              <a class="header-link" href="#">Home</a>
+              <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
             </nav>
-
+      
             <div class="mobile-navbar">
               <span class="hamburger-button"></span>
               <nav class="dropdown-menu">
                 <div class="dropdown-wrapper">
-                  <a class="header-link" href="#">Link 1</a>
-                  <a class="header-link" href="#">Link 2</a>
-                  <a class="header-link" href="#">Link 3</a>
-                  <a class="header-link" href="#">Link 4</a>
+                    <a class="header-link" href="#">About</a>
+                    <a class="header-link" href="#">Contact</a>
+                    <a class="header-link" href="#">Menu</a>
+                    <a class="header-link" href="#">Home</a>
+                    <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
                 </div>
               </nav>
             </div>
@@ -383,12 +371,14 @@
           <h3>Product/Service Listing</h3>
 
           <h4>CSS selector:</h4>
-          <p>.product-container .product-thumbnail .product-title .product-price .product-short-desc .product-more-info</p>
+          <p>.flex-container-p02 .product-list</p>
+          <h5>CSS combined element selector</h5>
+          <p>.button-nav</p>
 
           <h4>Sample code:</h4>
           <code>
-            &lt;div class="flex-container-product product-list"&gt;<br/>
-            &lt;img src="img/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce"&gt;<br/>
+            &lt;div class="flex-container-p02 product-list"&gt;<br/>
+            &lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;<br/>
             &lt;div&gt;<br/>
             &lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;<br/>
             &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. &lt;/p&gt;<br/>
@@ -399,7 +389,7 @@
           </code>
 
           <h4>Rendered element:</h4>
-          <div class="flex-container-product product-list">
+          <div class="flex-container-p02 product-list">
             <img class="image-sm" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce">
             <div>
               <h3>Homemade Barbeque Sauce</h3>
@@ -433,45 +423,9 @@
               &lt;type="radio" id="delivery" name="form-pick-up" value="delivery"/&gt;<br/>
               &lt;label class="form-radio-label" for="delivery"&gt;Delivery&lt;/label&gt;<br/>
               <br/>
-              &lt;h2&gt;How would you like to pay?&lt;/h2&gt;<br/>
-              &lt;a class="button-nav button-md submit-button" href="#"&gt;Credit / Debit Cards&lt;/a&gt;<br/>
-              &lt;a class="button-nav button-md submit-button" href="#"&gt;PayPal&lt;/a&gt;<br/>
-              &lt;a class="button-nav button-md submit-button" href="#"&gt;Google Pay&lt;/a&gt;<br/>
-              &lt;a class="button-nav button-md submit-button" href="#"&gt;Apple Pay&lt;/a&gt;<br/>
+              &lt;h2&gt;Payment Info&lt;/h2&gt;<br/>
               <br/>
               &lt;form&gt;<br/>
-                &lt;div class="form-container"&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label class="form-label" for="card-number"&gt;Card number&lt;/label&gt;<br/>
-                    &lt;input class="form-input" type="text" id="card-number" maxlength="16"/&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  <br/>
-                  &lt;fieldset class="form-wrapper"&gt;<br/>
-                    &lt;legend class="form-label"&gt;Expiration date and security number&lt;/legend&gt;<br/>
-                    &lt;span class="form-wrapper"&gt;<br/>
-                      &lt;select class="form-input form-select" name="expiry-month" id="expiry-month"&gt;<br/>
-                        &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
-                        &lt;option value="01"&gt;01&lt;/option&gt;<br/>
-                        &lt;option value="02"&gt;--&lt;/option&gt;<br/>
-                        &lt;option value="03"&gt;12&lt;/option&gt;<br/>
-                      &lt;/select&gt;<br/>
-                    &lt;/span&gt;<br/>
-                    <br/>
-                    &lt;span class="form-wrapper"&gt;<br/>
-                      &lt;select class="form-input form-select" name="expiry-year" id="expiry-year"&gt;<br/>
-                        &lt;option disabled selected value&gt;--&lt;/option&gt;<br/>
-                        &lt;option value="2021"&gt;2021&lt;/option&gt;<br/>
-                        &lt;option value="2022"&gt;--&lt;/option&gt;<br/>
-                        &lt;option value="2046"&gt;2046&lt;/option&gt;<br/>
-                      &lt;/select&gt;<br/>
-                    &lt;/span&gt;<br/>
-                    <br/>
-                    &lt;span class="form-wrapper"&gt;<br/>
-                      &lt;input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"&gt;<br/>
-                    &lt;/span&gt;<br/>
-                  &lt;fieldset&gt;
-                &lt;/div&gt;<br/>
-                <br/>
                 &lt;div class="form-container"&gt;
                   &lt;span class="form-wrapper"&gt;<br/>
                     &lt;label class="form-label" for="first-name"&gt;First Name&lt;/label&gt;<br/>
@@ -483,7 +437,7 @@
                   &lt;/span&gt;<br/>
                 &lt;/div&gt;<br/>
                 <br/>
-                &lt;div class="flex-container form-container"&gt;<br/>
+                &lt;div class="form-container"&gt;<br/>
                   &lt;span class="form-wrapper"&gt;<br/>
                     &lt;label for="text-input-field-address" class="form-label"&gt;Address: &lt;/label&gt;<br/>
                     &lt;input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address"&gt;<br/>
@@ -497,7 +451,7 @@
                     &lt;input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province"&gt;<br/>
                   &lt;/span&gt;<br/>
                 &lt;/div&gt;<br/>
-                &lt;div class="flex-container form-container"&gt;<br/>
+                &lt;div class="form-container"&gt;<br/>
                   &lt;span class="form-wrapper"&gt;<br/>
                     &lt;label for="text-input-field-city" class="form-label"&gt;City: &lt;/label&gt;<br/>
                     &lt;input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city"&gt;<br/>
@@ -507,6 +461,22 @@
                     &lt;input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal"&gt;<br/>
                   &lt;/span&gt;<br/>
                 &lt;/div&gt;<br/>
+                <br/>
+                &lt;div class="form-container"&gt;<br/>
+                &lt;h3&gt;Payment Method&lt;/h3&gt;<br/>
+                &lt;div class="payment-method"&gt;<br/>
+                &lt;span class="form-wrapper"&gt;
+                &lt;input type="radio" name="radio-button-payment" id="button-radio-credit"/&gt;
+                &lt;label for="button-radio-credit" class="input-radio-label"&gt;Credit Card&lt;/label&gt;<br/>
+                &lt;/span&gt;<br/>
+                &lt;span class="form-wrapper"&gt;
+                &lt;input type="radio" name="radio-button-payment" id="button-radio-debit"/&gt;
+                &lt;label for="button-radio-debit" class="input-radio-label"&gt;Debit Card&lt;/label&gt;<br/>
+                &lt;/span&gt;<br/>
+                &lt;span class="form-wrapper"&gt;
+                &lt;input type="radio" name="radio-button-payment" id="button-radio-paypal"/&gt;
+                &lt;label for="button-radio-paypal" class="input-radio-label"&gt;PayPal&lt;/label&gt;<br/>
+                &lt;/span&gt;<br/>
                 <br/>
                 &lt;div class="form-submit-wrapper"&gt;<br/>
                   &lt;p&gt;You will have a chance to review your order before it is placed&lt;/p&gt;<br/>
@@ -526,11 +496,7 @@
             <input type="radio" id="delivery" name="form-pick-up" value="delivery"/>
             <label class="form-radio-label" for="delivery">Delivery</label>
 
-            <h2>How would you like to pay?</h2>
-            <a class="button-nav button-md submit-button" href="#">Credit / Debit Cards</a>
-            <a class="button-nav button-md submit-button" href="#">PayPal</a>
-            <a class="button-nav button-md submit-button" href="#">Google Pay</a>
-            <a class="button-nav button-md submit-button" href="#">Apple Pay</a>
+            <h2>Payment Info</h2>
 
             <form>
               <div class="form-container">
@@ -544,7 +510,7 @@
                 </span>
               </div>
 
-              <div class="flex-container form-container">
+              <div class="form-container">
                 <span class="form-wrapper">
                   <label for="text-input-field-address" class="form-label">Address: </label>
                   <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
@@ -558,7 +524,7 @@
                   <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
                 </span>
               </div>
-              <div class="flex-container form-container">
+              <div class="form-container">
                 <span class="form-wrapper">
                   <label for="text-input-field-city" class="form-label">City: </label>
                   <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
@@ -567,6 +533,24 @@
                   <label for="text-input-field-city" class="form-label">Postal code: </label>
                   <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
                 </span>
+              </div>
+
+              <div class="form-container">
+                <h3>Payment Method</h3>
+                <div class="payment-method">
+                  <span class="form-wrapper">
+                    <input type="radio" name="radio-button-payment" id="button-radio-credit"/>
+                    <label for="button-radio-credit" class="form-radio-label">Credit Card</label>
+                  </span>
+                  <span class="form-wrapper">
+                    <input type="radio" name="radio-button-payment" id="button-radio-debit"/>
+                    <label for="button-radio-debit" class="form-radio-label">Debit Card</label>
+                  </span>
+                  <span class="form-wrapper">
+                    <input type="radio" name="radio-button-payment" id="button-radio-paypal"/>
+                    <label for="button-radio-paypal" class="form-radio-label">PayPal</label>
+                  </span>
+                </div>
               </div>
 
               <div>
@@ -587,7 +571,7 @@
           <code>
             &lt;div class="checkout-container&gt;<br/>
               &lt;article class="checkout-item"&gt;<br/>
-                &lt;img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/&gt;<br/>
+                &lt;img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/&gt;<br/>
                 &lt;div class="checkout-item-wrapper"&gt;<br/>
                   &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
                   &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
@@ -608,7 +592,7 @@
           <h4>Rendered element:</h4>
           <div class="checkout-container">
             <article class="checkout-item">
-              <img class="image-xs" src="images/red-velvet-cookies.png" alt="Sample Thumbnail"/>
+              <img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/>
               <div class="checkout-item-wrapper">
                 <h2 class="checkout-item-title">Product Title</h2>
                 <p class="checkout-item-price">$0.00</p>
@@ -634,64 +618,58 @@
 
         <section class="element">
           <h3>Fonts</h3>
-          <h1>Header 1, Nunito</h1>
-          <h2>Header 2, Nunito</h2>
-          <h3>Header 3, Nunito</h3>
-          <h4>Header 4, Nunito</h4>
-          <h2 class="checkout-item-title">Product Title, Poppins</h2>
+          <p class="header-title">Site Title, Oswald</p>
+          <h1>Header 1, Bitter</h1>
+          <h2>Header 2, Bitter</h2>
+          <h3>Header 3, Bitter</h3>
+          <h4>Header 4, Bitter</h4>
           <p>Body, Poppins</p>
         </section>
 
       <!-- Names generated using https://coolors.co/ -->
       <section class="element">
-        <h3>Color Pallettes</h3>
+        <h3>Color Palettes</h3>
         <h4>Primary Colors</h4>
         <div class="pallete-wrapper">
           <div class="color-pallete primary-red"></div>
-          <p class="pallete-title">Merlot</p>
-          <p>#811921</p>
+            <p class="pallete-title">Merlot</p>
+            <p>#811921</p>
         </div>
         <div class="pallete-wrapper">
           <div class="color-pallete primary-white"></div>
-          <p class="pallete-title">White</p>
-          <p>#FFFFFF</p>
+            <p class="pallete-title">White</p>
+            <p>#FFFFFF</p>
         </div>
         <div class="pallete-wrapper">
           <div class="color-pallete primary-black"></div>
-          <p class="pallete-title">Black</p>
-          <p>#000000</p>
+            <p class="pallete-title">Black</p>
+            <p>#000000</p>
         </div>
         <h4>Secondary Colors</h4>
         <div class="pallete-wrapper">
           <div class="color-pallete secondary-orange"></div>
-          <p class="pallete-title">Tahiti Gold</p>
-          <p>#F28507</p>
+            <p class="pallete-title">Tahiti Gold</p>
+            <p>#F28507</p>
+        </div>
+        <div class="pallete-wrapper">
+          <div class="color-pallete secondary-blue"></div>
+            <p class="pallete-title">NCS Blue</p>
+            <p>#1C90C5</p>
         </div>
         <div class="pallete-wrapper">
           <div class="color-pallete secondary-grey"></div>
-          <p class="pallete-title">Pale Silver</p>
-          <p>#b9b3a4</p>
+            <p class="pallete-title">Pale Silver</p>
+            <p>#B9B3A4</p>
         </div>
         <div class="pallete-wrapper">
           <div class="color-pallete secondary-white"></div>
-          <p class="pallete-title">Cultured</p>
-          <p>#f9f9f9</p>
+            <p class="pallete-title">Cultured</p>
+            <p>#F9F9F9</p>
         </div>
         <div class="pallete-wrapper">
           <div class="color-pallete secondary-off-white"></div>
-          <p class="pallete-title">Floral White</p>
-          <p>#f4f1e9</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-grey"></div>
-          <p class="pallete-title">Pale Silver</p>
-          <p>#b9b3a4</p>
-        </div>
-        <div class="pallete-wrapper">
-          <div class="color-pallete secondary-dark-grey"></div>
-          <p class="pallete-title">Quick Silver</p>
-          <p>#a5a39d</p>
-        </div>
+            <p class="pallete-title">Floral White</p>
+            <p>#F4F1E9</p>
       </section>
         <section class="element">
           <h3>Art Direction</h3>
@@ -708,7 +686,7 @@
         </figure>
 
         <figure>
-          <img class="image-md" src="images/bullseye-bbq-sauce.png" alt="Bullseye BBQ sauce container"/>
+          <img class="image-xs" src="images/bullseye-bbq-sauce.png" alt="Bullseye BBQ sauce container"/>
           <figcaption>Another example of a barbeque sauce having a country aesthetic.</figcaption>
         </figure>
 
@@ -733,9 +711,10 @@
         <h2>Citations</h2>
 
         <ul>
+          <li>Matas, Sol. Designer. 2010. <strong>Bitter [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/bitter">https://fonts.adobe.com/fonts/bitter</a></li>
           <li>Pinhorn, Johnny. Designer. Kale, Ninad. Designer. 2014. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/poppins">https://fonts.adobe.com/fonts/poppins</a></li>
-          <li>Adams, Vernon. Designer. 2017. <strong>Nunito [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/nunito">https://fonts.adobe.com/fonts/nunito</a></li>
-          <li>Liu, Freeman. Designer. 2021. <strong>matcha-cookies [Image]</strong>. Created by me</li>
+          <li>Adams, Vernon. Designer. 2011. <strong>Oswald [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/oswald">https://fonts.adobe.com/fonts/oswald</a></li>
+          <li>Liu, Freeman. Designer. 2021. <strong>red-black-background [Image]</strong>. Created by us</li>
           <li>Enola99d. Designer. 2019. <strong>Vintage Grill Barbeque Logo Design [Image]</strong></li> Retrieved from <a href="https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm">https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm</a>
           <li>Country Side BBQ. Company. n.d. <strong>Country Side Barbeque Logo [Image]</strong> Retrieved from <a href="http://www.countrysidebbq.net/menus.php">http://www.countrysidebbq.net/menus.php</a></li>
           <li>COUNTRYSIDE BBQ Sauce. Company. n.d. <strong>COUNTRYSIDE BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.algona.org/list/member/countryside-bbq-sauce-80">https://www.algona.org/list/member/countryside-bbq-sauce-80</a></li>

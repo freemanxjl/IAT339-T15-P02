@@ -1,27 +1,10 @@
 /* Styling for the template pages */
 
-.cart-button{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    display: block;
-    transition-property: border-color;
-    transition-duration: 0.3s;
-    border: 3px solid rgba(255,255,255,0);
-}
-
-.cart-button:hover{
-    border-color: rgba(255,255,255,1);
-}
-
 .service-list img{
     margin: 2rem 2rem 1rem 1rem;
 }
 
 .service-list-container{
-    background-image: url('../images/red-black-background.png');
-    background-repeat: repeat-x;
-    background-position: bottom;
     padding: 8rem 7rem 25rem 7rem;
     margin-bottom: -1.1rem;
 }
@@ -29,17 +12,27 @@
 .product-list-container{
     background-color: #000000;
     color: #FFFFFF;
-    padding-bottom: 2.5rem;
-    padding: 2rem 7rem 2rem 7rem;
+    padding: 2rem 7rem 2.5rem 7rem;
+}
+
+.checkout-header-container{
+    padding: 8rem 7rem 0 7rem;
+    margin-bottom: 2rem;
+}
+
+.checkout-payment-container{
+    padding: 2rem 7rem 2.5rem 7rem;
 }
 
 /* Media Queries */
-@media( min-width: 1100px){
-    .cart-button{
-        float: right;
-        position: relative;
-        bottom: 0.5rem;
-        left: 0.7rem;
+
+@media( min-width: 1340px){
+    .flex-container .checkout-container{
+        max-width: 30rem;
+    }
+
+    .flex-container .payment-form-container{
+        border-right: 0.1rem #b9b3a4 solid;
     }
 }
 
@@ -49,6 +42,7 @@
     }
 
     .flex-container .payment-form-container{
+        border-top: 0.1rem #b9b3a4 solid;
         order: 2;
     }
 
@@ -75,6 +69,14 @@
     }
 
     .product-list-container{
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    .checkout-header-container{
+        padding: 8rem 2rem 0 2rem;
+    }
+
+    .checkout-payment-container{
         padding: 2rem 2rem 5rem 2rem;
     }
 }
