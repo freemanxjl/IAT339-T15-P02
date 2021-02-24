@@ -7,12 +7,10 @@
 /* Main button for navigation on site, it is also used for all base button stylings on site*/
 .button-nav {
     font-weight: 600;
-    color: #f9f9f9;
-    background-color: #8ac6bf;
-    border: 0.2rem solid #8ac6bf;
+    color: #000000;
+    background-color: #FFFFFF;
     margin: 0.25rem 0.5rem 0.25rem 0;
     padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-    border-radius: 2rem;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -20,14 +18,13 @@
 }
   
 .button-nav:hover, .button-nav:focus{
-    background-color: transparent;
-    color: #8ac6bf;
+    background-color: #F28507;
+    color: #FFFFFF;
 }
 
 /* Different sizes for buttons */
 .button-sm{
     padding: 0.25rem 1rem 0.25rem 1rem;
-    border: 0.15rem solid #8ac6bf;
     font-size: 0.8rem;
 }
 
@@ -42,14 +39,14 @@
 
 /* Styling for the submit button */
 .submit-button {
-    background-color: #8ac6bf;
-    border: 0.2rem solid #8ac6bf;
+    background-color: #1c90c5;
+    border: 0.15rem solid #1c90c5;
 }
 
 .submit-button:hover, .submit-button:focus{
-    background-color: #8ac6bf;
-    color: #f9f9f9;
-    border: 0.2rem solid #8ac6bf;
+    background-color: #5cc8fa;
+    border-color: #5cc8fa;
+    color: #FFFFFF;
 }
 
 /* Styling for the reset button */
@@ -60,7 +57,8 @@
 }
 
 .reset-button:hover, .reset-button:focus{
-    color: #b8232f;
+    background-color: #991C06;
+    color: white;
 }
 
 /* INPUT ELEMENTS----------------- */
@@ -82,14 +80,11 @@
     width: 100%;
     padding: 0.5rem 0 0.5rem 0.75rem;
     border: 0.2rem solid #b9b3a4;
-    border-radius: 0.5rem;
     transition: border 0.2s ease-in;
 }
 
 .form-input:focus{
-    /* Custom focus color referenced from https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus */
     outline: none;
-    border: 0.2rem solid #8ac6bf;
 }
 
 /* Styling for the radio button inputs */

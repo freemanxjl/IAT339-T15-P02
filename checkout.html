@@ -20,7 +20,7 @@
     <!-- External CSS -->
 
     <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/jwz1ygb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wds2ejr.css">
 
   </head>
 
@@ -46,51 +46,9 @@
         <input type="radio" id="delivery" name="form-pick-up" value="delivery"/>
         <label class="form-radio-label" for="delivery">Delivery</label>
 
-        <h2>How would you like to pay?</h2>
-        <a class="button-nav button-md submit-button" href="#">Credit / Debit Cards</a>
-        <a class="button-nav button-md submit-button" href="#">PayPal</a>
-        <a class="button-nav button-md submit-button" href="#">Google Pay</a>
-        <a class="button-nav button-md submit-button" href="#">Apple Pay</a>
+        <h2>Payment Info</h2>
 
         <form>
-          <div class="form-container flex-container">
-            <span class="form-wrapper">
-              <label class="form-label" for="card-number">Card number</label>
-              <input class="form-input" type="text" id="card-number" maxlength="16"/>
-            </span>
-
-            <!-- Fieldset element referenced from: https://stackoverflow.com/questions/9004307/two-input-fields-inside-one-label-->
-
-            <fieldset class="form-wrapper">
-              <legend class="form-label">Expiration date and security number</legend>
-              <span class="form-wrapper">
-
-                <!--
-                  Select element referenced from:
-                  https://www.w3schools.com/tags/tag_select.asp
-                  https://stackoverflow.com/questions/8605516/default-select-option-as-blank
-                -->
-
-                <select class="form-input form-select" name="expiry-month" id="expiry-month">
-                  <option disabled selected value>--</option>
-                  <option value="01">01</option>
-                  <option value="02">...</option>
-                  <option value="03">12</option>
-                </select>
-              </span>
-              <span class="form-wrapper">
-                <select class="form-input form-select" name="expiry-year" id="expiry-year">
-                  <option disabled selected value>----</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">...</option>
-                  <option value="2046">2046</option>
-                </select>
-              </span>
-              <span class="form-wrapper">
-                <input class="form-input form-security-num" name="cvv" id="cvv" maxlength="3"/>
-              </span>
-            </fieldset>
-          </div>
           <div class=form-container>
             <span class="form-wrapper">
               <label class="form-label" for="first-name">First name</label>
