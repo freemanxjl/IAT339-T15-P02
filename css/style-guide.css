@@ -102,6 +102,15 @@ body{
     max-width: 55rem;
 }
 
+/* Specific modifications to elements within Style Guide */
+/* Mostly fixes such as correcting font color */
+.checkout-container{
+    color: black;
+}
+.payment-form-container{
+    color: black;
+}
+
 /* Media Queries for Style Guide */
 
 @media( max-width: 1100px ){

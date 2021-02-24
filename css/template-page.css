@@ -26,12 +26,23 @@
 
 /* Media Queries */
 
+@media( min-width: 1340px){
+    .flex-container .checkout-container{
+        max-width: 30rem;
+    }
+
+    .flex-container .payment-form-container{
+        border-right: 0.1rem #b9b3a4 solid;
+    }
+}
+
 @media( max-width: 1340px){
     .flex-container{
         flex-direction: column;
     }
 
     .flex-container .payment-form-container{
+        border-top: 0.1rem #b9b3a4 solid;
         order: 2;
     }
 

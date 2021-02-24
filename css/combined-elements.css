@@ -147,6 +147,11 @@
     max-width: 4rem;
 }
 
+.payment-method .form-wrapper{
+    display: block;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
 /* CHECKOUT CART ELEMENTS */
 
 .checkout-container{
