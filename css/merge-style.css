@@ -9,7 +9,7 @@ transition-duration: 0.8s
 
 .header-link{
   transition-property: border-bottom-color;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.2rem;
   transition-duration: 0.3s;
   border-bottom: 3px solid rgba(255,255,255,0);
 }
@@ -60,6 +60,44 @@ fieldset legend{
   display: relative;
   top: 10rem;
 }
+
+.main-header{
+  background-color:rgb(0,0,0);
+  border-bottom: #811921 0.75rem groove;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  z-index: 1000;
+}
+
+.cart-button{
+  /* background-size: 2rem 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: block; */
+}
+
+/*/
+Colors for Palette
+/*/
+
+.primary-red{
+  background-color: #811921;
+}
+
+.primary-white{
+  background-color: #FFF;
+}
+
+.primary-black{
+  background-color: #000;
+  border: 0.25rem solid #b9b3a4;
+}
+
+.secondary-orange{
+  background-color: #F28507;
+}
+
 
 
 
