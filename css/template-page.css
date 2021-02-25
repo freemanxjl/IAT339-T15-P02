@@ -80,3 +80,20 @@
         padding: 2rem 2rem 5rem 2rem;
     }
 }
+
+@media( max-width: 500px){
+  .service-list img{
+    order: -1;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .service-list{
+    margin-top: 2rem;
+  }
+
+
+
+
+
+}
