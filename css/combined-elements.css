@@ -79,7 +79,7 @@
 
 .header-link:hover{
     border-bottom-color: rgba(255,255,255,1);
-}  
+}
 
 /* For mobile hamburger navbar */
 
@@ -231,5 +231,19 @@
 @media(max-width: 540px){
     .checkout-item{
         flex-direction: column;
+    }
+
+    .checkout-item-wrapper{
+      margin-bottom: 0.5rem;
+    }
+
+    .checkout-container{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .payment-form-container{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 }
