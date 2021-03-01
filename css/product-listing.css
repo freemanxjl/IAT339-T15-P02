@@ -1,0 +1,59 @@
+/*
+  Styling for the Product Listing page ------------
+*/
+
+.service-list img{
+    margin: 2rem 2rem 1rem 1rem;
+}
+
+.service-list-container{
+    padding: 8rem 7rem 25rem 7rem;
+    margin-bottom: -1.1rem;
+}
+
+.product-list-container{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2rem 7rem 2.5rem 7rem;
+}
+
+/* Media Queries */
+@media( max-width: 1340px){
+  .flex-container-p02{
+      flex-direction: column;
+  }
+
+  .service-list h3{
+      order: 1;
+  }
+
+  .service-list img{
+      order: 2;
+  }
+
+  .service-list p{
+      order: 3;
+  }
+}
+
+@media( max-width: 800px){
+  .service-list-container{
+      padding: 8rem 2rem 25rem 2rem;
+  }
+
+  .product-list-container{
+      padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+@media( max-width: 500px){
+  .service-list img{
+    order: -1;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .service-list{
+    margin-top: 2rem;
+  }
+}

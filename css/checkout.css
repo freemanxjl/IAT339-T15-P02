@@ -1,0 +1,68 @@
+/*/
+  Styling for the Checkout page ------------
+/*/
+
+/* Using flex learned from https://css-tricks.com/almanac/properties/f/flex/ */
+.payment-form-container{
+  flex: 2;
+}
+
+.checkout-container{
+  flex: 1;
+}
+
+.checkout-header-container{
+    padding: 8rem 7rem 0 7rem;
+    margin-bottom: 2rem;
+}
+
+.checkout-payment-container{
+    padding: 2rem 7rem 2.5rem 7rem;
+}
+
+.checkout-item img{
+  margin-top: 1rem;
+}
+
+/* Media Queries */
+
+@media( min-width: 1340px){
+    .flex-container-p02 .payment-form-container{
+        border-right: 0.1rem #b9b3a4 solid;
+    }
+}
+
+@media( max-width: 1340px){
+  .flex-container-p02{
+      flex-direction: column;
+  }
+
+  .flex-container-p02 .payment-form-container{
+      border-top: 0.1rem #b9b3a4 solid;
+      order: 2;
+  }
+
+  .flex-container-p02 .checkout-container{
+      order: 1;
+  }
+}
+
+@media( max-width: 800px){
+  .checkout-header-container{
+      padding: 8rem 2rem 0 2rem;
+  }
+
+  .checkout-payment-container{
+      padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+@media( max-width: 500px){
+  .checkout-header-container{
+    margin-bottom: 1rem;
+  }
+
+  .checkout-payment-container{
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}
