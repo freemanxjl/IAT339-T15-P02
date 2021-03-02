@@ -143,10 +143,6 @@
     max-width: 60rem;
 }
 
-.form-security-num{
-    max-width: 4rem;
-}
-
 .payment-method .form-wrapper{
     display: block;
     margin: 0.5rem 0 0.5rem 0;
@@ -167,16 +163,16 @@
     align-content: center;
 }
 
-.checkout-item-wrapper{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 1.5rem 1rem 1.5rem;
-}
-
 .checkout-item-title{
     font-family: poppins, sans-serif;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.checkout-item-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5rem 1rem 1.5rem;
 }
 
 .checkout-item-wrapper .form-input{

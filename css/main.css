@@ -106,7 +106,7 @@ figcaption{
   flex-direction: row;
 }
 
-.flex-container-p02{
+.flex-container-nowrap{
   display: flex;
   flex-direction: row;
   align-content: flex-start;
