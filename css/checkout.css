@@ -11,11 +11,6 @@
   flex: 1;
 }
 
-.checkout-header-container{
-    padding: 8rem 7rem 0 7rem;
-    margin-bottom: 2rem;
-}
-
 .checkout-payment-container{
     padding: 2rem 7rem 2.5rem 7rem;
 }
@@ -48,20 +43,12 @@
 }
 
 @media( max-width: 800px){
-  .checkout-header-container{
-      padding: 8rem 2rem 0 2rem;
-  }
-
   .checkout-payment-container{
       padding: 2rem 2rem 5rem 2rem;
   }
 }
 
 @media( max-width: 500px){
-  .checkout-header-container{
-    margin-bottom: 1rem;
-  }
-
   .checkout-payment-container{
     padding: 1rem 2rem 2rem 2rem;
   }
