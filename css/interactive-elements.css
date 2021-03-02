@@ -1,4 +1,4 @@
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -16,7 +16,7 @@
     cursor: pointer;
     transition: background-color 0.2s ease-out;
 }
-  
+
 .button-nav:hover, .button-nav:focus{
     background-color: #F28507;
     color: #FFFFFF;
@@ -85,6 +85,7 @@
 
 .form-input:focus{
     outline: none;
+    border: 0.2rem solid #45b2e4;
 }
 
 /* Styling for the radio button inputs */
@@ -177,5 +178,14 @@ fieldset.form-wrapper{
 
     .image-md{
         max-width: 85%;
+    }
+
+    .form-container{
+      padding-bottom: 1rem;
+      padding-top: 0.5rem;
+    }
+
+    .form-submit-container{
+      margin-top: 1rem;
     }
 }
