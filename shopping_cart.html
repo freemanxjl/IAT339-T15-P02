@@ -17,8 +17,8 @@
 
   <body class="brush-background">
     <header>
-      <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-      <a href="#" class="header-title">COOKIN</a>
+      <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+      <a href="home.html" class="header-title">COOKIN</a>
 
       <nav class="header-item-wrapper">
         <a class="header-link" href="about.html">About</a>
@@ -42,27 +42,32 @@
       </div>
     </header>
 
-    <section class="shopping-cart-container">
-      <h1>SHOPPING CART</h1>
-
-      <div class="checkout-container">
-        <article class="checkout-item">
-          <img class="image-sm" src="images/chicken-wings.png" alt="Sample Thumbnail"/>
-          <div class="checkout-item-wrapper">
-            <h2 class="checkout-item-title">Product Title</h2>
-            <p class="checkout-item-price">$0.00</p>
-            <a class="button-nav button-sm reset-button" href="#">Remove from Cart</a>
-          </div>
-          <div class="checkout-item-wrapper">
-            <label class="form-label" for="item-quantity">Quantity</label>
-            <input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/>
-          </div>
-        </article>
-        <hr/>
-        <p><span class="checkout-subtotal">Subtotal:</span> $0.00</p>
-        <p><span class="checkout-taxes">Taxes (GST/HST):</span> $0.00</p>
-        <p><span class="checkout-fulltotal">Total amount:</span> $0.00</p>
+    <section>
+      <div class="page-header-container">
+        <h1>SHOPPING CART</h1>
       </div>
+
+      <div class="page-main-container">
+        <div class="checkout-container">
+          <article class="checkout-item">
+            <img class="image-sm" src="images/chicken-wings.png" alt="Sample Thumbnail"/>
+            <div class="checkout-item-wrapper">
+              <h2 class="checkout-item-title">Product Title</h2>
+              <p class="checkout-item-price">$0.00</p>
+              <a class="button-nav button-sm reset-button" href="#">Remove from Cart</a>
+            </div>
+            <div class="checkout-item-wrapper">
+              <label class="form-label" for="item-quantity">Quantity</label>
+              <input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/>
+            </div>
+          </article>
+          <hr/>
+          <p><span class="checkout-subtotal">Subtotal:</span> $0.00</p>
+          <p><span class="checkout-taxes">Taxes (GST/HST):</span> $0.00</p>
+          <p><span class="checkout-fulltotal">Total amount:</span> $0.00</p>
+        </div>
+      </div>
+
     </section>
 
     <div class="sticky-fulltotal">

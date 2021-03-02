@@ -116,7 +116,35 @@ figcaption{
   background-position: bottom;
 }
 
+.page-header-container{
+  padding: 8rem 7rem 2rem 7rem;
+}
+
+.page-main-container{
+  padding: 0 7rem 20rem 7rem;
+}
+
+.page-secondary-container{
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1rem 7rem 2.5rem 7rem;
+}
+
 /* Media Queries */
+
+@media( max-width: 800px){
+  .page-header-container{
+      padding: 8rem 2rem 2rem 2rem;
+  }
+
+  .page-main-container{
+      padding: 0 2rem 20rem 2rem;
+  }
+
+  .page-secondary-container{
+      padding: 1rem 2rem 5rem 2rem;
+  }
+}
 
 @media( max-width: 372px){
   header{
