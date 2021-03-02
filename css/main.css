@@ -11,7 +11,7 @@ body{
   font-family: poppins, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  background-color: #811921;
+  background-color: #ba1128;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -95,11 +95,6 @@ figcaption{
   border-top-color: black;
 }
 
-.main-content{
-  padding-left: 5rem;
-  max-width: 65rem;
-}
-
 .flex-container{
   display: flex;
   justify-content: flex-start;
@@ -122,12 +117,6 @@ figcaption{
 }
 
 /* Media Queries */
-
-@media( max-width: 700px){
-  .main-content{
-      padding: 2rem 2rem 0 2rem;
-  }
-}
 
 @media( max-width: 372px){
   header{

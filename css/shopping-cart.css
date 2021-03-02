@@ -1,0 +1,41 @@
+h1{
+    margin-bottom: 6rem;
+}
+
+.shopping-cart-container{
+    padding: 8rem 7rem 6.9rem 7rem;
+}
+
+.checkout-button{
+    float: right;
+}
+
+.sticky-p{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem 2rem 0 2rem;
+}
+
+.sticky-fulltotal{
+    width: 100%;
+    background-color: #811921;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@media( max-width: 800px){
+    .shopping-cart-container{
+        padding: 8rem 2rem 6.9rem 2rem;
+    }
+
+    .checkout-button{
+        padding: 0.75rem 1rem 0.75rem 1rem;
+    }
+
+    .sticky-p{
+        font-size: 1rem;
+    }
+    
+  }
