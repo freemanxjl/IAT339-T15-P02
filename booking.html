@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wds2ejr.css">
   </head>
 
-  <body class="brush-background">
+  <body>
     <header>
       <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
       <a href="home.html" class="header-title">COOKIN</a>
@@ -42,15 +42,68 @@
       </div>
     </header>
 
-    <section class="page-main-container">
+    <!-- Date and Time from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time -->
+    <section>
       <div class="page-header-container">
         <h1>RESERVE A TABLE</h1>
       </div>
-      <div class="payment-form-container">
-        <form>
-          
-        </form>
+      
+      <div class="page-main-container brush-background">
+        <div class="align-center-container booking-container">
+          <form>
+            <div class=" form-container">
+              <span class="form-wrapper">
+                <label class="form-label" for="form-date">Date</label>
+                <input class="form-input" type="date" id="form-date"/>
+              </span>
+              <span class="form-wrapper">
+                <label class="form-label" for="form-time">Time</label>
+                <input class="form-input" type="time" id="form-time"/>
+              </span>
+              <span class="form-wrapper">
+                <label class="form-label" for="form-people">People</label>
+                <select class="form-input" id="form-people">
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7">7 People</option>
+                  <option value="8">8 People</option>
+                  <option value="8+">8+ People</option>
+                </select>
+              </span>
+              <span class="form-wrapper">
+                <input class="button-nav button-md submit-button" type="submit" value="Reserve"/>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="align-center-container phone-container">
+          <p>Or by phone at: 604-123-4567</p>
+        </div>
       </div>
+    </section>
+      
+    <section class="page-secondary-container">
+        <h1>OUR LOCATION</h1>
+        <div class="flex-container-nowrap">
+          <div>
+            <h2>Restaurant Hours</h2>
+            <table>
+              <tr>
+                <th>Monday to Friday</th>
+                <th>9:30am - 10:00pm</th>
+              </tr>
+              <tr>
+                <th>Saturday to Sunday</th>
+                <th>8:30am - 10:00pm</th>
+              </tr>
+            </table>
+          </div>
+          <img class="map-image image-sm" src="images/google-map.png" alt="Google Map">
+        </div>
     </section>
 
   </body>

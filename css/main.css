@@ -113,6 +113,12 @@ figcaption{
   flex-wrap: nowrap;
 }
 
+.align-center-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .brush-background{
   background-image: url('../images/red-black-background.png');
   background-repeat: repeat-x;
@@ -130,7 +136,8 @@ figcaption{
 .page-secondary-container{
   background-color: #000000;
   color: #FFFFFF;
-  padding: 1rem 7rem 2.5rem 7rem;
+  position: relative;
+  padding: 0.1rem 7rem 2.5rem 7rem;
 }
 
 /* Media Queries */
