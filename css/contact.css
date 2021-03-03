@@ -1,0 +1,70 @@
+/*
+Styling for Contact page
+*/
+
+.contact-container{
+    padding: 2rem 7rem 2.5rem 7rem;
+}
+
+.contact-text-container{
+  background-color: #f9f9f9;
+  padding: 2.5rem;
+  max-width: 100%;
+  flex: 2;
+}
+
+.contact-form-container{
+  background-color: #f4f1e9;
+  padding: 2.5rem;
+  max-width: 100%;
+  flex: 1;
+}
+
+.button-social-media{
+  background-color: #1c90c5;
+  border: 0.15rem solid #1c90c5;
+}
+
+.button-social-media:hover{
+  background-color: #45b2e4;
+  border-color: #45b2e4;
+  color: #FFFFFF;
+}
+
+textarea{
+  border: 0.2rem solid #b9b3a4;
+  transition: border 0.2s ease-in;
+  width: 100%;
+  height: auto;
+}
+
+textarea:focus{
+  outline: none;
+  border: 0.2rem solid #45b2e4;
+}
+
+#subject{
+  max-width: 100%;
+}
+
+/*
+Media Queries
+*/
+
+@media( max-width: 1340px){
+  .flex-container-nowrap{
+      flex-direction: column;
+  }
+}
+
+@media( max-width: 800px){
+  .contact-container{
+      padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+@media( max-width: 500px){
+  .contact-container{
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}

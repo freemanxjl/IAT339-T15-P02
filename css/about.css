@@ -2,40 +2,40 @@
 Styling for About page
 */
 
-.about-us-intro-container{
-  padding: 8rem 7rem 27rem 7rem;
-  margin-bottom: -8rem;
-}
-
 .about-us-container{
   background-color: #000000;
   color: #FFFFFF;
   padding: 0rem 7rem 2.5rem 7rem;
 }
 
-.about-us-intro-container img{
+.page-main-container{
+  padding-bottom: 28rem;
+}
+
+.page-main-container img{
   margin: 2rem 2rem 1rem 1rem;
 }
 
 /* Media Queries */
 @media( max-width: 1340px){
-  .flex-container-p02{
+  .flex-container{
       flex-direction: column;
   }
 
-  .about-us-intro-container img{
+  .page-main-container img{
     margin-left: 0rem;
     margin-right: 0rem;
   }
 }
 
 @media( max-width: 800px){
-  .about-us-intro-container, .about-us-container{
-      padding: 8rem 2rem 25rem 2rem;
+  .page-main-container{
+    padding-bottom: 20rem;
   }
 }
+
 @media( max-width:500px){
-  .about-us-intro-container img{
+  .page-main-container img{
     order: -1;
     max-width: 100%;
   }
