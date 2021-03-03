@@ -140,11 +140,7 @@
 .payment-form-container{
     background-color: #f9f9f9;
     padding: 2.5rem;
-    max-width: 60rem;
-}
-
-.form-security-num{
-    max-width: 4rem;
+    max-width: 100%;
 }
 
 .payment-method .form-wrapper{
@@ -157,7 +153,7 @@
 .checkout-container{
     background-color: #f4f1e9;
     padding: 2.5rem;
-    max-width: 60rem;
+    max-width: 100%;
 }
 
 .checkout-item{
@@ -167,16 +163,16 @@
     align-content: center;
 }
 
-.checkout-item-wrapper{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 1.5rem 1rem 1.5rem;
-}
-
 .checkout-item-title{
     font-family: poppins, sans-serif;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.checkout-item-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5rem 1rem 1.5rem;
 }
 
 .checkout-item-wrapper .form-input{

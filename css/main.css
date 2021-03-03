@@ -11,7 +11,7 @@ body{
   font-family: poppins, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  background-color: #811921;
+  background-color: #ba1128;
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -23,7 +23,10 @@ h1, h2, h3, h4, h5, h6{
   margin: 1rem 0 1rem 0;
 }
 
-h1{ font-size: 2.8rem; }
+h1{ 
+  margin-top: 2.25rem;
+  font-size: 2.8rem; 
+}
 h2{ font-size: 2.2rem; }
 h3{ font-size: 1.8rem; }
 h4{ font-size: 1.6rem; }
@@ -95,18 +98,13 @@ figcaption{
   border-top-color: black;
 }
 
-.main-content{
-  padding-left: 5rem;
-  max-width: 65rem;
-}
-
 .flex-container{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
 }
 
-.flex-container-p02{
+.flex-container-nowrap{
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -121,11 +119,33 @@ figcaption{
   background-position: bottom;
 }
 
+.page-header-container{
+  padding: 8rem 7rem 2rem 7rem;
+}
+
+.page-main-container{
+  padding: 0 7rem 20rem 7rem;
+}
+
+.page-secondary-container{
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1rem 7rem 2.5rem 7rem;
+}
+
 /* Media Queries */
 
-@media( max-width: 700px){
-  .main-content{
-      padding: 2rem 2rem 0 2rem;
+@media( max-width: 800px){
+  .page-header-container{
+      padding: 8rem 2rem 2rem 2rem;
+  }
+
+  .page-main-container{
+      padding: 0 2rem 20rem 2rem;
+  }
+
+  .page-secondary-container{
+      padding: 1rem 2rem 5rem 2rem;
   }
 }
 

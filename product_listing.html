@@ -25,88 +25,92 @@
 
   <body>
     <header>
-      <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-      <a href="#" class="header-title">COOKIN</a>
+      <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
+      <a href="home.html" class="header-title">COOKIN</a>
 
       <nav class="header-item-wrapper">
-        <a class="header-link" href="#">About</a>
-        <a class="header-link" href="#">Contact</a>
-        <a class="header-link" href="#">Menu</a>
-        <a class="header-link" href="#">Home</a>
-        <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
+        <a class="header-link" href="about.html">About</a>
+        <a class="header-link" href="contact.html">Contact</a>
+        <a class="header-link" href="product_listing.html">Menu</a>
+        <a class="header-link" href="home.html">Home</a>
+        <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
       </nav>
 
       <div class="mobile-navbar">
         <span class="hamburger-button"></span>
         <nav class="dropdown-menu">
           <div class="dropdown-wrapper">
-              <a class="header-link" href="#">About</a>
-              <a class="header-link" href="#">Contact</a>
-              <a class="header-link" href="#">Menu</a>
-              <a class="header-link" href="#">Home</a>
-              <span class="cart-button"></span>
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="contact.html">Contact</a>
+            <a class="header-link" href="product_listing.html">Menu</a>
+            <a class="header-link" href="home.html">Home</a>
+            <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
           </div>
         </nav>
       </div>
     </header>
 
-    <section class="service-list-container brush-background">
-      <a href="index.html">Back to Style Guide</a>
-      <h2>A UNIQUE RESTAURANT EXPERIENCE</h2>
+    <section class="brush-background">
+      <div class="page-header-container">
+        <a href="index.html">Back to Style Guide</a>
+        <h1>A UNIQUE RESTAURANT EXPERIENCE</h1>
+      </div>
 
-        <div class="flex-container-p02 service-list">
+      <div class="page-main-container">
+        <div class="flex-container-nowrap service-list">
           <div>
-            <h3>A Familiar Feeling</h3>
+            <h2>A Familiar Feeling</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus.</p>
           </div>
           <img class="image-sm" src="images/people-eating.jpg" alt="Barbeque Sauce">
         </div>
-
-        <div class="flex-container-p02 service-list">
+  
+        <div class="flex-container-nowrap service-list">
           <img class="image-sm" src="images/bbq-grill.jpg" alt="Barbeque Sauce">
           <div>
-            <h3>Food Grilled by You</h3>
+            <h2>Food Grilled by You</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus.</p>
           </div>
         </div>
-
+  
         <div class="service-list">
-          <h3>Interested on Dining In?</h3>
+          <h2>Interested on Dining In?</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. </p>
-          <a href=# class="button-nav button-lg">RESERVE A TABLE</a>
+          <a href="booking.html" class="button-nav button-lg">RESERVE A TABLE</a>
         </div>
+      </div>
 
     </section>
 
-    <section class="product-list-container">
-      <h2>ENJOY OUR FOOD AT HOME</h2>
-        <h3>Available Products</h3>
+    <section class="page-secondary-container">
+      <h1>ENJOY OUR FOOD AT HOME</h1>
+        <h2>Available Products</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus.</p>
 
-        <div class="flex-container-p02 product-list">
-          <img class="image-sm" src="images/bbq-sauce.png" alt="Special Homemade Barbeque Sauce">
+        <div class="flex-container-nowrap product-list">
+          <a href="product_view.html"><img class="image-lg" src="images/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"></a>
           <div>
-            <h3>Homemade Barbeque Sauce</h3>
+            <a href="product_view.html"><h3>Homemade Barbeque Sauce</h3></a>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-            <a href=# class="button-nav">More Information</a>
+            <a href="#" class="button-nav button-lg">ADD TO CART</a>
           </div>
         </div>
 
-        <div class="flex-container-p02 product-list">
-          <img class="image-sm" src="images/beef-patties.png" alt="Packaged Beef Patty">
+        <div class="flex-container-nowrap product-list">
+          <a href="product_view.html"><img class="image-lg" src="images/beef-patties.png" alt="Packaged Beef Patty"></a>
           <div>
-            <h3>Beef Patty Pack (x6)</h3>
+            <a href="product_view.html"><h3>Beef Patty Pack (x6)</h3></a>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-            <a href=# class="button-nav">More Information</a>
+            <a href="#" class="button-nav button-lg">ADD TO CART</a>
           </div>
         </div>
 
-        <div class="flex-container-p02 product-list">
-          <img class="image-sm" src="images/chicken-wings.png" alt="Raw marinated chicken wings pack">
+        <div class="flex-container-nowrap product-list">
+          <a href="product_view.html"><img class="image-lg" src="images/chicken-wings.png" alt="Raw marinated chicken wings pack"></a>
           <div>
-            <h3>Raw Marinated Chicken Wings Pack</h3>
+            <a href="product_view.html"><h3>Raw Marinated Chicken Wings Pack</h3></a>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-            <a href=# class="button-nav">More Information</a>
+            <a href="#" class="button-nav button-lg">ADD TO CART</a>
           </div>
         </div>
     </section>
