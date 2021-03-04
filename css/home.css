@@ -1,0 +1,74 @@
+/*
+Styling for home Pages
+*/
+
+.hero-content-container{
+  background-image: url('../images/red-overlay-background.png');
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 7rem 45rem 7rem;
+}
+
+.hero-text-container{
+
+}
+
+.hero-text-container h1{
+  font-size: 7rem;
+}
+
+.home-content img{
+    margin: 2rem 2rem 1rem 1rem;
+}
+
+/*
+Media Queries
+*/
+
+@media( max-width: 1340px){
+  .flex-container-nowrap{
+      flex-direction: column;
+  }
+
+  .home-content img{
+      margin: 2rem 0rem 1rem 0rem;
+  }
+
+  .home-content h2{
+      order: 1;
+  }
+
+  .home-content img{
+      order: 2;
+  }
+
+  .home-content p{
+      order: 3;
+  }
+}
+
+@media( max-width: 800px){
+  .hero-content-container{
+    padding: 15rem 2rem 25rem 2rem;
+  }
+
+  .home-content{
+    margin-top: 2rem;
+  }
+}
+
+@media( max-width: 500px){
+  .hero-text-container h1{
+    font-size: 4rem;
+  }
+
+  .home-content img{
+    order: -1;
+    margin: 0;
+    max-width: 100%;
+  }
+}
