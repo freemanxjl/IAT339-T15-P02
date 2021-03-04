@@ -13,9 +13,9 @@ Styling for home Pages
   padding: 20rem 7rem 45rem 7rem;
 }
 
-.hero-text-container{
+/* .hero-text-container{
 
-}
+} */
 
 .hero-text-container h1{
   font-size: 7rem;
@@ -23,6 +23,12 @@ Styling for home Pages
 
 .home-content img{
     margin: 2rem 2rem 1rem 1rem;
+}
+
+.site-title{
+  font-family: oswald, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
 /*
