@@ -2,6 +2,7 @@
 Styling for home Pages
 */
 
+/* Hero image and content learned from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero */
 .hero-content-container{
   background-image: url('../images/red-overlay-background.png');
   position: relative;
@@ -30,6 +31,20 @@ Styling for home Pages
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
+
+.company-events-container{
+  margin-top: 4rem;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 1rem;
+  max-width: 40vw;
+}
+
+.company-event{
+  border-top: 1px solid black;
+  padding: 1.5rem;
+}
+
 
 /*
 Media Queries
@@ -65,6 +80,10 @@ Media Queries
   .home-content{
     margin-top: 2rem;
   }
+
+  .company-events-container{
+    max-width: 75vw;
+  }
 }
 
 @media( max-width: 500px){
@@ -75,6 +94,10 @@ Media Queries
   .home-content img{
     order: -1;
     margin: 0;
+    max-width: 100%;
+  }
+
+  .company-events-container{
     max-width: 100%;
   }
 }
