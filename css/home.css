@@ -1,5 +1,5 @@
 /*
-Styling for home Pages
+Styling for Home Page
 */
 
 /* Hero image and content learned from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero */
@@ -13,10 +13,6 @@ Styling for home Pages
   background-size: cover;
   padding: 20rem 7rem 45rem 7rem;
 }
-
-/* .hero-text-container{
-
-} */
 
 .hero-text-container h1{
   font-size: 7rem;
@@ -33,11 +29,16 @@ Styling for home Pages
 }
 
 .company-events-container{
-  margin-top: 4rem;
+  margin-top: 1rem;
   background-color: #f9f9f9;
   color: black;
   padding: 1rem;
-  max-width: 40vw;
+}
+
+/* Having a section of a page having its own scroll bar learned from https://stackoverflow.com/questions/14380442/make-one-section-of-simple-web-page-have-own-scroll-bar */
+.company-events-scroll-container{
+  max-height: 15rem;
+  overflow-y: auto;
 }
 
 .company-event{
@@ -45,10 +46,31 @@ Styling for home Pages
   padding: 1.5rem;
 }
 
+.home-content-container{
+flex: 2;
+}
+
+.events-section-container{
+flex: 1;
+margin-left: 2rem;
+}
 
 /*
 Media Queries
 */
+
+@media( max-width: 1600px){
+  .page-secondary-container.flex-container-nowrap{
+    flex-direction: column;
+  }
+
+  .events-section-container{
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 40rem;
+  }
+
+}
 
 @media( max-width: 1340px){
   .flex-container-nowrap{
