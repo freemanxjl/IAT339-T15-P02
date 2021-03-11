@@ -29,6 +29,10 @@ h1{
 }
 
 @media( max-width: 670px){
+    h1{
+        font-size: 3.5rem;
+    }
+
     .product-image{
         position: unset;
     }
