@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5, h6{
   margin: 1rem 0 1rem 0;
 }
 
-h1{ 
+h1{
   margin-top: 2.25rem;
-  font-size: 2.8rem; 
+  font-size: 2.8rem;
 }
 h2{ font-size: 2.2rem; }
 h3{ font-size: 1.8rem; }
@@ -88,6 +88,26 @@ figure{
 
 figcaption{
   max-width: 35rem;
+}
+
+.brush-background-flip{
+  background-image: url('../images/red-black-background-flip.png');
+  background-repeat: repeat-x;
+  padding-top: 13rem;
+}
+
+footer{
+  padding-left: 7rem;
+  padding-bottom: 2rem;
+  z-index: 1;
+}
+
+footer p{
+  max-width: 30rem;
+}
+
+footer a{
+  margin-right: 2rem;
 }
 
 /* Classes Styling */
@@ -153,6 +173,10 @@ figcaption{
 
   .page-secondary-container{
       padding: 1rem 2rem 5rem 2rem;
+  }
+
+  footer{
+    padding-left: 2rem;
   }
 }
 

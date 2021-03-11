@@ -31,6 +31,12 @@ Styling for Contact page
   color: #FFFFFF;
 }
 
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+}
+
 textarea{
   border: 0.2rem solid #b9b3a4;
   transition: border 0.2s ease-in;
