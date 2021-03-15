@@ -44,8 +44,8 @@
           </div>
           <div class="dropdown-wrapper">
             <h3>Other Pages</h3>
-            <a class="header-link" href="product_listing.html">Product Listing Template</a>
-            <a class="header-link" href="checkout.html">Checkout Template</a>
+            <a class="header-link" href="home.html">COOKIN Main Site</a>
+            <a class="header-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" ref="noopener noreferrer">GitHub</a>
           </div>
           <div class="dropdown-wrapper">
             <h3>References</h3>
@@ -66,8 +66,8 @@
         <h3>Branding</h3>
         <a class="sidenav-link" href="#brand-components">Brand Components</a>
         <h3>Other Pages</h3>
-        <a class="sidenav-link" href="product_listing.html">Product Listing Template</a>
-        <a class="sidenav-link" href="checkout.html">Checkout Template</a>
+        <a class="sidenav-link" href="home.html">COOKIN Main Site</a>
+        <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" ref="noopener noreferrer">GitHub</a>
         <h3>References</h3>
         <a class="sidenav-link" href="#citations">Citations</a>
       </nav>
@@ -378,9 +378,10 @@
           <h4>Sample code:</h4>
           <code>
             &lt;div class="flex-container-nowrap product-list"&gt;<br/>
-            &lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;<br/>
+            &lt;a href="#"&gt;&lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;&lt;/a&gt;<br/>
             &lt;div&gt;<br/>
-            &lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;<br/>
+            &lt;a href="#"&gt;&lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;&lt;/a&gt;<br/>
+            &lt;h4&gt;$0.00&lt;/h4&gt;<br/>
             &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. &lt;/p&gt;<br/>
             &lt;a href=# class="button-nav"&gt;More Information&lt;/a&gt;<br/>
             &lt;/div&gt;<br/>
@@ -389,11 +390,12 @@
 
           <h4>Rendered element:</h4>
           <div class="flex-container-nowrap product-list">
-            <img class="image-sm" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce">
+            <a href="#"><img class="image-lg" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce"></a>
             <div>
-              <h3>Homemade Barbeque Sauce</h3>
+              <a href="#"><h3>Homemade Barbeque Sauce</h3></a>
+              <h4>$0.00</h4>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-              <a href=# class="button-nav">More Information</a>
+              <a href=# class="button-nav">Add to Cart</a>
             </div>
           </div>
 
@@ -609,6 +611,72 @@
           </div>
         </section>
 
+        <section class="element">
+          <h3>Reservation Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.checkout-container .checkout-item-wrapper .checkout-item-title .checkout-item-price .checkout-subtotal .checkout-taxes .checkout-fulltotal</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="checkout-container&gt;<br/>
+              &lt;article class="checkout-item"&gt;<br/>
+                &lt;img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/&gt;<br/>
+                &lt;div class="checkout-item-wrapper"&gt;<br/>
+                  &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
+                  &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
+                  &lt;a class="button-nav button-sm reset-button" href="#"&gt;Remove from Cart&lt;/a&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="checkout-item-wrapper"&gt;<br/>
+                  &lt;label class="form-label" for="item-quantity"&gt;Quantity&lt;/label&gt;<br/>
+                  &lt;input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/&gt;<br/>
+                &lt;/div&gt;<br/>
+              &lt;/article&gt;<br/>
+              &lt;hr/&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-subtotal"&gt;Subtotal:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-taxes"&gt;Taxes (GST/HST):&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+              &lt;p&gt;&lt;span class="checkout-fulltotal"&gt;Total amount:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="align-center-container booking-container">
+            <form>
+              <div class=" form-container">
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-date">Date</label>
+                  <input class="form-input" type="date" id="form-date"/>
+                </span>
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-time">Time</label>
+                  <input class="form-input" type="time" id="form-time"/>
+                </span>
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-people">People</label>
+                  <select class="form-input reservation-select" id="form-people">
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                    <option value="8+">8+ People</option>
+                  </select>
+                </span>
+                <span class="form-wrapper">
+                  <input class="button-nav button-md submit-button" type="submit" value="Reserve"/>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="align-center-container phone-container">
+            <p>Or by phone at: (604)-123-4567</p>
+          </div>
+        </div>
+        </section>
+
       </section>
       <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -730,7 +798,7 @@
             <li>unearthed. Company. 2016. <strong>Louisiana Hot Wings, Potato Salad and Hot Sauce [Image]</strong> Retreived from <a href="https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/">https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/</a></li>
             <li>Dickey's Barbeque Pit. Company. 2015. <strong>Dickey’s Barbecue Pit debuts redesigned model with plans to roll out nationwide.</strong> Retrieved from <a href="http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/">http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/</a></li>
             <li>Güler, Ataberk. Photographer. 2018. <strong>Homepage Overlay Background [Image]</strong> Retrieved from <a href="https://unsplash.com/photos/HH8D03HHqDI">https://unsplash.com/photos/HH8D03HHqDI</a></li>
-            <li>nito. Photographer. n.d. <strong>meat skewers on a barbeque [Image]</strong> Retrieved from <a href="https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail">https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail</a></li>
+            <li>nito. Photographer. n.d. <strong>Meat skewers on a barbeque [Image]</strong> Retrieved from <a href="https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail">https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail</a></li>
             <li>Raths, Alexander. Photographer. n.d. <strong>Assorted delicious grilled meat with vegetable over the coals on a barbecue [Image]</strong> Retrieved from <a href="https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html"></a>https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html</li>
           </ul>
         </section>

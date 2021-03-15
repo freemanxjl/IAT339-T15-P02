@@ -188,4 +188,9 @@ fieldset.form-wrapper{
     .form-submit-container{
       margin-top: 1rem;
     }
+
+    .form-input{
+        max-width: 100%;
+        padding-right: 6.75rem;
+    }
 }

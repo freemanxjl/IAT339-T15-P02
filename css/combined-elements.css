@@ -187,6 +187,26 @@
     font-weight: 600;
 }
 
+/* RESERVATION FORM ELEMENTS */
+.booking-container{
+    background-color: #f4f1e9;
+    color: #000000;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    max-width: 100%;
+}
+
+.phone-container{
+    max-width: 100%;
+    padding-bottom: 2.5rem;
+    background-color: #f4f1e9;
+    color: #000000;
+}
+
+.reserve-submit-button{
+    display: block;
+    margin-top: 2rem;
+}
+
 /* Media Queries */
 
 /* 1100+ px */
@@ -242,4 +262,9 @@
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
+
+    .booking-container{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
 }

@@ -23,11 +23,34 @@
 
   </head>
 
-  <body name="top" class="brush-background">
+  <body name="top">
 
     <header>
-        <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
-        <a href="home.html" class="header-title">COOKIN</a>
+      <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
+      <a href="home.html" class="header-title">COOKIN</a>
+
+      <nav class="header-item-wrapper">
+        <a class="header-link" href="about.html">About</a>
+        <a class="header-link" href="contact.html">Contact</a>
+        <a class="header-link" href="booking.html">Reservations</a>
+        <a class="header-link" href="product_listing.html">Menu</a>
+        <a class="header-link" href="home.html">Home</a>
+        <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
+      </nav>
+
+      <div class="mobile-navbar">
+        <span class="hamburger-button"></span>
+        <nav class="dropdown-menu">
+          <div class="dropdown-wrapper">
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="contact.html">Contact</a>
+            <a class="header-link" href="booking.html">Reservations</a>
+            <a class="header-link" href="product_listing.html">Menu</a>
+            <a class="header-link" href="home.html">Home</a>
+            <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shpping cart page"></a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <section>
@@ -36,7 +59,7 @@
         <a href="shopping_cart.html">Return to cart</a>
       </div>
 
-      <div class="page-main-content">
+      <div class="page-main-content brush-background">
         <div class="flex-container-nowrap checkout-payment-container">
           <div class="payment-form-container">
 
@@ -130,5 +153,14 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <p><strong>&copy; 2021 COOKIN</strong></p>
+      <p>All rights reserve, COOKIN is a registered trademark by Food Royalties Limited Partnerships, used under license.</p>
+      <p>Created by Freeman Liu and EJ Nicolas for IAT339</p>
+      <a href="#top">Back to top</a>
+      <a href="index.html">Style guide</a>
+      <a href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" ref="noopener noreferrer">GitHub</a>
+    </footer>
   </body>
 </html>

@@ -10,20 +10,12 @@ tr, th{
     padding-bottom: 5rem;
 }
 
-.booking-container{
-    background-color: #f4f1e9;
-    padding: 2.5rem 2.5rem 0 2.5rem;
-    max-width: 100%;
-}
-
-.phone-container{
-    max-width: 100%;
-    padding-bottom: 2.5rem;
-    background-color: #f4f1e9;
-}
-
 .map-image{
     margin-left: 3rem;
+}
+
+.form-input{
+    display: unset;
 }
 
 @media(max-width: 680px){
@@ -33,14 +25,6 @@ tr, th{
 
     .submit-button{
         margin-top: 2rem;
-    }
-}
-
-/* 0 - 540px */
-@media(max-width: 540px){
-    .booking-container{
-      padding-top: 1rem;
-      padding-bottom: 1rem;
     }
 }
 
