@@ -6,9 +6,7 @@ console.log("Window width: "+width+"px");
 var navDesktop = document.querySelector("#nav-desktop");
 var navMobile = document.querySelector("#nav-mobile");
 var buttonHamburger = document.querySelector("#hamburger-button");
-var mobileNavItems = document.querySelector("#dropdown-wrapper");
-var navMobileFirstItem = document.querySelector("dropdown-wrapper a");
-
+var mobileNavItems = document.querySelector("#dropdown-menu");
 
 if(width < 1100){
   navMobile.classList.remove("hidden");
@@ -60,7 +58,6 @@ buttonHamburger.addEventListener("click", function(){
     mobileNavItems.classList.remove("hidden");
     mobileNavItems.classList.add("dropdown-wrapper");
     mobileNavItems.setAttribute("aria-hidden", "false");
-    navMobileFirstItem.focus();
   }
   else{
     mobileNavItems.classList.add("hidden");
@@ -76,7 +73,6 @@ buttonHamburger.addEventListener("keypress", function(e){
       mobileNavItems.classList.remove("hidden");
       mobileNavItems.classList.add("dropdown-wrapper");
       mobileNavItems.setAttribute("aria-hidden", "false");
-      navMobileFirstItem.focus();
     }
     else{
       mobileNavItems.classList.add("hidden");

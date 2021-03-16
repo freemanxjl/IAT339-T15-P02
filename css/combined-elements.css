@@ -113,7 +113,7 @@
 /* Wrapper to group elements so we can align them properly using flexbox */
 .dropdown-wrapper{
     margin: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
