@@ -45,7 +45,7 @@
           <div class="dropdown-wrapper">
             <h3>Other Pages</h3>
             <a class="header-link" href="home.html">COOKIN Main Site</a>
-            <a class="header-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" ref="noopener noreferrer">GitHub</a>
+            <a class="header-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           <div class="dropdown-wrapper">
             <h3>References</h3>
@@ -67,7 +67,7 @@
         <a class="sidenav-link" href="#brand-components">Brand Components</a>
         <h3>Other Pages</h3>
         <a class="sidenav-link" href="home.html">COOKIN Main Site</a>
-        <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" ref="noopener noreferrer">GitHub</a>
+        <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
         <h3>References</h3>
         <a class="sidenav-link" href="#citations">Citations</a>
       </nav>
@@ -409,9 +409,9 @@
           <h3>Payment Form</h3>
 
           <h4>CSS selector:</h4>
-          <p>.payment-form-container .form-wrapper</p>
+          <p>.payment-form-container</p>
           <h5>CSS combined element selector</h5>
-          <p>.button-nav .submit-button .form-label, .form-radio-label, .form-input</p>
+          <p>.button-nav .submit-button .form-label .form-radio-label .form-input .form-wrapper</p>
 
           <h4>Sample code:</h4>
           <code>
@@ -615,34 +615,50 @@
           <h3>Reservation Form</h3>
 
           <h4>CSS selector:</h4>
-          <p>.checkout-container .checkout-item-wrapper .checkout-item-title .checkout-item-price .checkout-subtotal .checkout-taxes .checkout-fulltotal</p>
+          <p>.align-center-container .booking-container .phone-container</p>
+          <h5>CSS combined element selector</h5>
+          <p>.button-nav .submit-button .form-label .form-input .form-wrapper .form-container</p>
 
           <h4>Sample code:</h4>
           <code>
-            &lt;div class="checkout-container&gt;<br/>
-              &lt;article class="checkout-item"&gt;<br/>
-                &lt;img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/&gt;<br/>
-                &lt;div class="checkout-item-wrapper"&gt;<br/>
-                  &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
-                  &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
-                  &lt;a class="button-nav button-sm reset-button" href="#"&gt;Remove from Cart&lt;/a&gt;<br/>
-                &lt;/div&gt;<br/>
-                &lt;div class="checkout-item-wrapper"&gt;<br/>
-                  &lt;label class="form-label" for="item-quantity"&gt;Quantity&lt;/label&gt;<br/>
-                  &lt;input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/&gt;<br/>
-                &lt;/div&gt;<br/>
-              &lt;/article&gt;<br/>
-              &lt;hr/&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-subtotal"&gt;Subtotal:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-taxes"&gt;Taxes (GST/HST):&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-fulltotal"&gt;Total amount:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
+            &lt;div class="align-center-container booking-container"&gt;<br/>
+            &lt;form&gt;<br/>
+            &lt;div class="form-container"&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-date"&gt;Date&lt;/label&gt;<br/>
+            &lt;input class="form-input" type="date" id="form-date"/&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-time"&gt;Time&lt;/label&gt;<br/>
+            &lt;input class="form-input" type="time" id="form-time"/&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-people"&gt;People&lt;/label&gt;<br/>
+            &lt;select class="form-input reservation-select" id="form-people"&gt;<br/>
+            &lt;option value="1"&gt;1 Person&lt;/option&gt;<br/>
+            &lt;option value="2"&gt;2 People&lt;/option&gt;<br/>
+            &lt;option value="3"&gt;3 People&lt;/option&gt;<br/>
+            &lt;option value="4"&gt;4 People&lt;/option&gt;<br/>
+            &lt;option value="5"&gt;5 People&lt;/option&gt;<br/>
+            &lt;option value="6"&gt;6 People&lt;/option&gt;<br/>
+            &lt;option value="7"&gt;7 People&lt;/option&gt;<br/>
+            &lt;option value="8+"&gt;8+ People&lt;/option&gt;<br/>
+            &lt;/select&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;input class="button-nav button-md submit-button" type="submit" value="Reserve"&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/form&gt;<br/>
+            &lt;div class="align-center-container phone-container"&gt;<br/>
+            &lt;p&gt;Or by phone at: (604)-123-4567&lt;/p&gt;<br/>
             &lt;/div&gt;
           </code>
 
           <h4>Rendered element:</h4>
           <div class="align-center-container booking-container">
             <form>
-              <div class=" form-container">
+              <div class="form-container">
                 <span class="form-wrapper">
                   <label class="form-label" for="form-date">Date</label>
                   <input class="form-input" type="date" id="form-date"/>
@@ -674,7 +690,6 @@
           <div class="align-center-container phone-container">
             <p>Or by phone at: (604)-123-4567</p>
           </div>
-        </div>
         </section>
 
       </section>
