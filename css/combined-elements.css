@@ -197,6 +197,34 @@
     color: #000000;
 }
 
+/* EVENTS CONTAINER ELEMENTS */
+.company-events-container{
+    margin-top: 1rem;
+    background-color: #f9f9f9;
+    color: black;
+    padding: 1rem;
+  }
+  
+  /* Having a section of a page having its own scroll bar learned from https://stackoverflow.com/questions/14380442/make-one-section-of-simple-web-page-have-own-scroll-bar */
+  .company-events-scroll-container{
+    max-height: 15rem;
+    overflow-y: auto;
+  }
+  
+  .company-event{
+    border-top: 1px solid black;
+    padding: 1.5rem;
+  }
+
+/* CONTACT FORM ELEMENTS */
+.contact-form-container{
+    background-color: #f4f1e9;
+    color: #000000;
+    padding: 2.5rem;
+    max-width: 100%;
+    flex: 1;
+  }
+
 /* Media Queries */
 
 /* 1100+ px */

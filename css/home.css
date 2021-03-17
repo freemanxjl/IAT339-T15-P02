@@ -28,24 +28,6 @@ Styling for Home Page
   letter-spacing: 0.1rem;
 }
 
-.company-events-container{
-  margin-top: 1rem;
-  background-color: #f9f9f9;
-  color: black;
-  padding: 1rem;
-}
-
-/* Having a section of a page having its own scroll bar learned from https://stackoverflow.com/questions/14380442/make-one-section-of-simple-web-page-have-own-scroll-bar */
-.company-events-scroll-container{
-  max-height: 15rem;
-  overflow-y: auto;
-}
-
-.company-event{
-  border-top: 1px solid black;
-  padding: 1.5rem;
-}
-
 .home-content-container{
 flex: 2;
 }
