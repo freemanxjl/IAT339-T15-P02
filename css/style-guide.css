@@ -34,7 +34,7 @@ body{
 
 /* Colors for our pallete */
 .primary-red{
-    background-color: #811921;
+    background-color: #ad1c36;
 }
 
 .primary-white{
@@ -106,6 +106,7 @@ body{
 
 #citations{
     max-width: 55rem;
+
 }
 
 /* Specific modifications to elements within Style Guide */
@@ -115,6 +116,10 @@ body{
 }
 .payment-form-container{
     color: black;
+}
+
+.reservation-select{
+    display: unset;
 }
 
 /* Media Queries for Style Guide */

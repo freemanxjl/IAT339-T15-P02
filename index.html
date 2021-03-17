@@ -44,8 +44,8 @@
           </div>
           <div class="dropdown-wrapper">
             <h3>Other Pages</h3>
-            <a class="header-link" href="product_listing.html">Product Listing Template</a>
-            <a class="header-link" href="checkout.html">Checkout Template</a>
+            <a class="header-link" href="home.html">COOKIN Main Site</a>
+            <a class="header-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           <div class="dropdown-wrapper">
             <h3>References</h3>
@@ -82,8 +82,8 @@
         <h3>Branding</h3>
         <a class="sidenav-link" href="#brand-components">Brand Components</a>
         <h3>Other Pages</h3>
-        <a class="sidenav-link" href="product_listing.html">Product Listing Template</a>
-        <a class="sidenav-link" href="checkout.html">Checkout Template</a>
+        <a class="sidenav-link" href="home.html">COOKIN Main Site</a>
+        <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
         <h3>References</h3>
         <a class="sidenav-link" href="#citations">Citations</a>
       </nav>
@@ -394,9 +394,10 @@
           <h4>Sample code:</h4>
           <code>
             &lt;div class="flex-container-nowrap product-list"&gt;<br/>
-            &lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;<br/>
+            &lt;a href="#"&gt;&lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;&lt;/a&gt;<br/>
             &lt;div&gt;<br/>
-            &lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;<br/>
+            &lt;a href="#"&gt;&lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;&lt;/a&gt;<br/>
+            &lt;h4&gt;$0.00&lt;/h4&gt;<br/>
             &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. &lt;/p&gt;<br/>
             &lt;a href=# class="button-nav"&gt;More Information&lt;/a&gt;<br/>
             &lt;/div&gt;<br/>
@@ -405,11 +406,12 @@
 
           <h4>Rendered element:</h4>
           <div class="flex-container-nowrap product-list">
-            <img class="image-sm" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce">
+            <a href="#"><img class="image-lg" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce"></a>
             <div>
-              <h3>Homemade Barbeque Sauce</h3>
+              <a href="#"><h3>Homemade Barbeque Sauce</h3></a>
+              <h4>$0.00</h4>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-              <a href=# class="button-nav">More Information</a>
+              <a href=# class="button-nav">Add to Cart</a>
             </div>
           </div>
 
@@ -423,9 +425,9 @@
           <h3>Payment Form</h3>
 
           <h4>CSS selector:</h4>
-          <p>.payment-form-container .form-wrapper</p>
+          <p>.payment-form-container</p>
           <h5>CSS combined element selector</h5>
-          <p>.button-nav .submit-button .form-label, .form-radio-label, .form-input</p>
+          <p>.button-nav .submit-button .form-label .form-radio-label .form-input .form-wrapper</p>
 
           <h4>Sample code:</h4>
           <code>
@@ -625,6 +627,87 @@
           </div>
         </section>
 
+        <section class="element">
+          <h3>Reservation Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.align-center-container .booking-container .phone-container</p>
+          <h5>CSS combined element selector</h5>
+          <p>.button-nav .submit-button .form-label .form-input .form-wrapper .form-container</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="align-center-container booking-container"&gt;<br/>
+            &lt;form&gt;<br/>
+            &lt;div class="form-container"&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-date"&gt;Date&lt;/label&gt;<br/>
+            &lt;input class="form-input" type="date" id="form-date"/&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-time"&gt;Time&lt;/label&gt;<br/>
+            &lt;input class="form-input" type="time" id="form-time"/&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;label class="form-label" for="form-people"&gt;People&lt;/label&gt;<br/>
+            &lt;select class="form-input reservation-select" id="form-people"&gt;<br/>
+            &lt;option value="1"&gt;1 Person&lt;/option&gt;<br/>
+            &lt;option value="2"&gt;2 People&lt;/option&gt;<br/>
+            &lt;option value="3"&gt;3 People&lt;/option&gt;<br/>
+            &lt;option value="4"&gt;4 People&lt;/option&gt;<br/>
+            &lt;option value="5"&gt;5 People&lt;/option&gt;<br/>
+            &lt;option value="6"&gt;6 People&lt;/option&gt;<br/>
+            &lt;option value="7"&gt;7 People&lt;/option&gt;<br/>
+            &lt;option value="8+"&gt;8+ People&lt;/option&gt;<br/>
+            &lt;/select&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;span class="form-wrapper"&gt;<br/>
+            &lt;input class="button-nav button-md submit-button" type="submit" value="Reserve"&gt;<br/>
+            &lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/form&gt;<br/>
+            &lt;div class="align-center-container phone-container"&gt;<br/>
+            &lt;p&gt;Or by phone at: (604)-123-4567&lt;/p&gt;<br/>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="align-center-container booking-container">
+            <form>
+              <div class="form-container">
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-date">Date</label>
+                  <input class="form-input" type="date" id="form-date"/>
+                </span>
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-time">Time</label>
+                  <input class="form-input" type="time" id="form-time"/>
+                </span>
+                <span class="form-wrapper">
+                  <label class="form-label" for="form-people">People</label>
+                  <select class="form-input reservation-select" id="form-people">
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                    <option value="8+">8+ People</option>
+                  </select>
+                </span>
+                <span class="form-wrapper">
+                  <input class="button-nav button-md submit-button" type="submit" value="Reserve"/>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="align-center-container phone-container">
+            <p>Or by phone at: (604)-123-4567</p>
+          </div>
+        </section>
+
       </section>
       <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -746,7 +829,7 @@
             <li>unearthed. Company. 2016. <strong>Louisiana Hot Wings, Potato Salad and Hot Sauce [Image]</strong> Retreived from <a href="https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/">https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/</a></li>
             <li>Dickey's Barbeque Pit. Company. 2015. <strong>Dickey’s Barbecue Pit debuts redesigned model with plans to roll out nationwide.</strong> Retrieved from <a href="http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/">http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/</a></li>
             <li>Güler, Ataberk. Photographer. 2018. <strong>Homepage Overlay Background [Image]</strong> Retrieved from <a href="https://unsplash.com/photos/HH8D03HHqDI">https://unsplash.com/photos/HH8D03HHqDI</a></li>
-            <li>nito. Photographer. n.d. <strong>meat skewers on a barbeque [Image]</strong> Retrieved from <a href="https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail">https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail</a></li>
+            <li>nito. Photographer. n.d. <strong>Meat skewers on a barbeque [Image]</strong> Retrieved from <a href="https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail">https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail</a></li>
             <li>Raths, Alexander. Photographer. n.d. <strong>Assorted delicious grilled meat with vegetable over the coals on a barbecue [Image]</strong> Retrieved from <a href="https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html"></a>https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html</li>
           </ul>
         </section>

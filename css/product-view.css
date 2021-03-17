@@ -3,12 +3,6 @@ h1{
     font-size: 5rem;
 }
 
-.product-view-background{
-    background-image: url('../images/product-view-background.png');
-    background-repeat: repeat-x;
-    background-position: bottom;
-}
-
 .product-image{
     position: absolute;
     top: 8rem;
