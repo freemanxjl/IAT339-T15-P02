@@ -95,7 +95,7 @@
     background-size: 2.5rem 2.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    display: none;
+    display: block;
     position: relative;
     top: 0.75rem;
     right: 1rem;
@@ -105,7 +105,6 @@
 
 /* Actual menu that drops down and reveals content from side navbar */
 .dropdown-menu{
-    display: none;
     width: fit-content;
     margin-top: -1.5rem;
     padding: 1rem 0 1rem 0;
@@ -114,18 +113,14 @@
 /* Wrapper to group elements so we can align them properly using flexbox */
 .dropdown-wrapper{
     margin: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .dropdown-menu h2, .dropdown-menu h3{
     font-size: 1.5rem;
-}
-
-/* Logic to display dropdown when hamburger menu is hovered, with javascript we can make this a button press instead */
-/* We are using flex-direction row as there are problems in mobile currently using columns that are difficult to solve */
-.mobile-navbar:hover .dropdown-menu, .mobile-navbar:active .dropdown-menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 /* PRODUCT LISTING ELEMENT */
@@ -213,29 +208,6 @@
         bottom: 0.5rem;
         left: 0.7rem;
     }
-}
-
-/* 0 - 1100px */
-@media( max-width: 1100px ){
-    /* Header items are replaced with the mobile hamburger menu */
-    .header-item-wrapper{
-        display: none;
-    }
-
-    /* Displays hamburger button on mobile */
-    .hamburger-button{
-        display: block;
-    }
-
-    /* Additionally make each link display block instead of inline */
-    .header-link{
-        display: block;
-        margin: 0.5rem 0 0.5rem 0;
-    }
-
-    .header-link{
-        padding-bottom: 0;
-      }
 }
 
 /* 0 - 540px */

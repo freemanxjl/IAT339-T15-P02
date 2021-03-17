@@ -29,9 +29,9 @@
       <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
       <a href="#" class="header-title">COOKIN Style Guide</a>
 
-      <div class="mobile-navbar">
-        <span class="hamburger-button"></span>
-        <nav class="dropdown-menu">
+      <div id="nav-mobile" class="mobile-navbar hidden">
+        <span id="hamburger-button" tabindex="0"></span>
+        <nav id="dropdown-menu" class="hidden">
           <div class="dropdown-wrapper">
             <h2>Main Elements</h2>
             <a class="header-link" href="#interactive_elements">Interactive Elements</a>
@@ -51,6 +51,22 @@
             <h3>References</h3>
             <a class="header-link" href="#citations">Citations</a>
           </div>
+        </nav>
+      </div>
+
+      <div class="side-navbar">
+        <nav id="nav-desktop">
+          <h2>Main Elements</h2>
+          <a class="sidenav-link" href="#interactive_elements">Interactive Elements</a>
+          <a class="sidenav-link" href="#text_elements">Text Elements</a>
+          <a class="sidenav-link" href="#combined_elements">Combined Elements</a>
+          <h3>Branding</h3>
+          <a class="sidenav-link" href="#brand-components">Brand Components</a>
+          <h3>Other Pages</h3>
+          <a class="sidenav-link" href="product_listing.html">Product Listing Template</a>
+          <a class="sidenav-link" href="checkout.html">Checkout Template</a>
+          <h3>References</h3>
+          <a class="sidenav-link" href="#citations">Citations</a>
         </nav>
       </div>
 
@@ -819,6 +835,7 @@
         </section>
       </section>
     </div>
-
+    <!-- Linking Javascripts -->
+    <script src="js/nav.js"></script>
   </body>
 </html>

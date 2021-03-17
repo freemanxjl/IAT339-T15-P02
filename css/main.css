@@ -160,6 +160,10 @@ footer a{
   padding: 0.1rem 7rem 2.5rem 7rem;
 }
 
+.hidden{
+  display: none;
+}
+
 /* Media Queries */
 
 @media( max-width: 800px){
