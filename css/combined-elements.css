@@ -157,6 +157,10 @@
     align-content: center;
 }
 
+.checkout-item img{
+  max-width: 10rem;
+}
+
 .checkout-item-title{
     font-family: poppins, sans-serif;
     font-weight: 600;
