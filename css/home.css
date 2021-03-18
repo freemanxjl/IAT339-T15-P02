@@ -15,7 +15,11 @@ Styling for Home Page
 }
 
 .hero-text-container h1{
-  font-size: 7rem;
+  font-size: 10rem;
+}
+
+.hero-text-container h2{
+  font-size: 2rem;
 }
 
 .home-content img{
