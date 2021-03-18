@@ -7,6 +7,10 @@ var navDesktop = document.querySelector("#nav-desktop");
 var navMobile = document.querySelector("#nav-mobile");
 var buttonHamburger = document.querySelector("#hamburger-button");
 var mobileNavItems = document.querySelector("#dropdown-menu");
+var navDesktopStyleGuide = document.querySelector("#nav-desktop-example");
+var navMobileStyleGuide = document.querySelector("#nav-mobile-example");
+var buttonHamburgerStyleGuide = document.querySelector("#hamburger-button-example");
+var mobileNavItemsStyleGuide = document.querySelector("#dropdown-menu-example");
 
 if(width < 1100){
   navMobile.classList.remove("hidden");
@@ -17,6 +21,14 @@ if(width < 1100){
   buttonHamburger.setAttribute("aria-hidden", "false");
   navDesktop.classList.add("hidden");
   navDesktop.setAttribute("aria-hidden", "true");
+  navMobileStyleGuide.classList.remove("hidden");
+  navMobileStyleGuide.classList.add("mobile-navbar");
+  navMobileStyleGuide.setAttribute("aria-hidden", "false");
+  buttonHamburgerStyleGuide.classList.remove("hidden");
+  buttonHamburgerStyleGuide.classList.add("hamburger-button")
+  buttonHamburgerStyleGuide.setAttribute("aria-hidden", "false");
+  navDesktopStyleGuide.classList.add("hidden");
+  navDesktopStyleGuide.setAttribute("aria-hidden", "true");
 }
 else{
   navMobile.classList.add("hidden");
@@ -27,6 +39,14 @@ else{
   buttonHamburger.setAttribute("aria-hidden", "true");
   navDesktop.classList.remove("hidden");
   navDesktop.setAttribute("aria-hidden", "false");
+  navMobileStyleGuide.classList.add("hidden");
+  navMobileStyleGuide.classList.remove("mobile-navbar");
+  navMobileStyleGuide.setAttribute("aria-hidden", "true");
+  buttonHamburgerStyleGuide.classList.add("hidden");
+  buttonHamburgerStyleGuide.classList.remove("hamburger-button")
+  buttonHamburgerStyleGuide.setAttribute("aria-hidden", "true");
+  navDesktopStyleGuide.classList.remove("hidden");
+  navDesktopStyleGuide.setAttribute("aria-hidden", "false");
 }
 
 window.addEventListener("resize", function(){
@@ -40,6 +60,14 @@ window.addEventListener("resize", function(){
     buttonHamburger.setAttribute("aria-hidden", "false");
     navDesktop.classList.add("hidden");
     navDesktop.setAttribute("aria-hidden", "true");
+    navMobileStyleGuide.classList.remove("hidden");
+    navMobileStyleGuide.classList.add("mobile-navbar");
+    navMobileStyleGuide.setAttribute("aria-hidden", "false");
+    buttonHamburgerStyleGuide.classList.remove("hidden");
+    buttonHamburgerStyleGuide.classList.add("hamburger-button")
+    buttonHamburgerStyleGuide.setAttribute("aria-hidden", "false");
+    navDesktopStyleGuide.classList.add("hidden");
+    navDesktopStyleGuide.setAttribute("aria-hidden", "true");
   }
   else{
     navMobile.classList.add("hidden");
@@ -50,6 +78,14 @@ window.addEventListener("resize", function(){
     buttonHamburger.setAttribute("aria-hidden", "true");
     navDesktop.classList.remove("hidden");
     navDesktop.setAttribute("aria-hidden", "false");
+    navMobileStyleGuide.classList.add("hidden");
+    navMobileStyleGuide.classList.remove("mobile-navbar");
+    navMobileStyleGuide.setAttribute("aria-hidden", "true");
+    buttonHamburgerStyleGuide.classList.add("hidden");
+    buttonHamburgerStyleGuide.classList.remove("hamburger-button")
+    buttonHamburgerStyleGuide.setAttribute("aria-hidden", "true");
+    navDesktopStyleGuide.classList.remove("hidden");
+    navDesktopStyleGuide.setAttribute("aria-hidden", "false");
   }
 });
 
@@ -66,6 +102,19 @@ buttonHamburger.addEventListener("click", function(){
   }
 });
 
+buttonHamburgerStyleGuide.addEventListener("click", function(){
+  if(mobileNavItemsStyleGuide.classList.contains("hidden")){
+    mobileNavItemsStyleGuide.classList.remove("hidden");
+    mobileNavItemsStyleGuide.classList.add("dropdown-wrapper");
+    mobileNavItemsStyleGuide.setAttribute("aria-hidden", "false");
+  }
+  else{
+    mobileNavItemsStyleGuide.classList.add("hidden");
+    mobileNavItemsStyleGuide.classList.remove("dropdown-wrapper");
+    mobileNavItemsStyleGuide.setAttribute("aria-hidden", "true");
+  }
+});
+
 //keypress event listener referred from https://stackoverflow.com/questions/14542062/eventlistener-enter-key/50993410
 buttonHamburger.addEventListener("keypress", function(e){
   if(e.key == 'Enter'){
@@ -78,6 +127,21 @@ buttonHamburger.addEventListener("keypress", function(e){
       mobileNavItems.classList.add("hidden");
       mobileNavItems.classList.remove("dropdown-wrapper");
       mobileNavItems.setAttribute("aria-hidden", "true");
+    }
+  }
+});
+
+buttonHamburgerStyleGuide.addEventListener("keypress", function(e){
+  if(e.key == 'Enter'){
+    if(mobileNavItemsStyleGuide.classList.contains("hidden")){
+      mobileNavItemsStyleGuide.classList.remove("hidden");
+      mobileNavItemsStyleGuide.classList.add("dropdown-wrapper");
+      mobileNavItemsStyleGuide.setAttribute("aria-hidden", "false");
+    }
+    else{
+      mobileNavItemsStyleGuide.classList.add("hidden");
+      mobileNavItemsStyleGuide.classList.remove("dropdown-wrapper");
+      mobileNavItemsStyleGuide.setAttribute("aria-hidden", "true");
     }
   }
 });
