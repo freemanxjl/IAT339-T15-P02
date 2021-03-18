@@ -3,7 +3,11 @@
 */
 
 .service-list img{
-    margin: 2rem 2rem 1rem 1rem;
+    margin: 1rem 2rem 2rem 0;
+}
+
+.service-list p{
+    margin-right: 2rem;
 }
 
 /* Media Queries */
