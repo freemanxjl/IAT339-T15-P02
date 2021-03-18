@@ -6,36 +6,36 @@ var buttonCheckout = document.querySelector("#order-button");
 
 if(!(buttonBooking==null)){
   buttonBooking.addEventListener("click", function(){
-    alert("Table reserved");
+    alert("Your table has been reserved, see you soon!");
   });
 
   buttonBooking.addEventListener("keypress", function(e){
     if(e.key == 'Enter'){
-      alert("Table reserved");
+      alert("Your table has been reserved, see you soon!");
     }
   });
 }
 
 if(!(buttonContact==null)){
   buttonContact.addEventListener("click", function(){
-    alert("Contact form sent");
+    alert("Your message has been sent, thank you.");
   });
 
   buttonContact.addEventListener("keypress", function(e){
     if(e.key == 'Enter'){
-      alert("Contact form sent");
+      alert("Your message has been sent, thank you.");
     }
   });
 }
 
 if(!(buttonCheckout==null)){
   buttonCheckout.addEventListener("click", function(){
-    alert("Order sent");
+    alert("Thank you for your purchase, your order has been confirmed.");
   });
 
   buttonCheckout.addEventListener("keypress", function(e){
     if(e.key == 'Enter'){
-      alert("Order sent");
+      alert("Thank you for your purchase, your order has been confirmed.");
     }
   });
 }
