@@ -42,7 +42,7 @@ else{
   buttonHamburger.setAttribute("aria-hidden", "true");
   navDesktop.classList.remove("hidden");
   navDesktop.setAttribute("aria-hidden", "false");
-  if(!navDesktopStyleGuide==null){
+  if(!(navDesktopStyleGuide==null)){
     navMobileStyleGuide.classList.add("hidden");
     navMobileStyleGuide.classList.remove("mobile-navbar");
     navMobileStyleGuide.setAttribute("aria-hidden", "true");
@@ -65,7 +65,7 @@ window.addEventListener("resize", function(){
     buttonHamburger.setAttribute("aria-hidden", "false");
     navDesktop.classList.add("hidden");
     navDesktop.setAttribute("aria-hidden", "true");
-    if(!navDesktopStyleGuide == null){
+    if(!(navDesktopStyleGuide==null)){
       navMobileStyleGuide.classList.remove("hidden");
       navMobileStyleGuide.classList.add("mobile-navbar");
       navMobileStyleGuide.setAttribute("aria-hidden", "false");
@@ -85,7 +85,7 @@ window.addEventListener("resize", function(){
     buttonHamburger.setAttribute("aria-hidden", "true");
     navDesktop.classList.remove("hidden");
     navDesktop.setAttribute("aria-hidden", "false");
-    if(!navDesktopStyleGuide == null){
+    if(!(navDesktopStyleGuide==null)){
       navMobileStyleGuide.classList.add("hidden");
       navMobileStyleGuide.classList.remove("mobile-navbar");
       navMobileStyleGuide.setAttribute("aria-hidden", "true");
@@ -111,7 +111,7 @@ buttonHamburger.addEventListener("click", function(){
   }
 });
 
-if(!buttonHamburgerStyleGuide == null){
+if(!(buttonHamburgerStyleGuide==null)){
   buttonHamburgerStyleGuide.addEventListener("click", function(){
     if(mobileNavItemsStyleGuide.classList.contains("hidden")){
       mobileNavItemsStyleGuide.classList.remove("hidden");
@@ -143,7 +143,7 @@ buttonHamburger.addEventListener("keypress", function(e){
   }
 });
 
-if(!buttonHamburgerStyleGuide==null){
+if(!(buttonHamburgerStyleGuide==null)){
   buttonHamburgerStyleGuide.addEventListener("keypress", function(e){
     if(e.key == 'Enter'){
       if(mobileNavItemsStyleGuide.classList.contains("hidden")){
