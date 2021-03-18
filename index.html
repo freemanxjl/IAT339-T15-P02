@@ -311,28 +311,31 @@
 
           <h4>Sample code:</h4>
           <code>
-            &lt;a href="#"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/&gt;&lt;/a&gt;<br/>
-            &lt;a href="#" class="header-title"&gt;COOKIN&lt;/a&gt;<br/>
-            &lt;nav class="header-item-wrapper"&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;<br/>
-              &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;<br/>
-            &lt;/nav&gt;<br/>
-            <br/>
-            &lt;div class="mobile-navbar"&gt;<br/>
-              &lt;span class="hamburger-button"&gt;&lt;/span&gt;<br/>
-              &lt;nav class="dropdown-menu"&gt;<br/>
-                &lt;div class="dropdown-wrapper"&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;<br/>
-                    &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;<br/>
-                &lt;/div&gt;<br/>
+            &lt;header&gt;<br/>
+              &lt;a href="home.html"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Home page"/&gt;&lt;/a&gt;<br/>
+              &lt;a href="home.html" class="header-title"&gt;COOKIN&lt;/a&gt;<br/>
+              &lt;nav id="nav-desktop" class="header-item-wrapper"&gt;<br/>
+                &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
+                &lt;a href=shopping_cart.html&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
               &lt;/nav&gt;<br/>
-            &lt;/div&gt;<br/>
+              &lt;div id="nav-mobile" class="mobile-navbar hidden"&gt;<br/>
+                &lt;span id="hamburger-button" class="hidden" tabindex="0"&gt;&lt;/span&gt;<br/>
+                &lt;nav id="dropdown-menu" class="hidden"&gt;<br/>
+                  &lt;div class="dropdown-wrapper"&gt;<br/>
+                      &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
+                      &lt;a href="shopping_cart.html"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
+                  &lt;/div&gt;<br/>
+                &lt;/nav&gt;<br/>
+              &lt;/div&gt;<br/>
+            &lt;/header&gt;<br/>
           </code>
 
           <!-- Code at the moment is not efficient as header-link items need to appear twice -->
@@ -366,7 +369,6 @@
               </nav>
             </div>
           </div>
-
         </section>
 
         <section class="element">
