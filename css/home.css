@@ -11,7 +11,7 @@ Styling for Home Page
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20rem 7rem 45rem 10rem;
+  padding: 20rem 7rem 45rem 7rem;
 }
 
 .hero-text-container h1{
@@ -44,6 +44,11 @@ margin-left: 2rem;
 /*
 Media Queries
 */
+@media( min-width: 1600px){
+  .hero-content-container{
+    padding: 20rem 7rem 45rem 10rem;
+  }
+}
 
 @media( max-width: 1600px){
   .page-secondary-container.flex-container-nowrap{
