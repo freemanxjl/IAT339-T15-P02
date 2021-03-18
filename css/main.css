@@ -165,6 +165,31 @@ footer a{
 }
 
 /* Media Queries */
+@media( min-width: 1600px){
+  body{
+    font-size: 1.3rem;
+  }
+
+  p{
+    max-width: 55rem;
+  }
+
+  footer{
+    padding-left: 10rem;
+  }
+
+  .page-header-container{
+    padding: 8rem 7rem 2rem 10rem;
+  }
+  
+  .page-main-container{
+    padding: 0 7rem 25rem 13rem;
+  }
+  
+  .page-secondary-container{
+    padding: 0.1rem 7rem 2.5rem 10rem;
+  }
+}
 
 @media( max-width: 800px){
   .page-header-container{
