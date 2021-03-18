@@ -73,22 +73,6 @@
     <!-- Unclosed header element noted from w3 validator -->
     </header>
 
-    <div class="side-navbar">
-      <nav>
-        <h2>Main Elements</h2>
-        <a class="sidenav-link" href="#interactive_elements">Interactive Elements</a>
-        <a class="sidenav-link" href="#text_elements">Text Elements</a>
-        <a class="sidenav-link" href="#combined_elements">Combined Elements</a>
-        <h3>Branding</h3>
-        <a class="sidenav-link" href="#brand-components">Brand Components</a>
-        <h3>Other Pages</h3>
-        <a class="sidenav-link" href="home.html">COOKIN Main Site</a>
-        <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <h3>References</h3>
-        <a class="sidenav-link" href="#citations">Citations</a>
-      </nav>
-    </div>
-
     <div class="intro-container brush-background">
       <h1>Welcome to the COOKIN Style Guide</h1>
       <p class="intro-caption">Here you will find common elements on the COOKIN website to help build and create a more consistent and concise site</p>
@@ -327,28 +311,31 @@
 
           <h4>Sample code:</h4>
           <code>
-            &lt;a href="#"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/&gt;&lt;/a&gt;<br/>
-            &lt;a href="#" class="header-title"&gt;COOKIN&lt;/a&gt;<br/>
-            &lt;nav class="header-item-wrapper"&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;<br/>
-              &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;<br/>
-              &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;<br/>
-            &lt;/nav&gt;<br/>
-            <br/>
-            &lt;div class="mobile-navbar"&gt;<br/>
-              &lt;span class="hamburger-button"&gt;&lt;/span&gt;<br/>
-              &lt;nav class="dropdown-menu"&gt;<br/>
-                &lt;div class="dropdown-wrapper"&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;About&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Contact&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Menu&lt;/a&gt;<br/>
-                    &lt;a class="header-link" href="#"&gt;Home&lt;/a&gt;<br/>
-                    &lt;a href="#"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"/&gt;&lt;/a&gt;<br/>
-                &lt;/div&gt;<br/>
+            &lt;header&gt;<br/>
+              &lt;a href="home.html"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Home page"/&gt;&lt;/a&gt;<br/>
+              &lt;a href="home.html" class="header-title"&gt;COOKIN&lt;/a&gt;<br/>
+              &lt;nav id="nav-desktop" class="header-item-wrapper"&gt;<br/>
+                &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
+                &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
+                &lt;a href=shopping_cart.html&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
               &lt;/nav&gt;<br/>
-            &lt;/div&gt;<br/>
+              &lt;div id="nav-mobile" class="mobile-navbar hidden"&gt;<br/>
+                &lt;span id="hamburger-button" class="hidden" tabindex="0"&gt;&lt;/span&gt;<br/>
+                &lt;nav id="dropdown-menu" class="hidden"&gt;<br/>
+                  &lt;div class="dropdown-wrapper"&gt;<br/>
+                      &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
+                      &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
+                      &lt;a href="shopping_cart.html"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
+                  &lt;/div&gt;<br/>
+                &lt;/nav&gt;<br/>
+              &lt;/div&gt;<br/>
+            &lt;/header&gt;<br/>
           </code>
 
           <!-- Code at the moment is not efficient as header-link items need to appear twice -->
@@ -356,31 +343,32 @@
              styled with position: fixed, on real site it should use <header> instead -->
           <h4>Rendered element:</h4>
           <div class="main-header">
-            <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-            <a href="#" class="header-title">COOKIN</a>
+            <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
+            <a href="home.html" class="header-title">COOKIN</a>
 
-            <nav class="header-item-wrapper">
-              <a class="header-link" href="#">About</a>
-              <a class="header-link" href="#">Contact</a>
-              <a class="header-link" href="#">Menu</a>
-              <a class="header-link" href="#">Home</a>
-              <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
+            <nav id="nav-desktop-example" class="header-item-wrapper">
+              <a class="header-link" href="about.html">About</a>
+              <a class="header-link" href="contact.html">Contact</a>
+              <a class="header-link" href="booking.html">Reservations</a>
+              <a class="header-link" href="product_listing.html">Menu</a>
+              <a class="header-link" href="home.html">Home</a>
+              <a href=shopping_cart.html><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
             </nav>
 
-            <div class="mobile-navbar">
-              <span class="hamburger-button"></span>
-              <nav class="dropdown-menu">
+            <div id="nav-mobile-example" class="mobile-navbar hidden">
+              <span id="hamburger-button-example" class="hidden" tabindex="0"></span>
+              <nav id="dropdown-menu-example" class="hidden">
                 <div class="dropdown-wrapper">
-                    <a class="header-link" href="#">About</a>
-                    <a class="header-link" href="#">Contact</a>
-                    <a class="header-link" href="#">Menu</a>
-                    <a class="header-link" href="#">Home</a>
-                    <a href=#><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Cart Icon"></a>
+                    <a class="header-link" href="about.html">About</a>
+                    <a class="header-link" href="contact.html">Contact</a>
+                    <a class="header-link" href="booking.html">Reservations</a>
+                    <a class="header-link" href="product_listing.html">Menu</a>
+                    <a class="header-link" href="home.html">Home</a>
+                    <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
                 </div>
               </nav>
             </div>
           </div>
-
         </section>
 
         <section class="element">
@@ -738,13 +726,13 @@
           <div class="events-section-container">
             <div class="company-events-container">
               <h3>Our Events</h3>
-  
+
               <div class="company-events-scroll-container" tabindex="0">
                 <div class="company-event">
                   <h4>Lorem Ipsum</h4>
                   <p><time datetime="2020-11-30">Nov 30, 2020</time> - Duis venenatis risus ac nunc semper, vitae accumsan magna suscipit. Etiam ac massa at mi molestie aliquam in in magna.</p>
                 </div>
-  
+
                 <div class="company-event">
                   <h4>Dolor sit amet</h4>
                   <p><time datetime="2021-02-25">Feb 25, 2021</time> - Vivamus blandit fringilla enim, ut faucibus est pellentesque sed. Maecenas elementum aliquam nibh sit amet scelerisque. Aliquam placerat gravida tristique.</p>

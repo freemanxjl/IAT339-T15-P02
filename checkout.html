@@ -23,31 +23,31 @@
 
   </head>
 
-  <body name="top">
+  <body id="top">
 
     <header>
       <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
       <a href="home.html" class="header-title">COOKIN</a>
 
-      <nav class="header-item-wrapper">
+      <nav id="nav-desktop" class="header-item-wrapper">
         <a class="header-link" href="about.html">About</a>
         <a class="header-link" href="contact.html">Contact</a>
         <a class="header-link" href="booking.html">Reservations</a>
         <a class="header-link" href="product_listing.html">Menu</a>
         <a class="header-link" href="home.html">Home</a>
-        <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
+        <a href=shopping_cart.html><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
       </nav>
 
-      <div class="mobile-navbar">
-        <span class="hamburger-button"></span>
-        <nav class="dropdown-menu">
+      <div id="nav-mobile" class="mobile-navbar hidden">
+        <span id="hamburger-button" class="hidden" tabindex="0"></span>
+        <nav id="dropdown-menu" class="hidden">
           <div class="dropdown-wrapper">
-            <a class="header-link" href="about.html">About</a>
-            <a class="header-link" href="contact.html">Contact</a>
-            <a class="header-link" href="booking.html">Reservations</a>
-            <a class="header-link" href="product_listing.html">Menu</a>
-            <a class="header-link" href="home.html">Home</a>
-            <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shpping cart page"></a>
+              <a class="header-link" href="about.html">About</a>
+              <a class="header-link" href="contact.html">Contact</a>
+              <a class="header-link" href="booking.html">Reservations</a>
+              <a class="header-link" href="product_listing.html">Menu</a>
+              <a class="header-link" href="home.html">Home</a>
+              <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
           </div>
         </nav>
       </div>
@@ -162,5 +162,6 @@
       <a href="index.html">Style guide</a>
       <a href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>
