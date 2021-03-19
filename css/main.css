@@ -9,7 +9,7 @@
 
 body{
   font-family: poppins, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 300;
   background-color: #ad1c36;
   background-position: bottom;
@@ -35,7 +35,7 @@ h6{ font-size: 1.2rem; }
 
 a{
   color: #FFFFFF;
-  font-size: 0.95rem;
+  font-size: 1rem;
   width: fit-content;
   margin: 0.25rem 0 0.25rem 0;
   font-weight: 500;
@@ -166,10 +166,6 @@ footer a{
 
 /* Media Queries */
 @media( min-width: 1600px){
-  body{
-    font-size: 1.2rem;
-  }
-
   p{
     max-width: 55rem;
   }
