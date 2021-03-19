@@ -1,958 +1,107 @@
 <!DOCTYPE html>
-<!-- lang="en" added based on w3 validator suggestion -->
+
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>COOKIN Style Guide</title>
-
+    <title>Home | COOKIN</title>
     <!-- normalize.css obtained from previous exercise in IAT 235 -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/interactive-elements.css">
     <link rel="stylesheet" href="css/combined-elements.css">
-    <link rel="stylesheet" href="css/style-guide.css">
-
-    <!-- External CSS -->
-
+    <link rel="stylesheet" href="css/home.css">
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/wds2ejr.css">
-
   </head>
 
-  <body>
-
+  <body id="top">
     <header>
-      <a href="#"><img class="header-icon" src="images/grill-logo.png" alt="Site Logo"/></a>
-      <a href="#" class="header-title">COOKIN Style Guide</a>
+      <a href="index.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
+      <a href="index.html" class="header-title">COOKIN</a>
+
+      <nav id="nav-desktop" class="header-item-wrapper">
+        <a class="header-link" href="about.html">About</a>
+        <a class="header-link" href="contact.html">Contact</a>
+        <a class="header-link" href="booking.html">Reservations</a>
+        <a class="header-link" href="product_listing.html">Menu</a>
+        <a href=shopping_cart.html><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
+      </nav>
 
       <div id="nav-mobile" class="mobile-navbar hidden">
-        <span id="hamburger-button" tabindex="0"></span>
+        <span id="hamburger-button" class="hidden" tabindex="0"></span>
         <nav id="dropdown-menu" class="hidden">
           <div class="dropdown-wrapper">
-            <h2>Main Elements</h2>
-            <a class="header-link" href="#interactive_elements">Interactive Elements</a>
-            <a class="header-link" href="#text_elements">Text Elements</a>
-            <a class="header-link" href="#combined_elements">Combined Elements</a>
-          </div>
-          <div class="dropdown-wrapper">
-            <h3>Branding</h3>
-            <a class="header-link" href="#brand-components">Brand Components</a>
-          </div>
-          <div class="dropdown-wrapper">
-            <h3>Other Pages</h3>
-            <a class="header-link" href="home.html">COOKIN Main Site</a>
-            <a class="header-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-          <div class="dropdown-wrapper">
-            <h3>References</h3>
-            <a class="header-link" href="#citations">Citations</a>
-          </div>
-        </nav>
-      </div>
-
-      <div class="side-navbar">
-        <nav id="nav-desktop">
-          <h2>Main Elements</h2>
-          <a class="sidenav-link" href="#interactive_elements">Interactive Elements</a>
-          <a class="sidenav-link" href="#text_elements">Text Elements</a>
-          <a class="sidenav-link" href="#combined_elements">Combined Elements</a>
-          <h3>Branding</h3>
-          <a class="sidenav-link" href="#brand-components">Brand Components</a>
-          <h3>Other Pages</h3>
-          <a class="sidenav-link" href="home.html">COOKIN Main Site</a>
-          <a class="sidenav-link" href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <h3>References</h3>
-          <a class="sidenav-link" href="#citations">Citations</a>
-        </nav>
-      </div>
-
-    <!-- Unclosed header element noted from w3 validator -->
-    </header>
-
-    <div class="intro-container brush-background">
-      <h1>Welcome to the COOKIN Style Guide</h1>
-      <p class="intro-caption">Here you will find common elements on the COOKIN website to help build and create a more consistent and concise site</p>
-
-      <section>
-        <h2>What does the company do, or offer?</h2>
-        <p>COOKIN is a restaurant which seats people on specially made tables featuring a barbeque grill. Customers buy prepped meats and vegetables to cook using the grills on their table.
-        Customers can make reservations for tables. People also have the option to buy the prepped food to take home. It's exactly like kbbq but with American food such as burgers, wings, etc instead</p>
-      </section>
-
-      <section>
-        <h2>Who is the company to potential customers?</h2>
-
-        <p>The brand's persona will be somewhat informal but still professional so it is suitable for most audiences. No overly casual or country jargon/speak. Stay proffesional but accessible to retain as many users as possible.</p>
-      </section>
-
-      <section>
-        <h2>Why might this company entice someone to purchase a product or service?</h2>
-
-        <p>This restaurant would bring people in for a unique eating experience, good food and a great time to spend with people. Also gives people the barbeque experience for people who cannot have a barbeque in their own home.</p>
-      </section>
-    </div>
-
-    <div class="main-content">
-      <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section id="interactive_elements">
-        <h2>Interactive Elements</h2>
-
-        <section class="element">
-          <h3>In-text Link</h3>
-
-          <h4>Sample code:</h4>
-          <code>&lt;a href="#"&gt;This is a link&lt;/a&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <a href="#">This is a link</a>
-
-        </section>
-
-
-        <!-- Default Button styling section -->
-        <section class="element">
-
-          <h3>Navigation Link</h3>
-          <p>A Navigation Link is a button that when clicked will navigate to another page</p>
-          <p>By default, each button element will be a small button if no size is assigned. Button sizes are split into small, medium, and large and can be assigned by using the following CSS selectors:</p>
-          <ul>
-            <li>.button-sm -> Small Button</li>
-            <li>.button-md -> Medium Button</li>
-            <li>.button-lg -> Large Button</li>
-          </ul>
-
-          <h4>CSS selector:</h4>
-          <p>.button-nav</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;a class="button-nav button-sm" href="#"&gt;Default Button&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-md" href="#"&gt;Default Button&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-lg" href="#"&gt;Default Button&lt;/a&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <a class="button-nav button-sm" href="#">Default Button</a>
-          <a class="button-nav button-md" href="#">Default Button</a>
-          <a class="button-nav button-lg" href="#">Default Button</a>
-
-        </section>
-
-        <section class="element">
-          <h3>Submit/Reset Buttons</h3>
-          <p>A Submit/Reset Button is a button that when clicked will perform an action. They are a special type of Navigation Button thus they also use the same sizing stylings</p>
-          <p>When hovered, these functional buttons do not have any animations when hovered to differentiate from Navigation Link buttons</p>
-
-          <h4>CSS selector:</h4>
-          <p>.submit-button .reset-button</p>
-          <h4>CSS combined element selector:</h4>
-          <p>.button-nav</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;a class="button-nav button-md submit-button" href="#"&gt;Submit Button&lt;/a&gt;<br/>
-            &lt;a class="button-nav button-md reset-button" href="#"&gt;Reset Button&lt;/a&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <a class="button-nav button-md reset-button" href="#">Reset Button</a>
-          <a class="button-nav button-md submit-button" href="#">Submit Button</a>
-
-        </section>
-
-
-        <section class="element">
-          <h3>Text Input Field with Label</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.form-label .form-input</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;label class="form-label" for="form-input"&gt;This is a label&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="text" id="form-input"/&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <label class="form-label" for="form-input">This is a label</label>
-          <input class="form-input" type="text" id="form-input" placeholder="Placeholder"/>
-
-        </section>
-
-
-        <section class="element">
-          <h3>Radio Button with Label</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.form-radio-label</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/&gt;<br/>
-            &lt;label class="form-radio-label" for="form-radio-one"&gt;This is a radio button&lt;/label&gt;<br/>
-            &lt;type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/&gt;<br/>
-            &lt;label class="form-radio-label" for="form-radio-two"&gt;This is also a radio button&lt;/label&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <!-- Referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
-          <input type="radio" id="form-radio-one" name="form-radio" value="form-radio-one"/>
-          <label class="form-radio-label" for="form-radio-one">This is a radio button</label>
-          <input type="radio" id="form-radio-two" name="form-radio" value="form-radio-two"/>
-          <label class="form-radio-label" for="form-radio-two">This is also a radio button</label>
-
-        </section>
-
-
-        <section class="element">
-          <h3>Image as a Link</h3>
-          <p>An Image as a Link is a &lt;img&gt; element nested within an &lt;a&gt; element</p>
-          <p>Images have four different sizes and must have a size associated with them. Images can be assigned by using the following CSS selectors:</p>
-          <ul>
-            <li>.image-xs -> Extra Small Image</li>
-            <li>.image-sm -> Small Image</li>
-            <li>.image-md -> Medium Image</li>
-            <li>.image-lg -> Large Image</li>
-          </ul>
-
-          <h4>Sample code:</h4>
-          <code>&lt;a href="#"&gt;&lt;img class="header-icon image-xs" src="images/grill-logo.png" alt="Site Logo"/&gt;&lt;/a&gt;</code>
-
-          <!-- Image used is made by me -->
-          <h4>Rendered element:</h4>
-          <a href="#"><img class="header-icon image-xs" src="images/grill-logo.png" alt="Site Logo"/></a>
-
-        </section>
-
-
-      </section>
-      <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-      <!-- TEXT ELEMENTS SECTION // -->
-      <section id="text_elements">
-        <h2>Text Elements</h2>
-
-        <section class="element">
-          <h3>Headings</h3>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;h1&gt;This is an h1&lt;/h1&gt;<br/>
-            &lt;h2&gt;This is an h2&lt;/h2&gt;<br/>
-            &lt;h3&gt;This is an h3&lt;/h3&gt;<br/>
-            &lt;h4&gt;This is an h4&lt;/h4&gt;<br/>
-          </code>
-
-          <h4>Rendered element:</h4>
-          <h1>This is an h1</h1>
-          <h2>This is an h2</h2>
-          <h3>This is an h3</h3>
-          <h4>This is an h4</h4>
-
-        </section>
-
-        <section class="element">
-          <h3>Paragraphs</h3>
-
-          <!-- Lorem ipsum generated from https://loremipsum.io/generator/ -->
-          <h4>Sample code:</h4>
-          <code>
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.&lt;/p&gt;<br/>
-          </code>
-
-          <h4>Rendered element:</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue eget arcu dictum varius duis. Dignissim suspendisse in est ante in nibh. Vitae aliquet nec ullamcorper sit amet risus. Ut diam quam nulla porttitor massa id neque aliquam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Diam quam nulla porttitor massa id neque aliquam vestibulum. Duis at tellus at urna condimentum. Nisi quis eleifend quam adipiscing vitae proin. Enim nec dui nunc mattis. Blandit turpis cursus in hac habitasse platea. Eleifend donec pretium vulputate sapien nec.</p>
-
-        </section>
-
-        <section class="element">
-          <h3>Numbered Lists</h3>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;ol&gt;<br/>
-              &lt;li&gt;Element 1&lt;li/&gt;<br/>
-              &lt;li&gt;Element 2&lt;li/&gt;<br/>
-              &lt;li&gt;Element 3&lt;li/&gt;<br/>
-              &lt;li&gt;Element 4&lt;li/&gt;<br/>
-            &lt;/ol&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <ol>
-            <li>Element 1</li>
-            <li>Element 2</li>
-            <li>Element 3</li>
-            <li>Element 4</li>
-          </ol>
-
-        </section>
-
-      </section>
-      <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-      <!-- COMBINED ELEMENTS SECTION // -->
-      <section id="combined_elements">
-        <h2>Combined Elements</h2>
-
-        <section class="element">
-          <h3>Main Navigation</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.main-header, .header-icon, .header-title, .header-item-wrapper, .header-link</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;header&gt;<br/>
-              &lt;a href="home.html"&gt;&lt;img class="header-icon" src="images/grill-logo.png" alt="Home page"/&gt;&lt;/a&gt;<br/>
-              &lt;a href="home.html" class="header-title"&gt;COOKIN&lt;/a&gt;<br/>
-              &lt;nav id="nav-desktop" class="header-item-wrapper"&gt;<br/>
-                &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
-                &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
-                &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
-                &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
-                &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
-                &lt;a href=shopping_cart.html&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
-              &lt;/nav&gt;<br/>
-              &lt;div id="nav-mobile" class="mobile-navbar hidden"&gt;<br/>
-                &lt;span id="hamburger-button" class="hidden" tabindex="0"&gt;&lt;/span&gt;<br/>
-                &lt;nav id="dropdown-menu" class="hidden"&gt;<br/>
-                  &lt;div class="dropdown-wrapper"&gt;<br/>
-                      &lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;<br/>
-                      &lt;a class="header-link" href="contact.html"&gt;Contact&lt;/a&gt;<br/>
-                      &lt;a class="header-link" href="booking.html"&gt;Reservations&lt;/a&gt;<br/>
-                      &lt;a class="header-link" href="product_listing.html"&gt;Menu&lt;/a&gt;<br/>
-                      &lt;a class="header-link" href="home.html"&gt;Home&lt;/a&gt;<br/>
-                      &lt;a href="shopping_cart.html"&gt;&lt;img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"&gt;&lt;/a&gt;<br/>
-                  &lt;/div&gt;<br/>
-                &lt;/nav&gt;<br/>
-              &lt;/div&gt;<br/>
-            &lt;/header&gt;<br/>
-          </code>
-
-          <!-- Code at the moment is not efficient as header-link items need to appear twice -->
-          <!-- NOTE: <div class="main-header"> is used instead of <header> as current header is
-             styled with position: fixed, on real site it should use <header> instead -->
-          <h4>Rendered element:</h4>
-          <div class="main-header">
-            <a href="home.html"><img class="header-icon" src="images/grill-logo.png" alt="Home page"/></a>
-            <a href="home.html" class="header-title">COOKIN</a>
-
-            <nav id="nav-desktop-example" class="header-item-wrapper">
               <a class="header-link" href="about.html">About</a>
               <a class="header-link" href="contact.html">Contact</a>
               <a class="header-link" href="booking.html">Reservations</a>
               <a class="header-link" href="product_listing.html">Menu</a>
-              <a class="header-link" href="home.html">Home</a>
-              <a href=shopping_cart.html><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
-            </nav>
-
-            <div id="nav-mobile-example" class="mobile-navbar hidden">
-              <span id="hamburger-button-example" class="hidden" tabindex="0"></span>
-              <nav id="dropdown-menu-example" class="hidden">
-                <div class="dropdown-wrapper">
-                    <a class="header-link" href="about.html">About</a>
-                    <a class="header-link" href="contact.html">Contact</a>
-                    <a class="header-link" href="booking.html">Reservations</a>
-                    <a class="header-link" href="product_listing.html">Menu</a>
-                    <a class="header-link" href="home.html">Home</a>
-                    <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
-                </div>
-              </nav>
-            </div>
+              <a href="shopping_cart.html"><img class="cart-button" src="images/shopping-cart-white-icon.png" alt="Shopping cart page"></a>
           </div>
-        </section>
+        </nav>
+      </div>
+    </header>
 
-        <section class="element">
-          <h3>Product/Service Listing</h3>
+    <section>
+      <div class="hero-content-container">
+        <div class="hero-text-container">
+          <h1 class="site-title">COOKIN</h1>
+          <h2>AMERICAN BBQ RESTAURANT</h2>
+          <a  href="product_listing.html" class="button-nav button-lg">SEE OUR PRODUCTS</a>
+          <a href="booking.html" class="button-nav button-lg">RESERVE A TABLE</a>
+        </div>
+      </div>
+    </section>
 
-          <h4>CSS selector:</h4>
-          <p>.flex-container-nowrap .product-list</p>
-          <h5>CSS combined element selector</h5>
-          <p>.button-nav</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="flex-container-nowrap product-list"&gt;<br/>
-            &lt;a href="#"&gt;&lt;img class="image-sm" src="img/bbq-sauce.png" alt="Special Homemade Barbeque Sauce"&gt;&lt;/a&gt;<br/>
-            &lt;div&gt;<br/>
-            &lt;a href="#"&gt;&lt;h3&gt;Homemade Barbeque Sauce&lt;/h3&gt;&lt;/a&gt;<br/>
-            &lt;h4&gt;$0.00&lt;/h4&gt;<br/>
-            &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. &lt;/p&gt;<br/>
-            &lt;a href=# class="button-nav"&gt;More Information&lt;/a&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;/div&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <div class="flex-container-nowrap product-list">
-            <a href="#"><img class="image-lg" src="images/bbq-sauce.png" alt="Special Homemade Barbeqe Sauce"></a>
+    <section>
+      <div class="page-secondary-container flex-container-nowrap">
+        <div class="home-content-container">
+          <div class="flex-container-nowrap home-content">
             <div>
-              <a href="#"><h3>Homemade Barbeque Sauce</h3></a>
-              <h4>$0.00</h4>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. Aenean in mi non ante ultricies auctor. Maecenas feugiat diam sed sapien rhoncus vehicula. Curabitur facilisis dolor lacinia mollis imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget consequat sem. Maecenas porttitor ex orci, non faucibus nulla volutpat maximus. </p>
-              <a href=# class="button-nav">Add to Cart</a>
+              <h2>New American Dining Experience</h2>
+              <p>Taking inspiration from Korean and Japanese barbeque restaurants, COOKIN gives its dine in customers the opportunity to cook food, provided by our chefs, using our tables with an embedded barbeque grill. Our restaurant simulates backyard barbeques inside the comfort of the restaurant and with fresh, marinated and prepped foods. </p>
+            </div>
+            <img class="image-sm" src="images/bbq-grill-close-up.jpg" alt="Photo of pork barbeque skewers being cooked on a barbeque grill">
+          </div>
+
+          <div class="flex-container-nowrap home-content">
+            <img class="image-sm" src="images/assorted-grilled-foods.jpg" alt="Photo of various meats and vegetables cooking on a barbeque grill">
+            <div>
+              <h2>We Have the Meats</h2>
+              <p>COOKIN has a wide selection of meats such as burgers, hotdogs, steaks, and marinated chicken wings. We also provide fresh vegetables such as onions and peppers to grill. Though our main appeal is American food, we also have food from other cultures such as kebabs, and Korean bulgogi. Can't dine in? We sell raw, prepped meat for you to still enjoy our food in the comfort of your own home. Please see the menu page for more info.</p>
             </div>
           </div>
+        </div>
 
-        </section>
+        <div class="events-section-container">
+          <div class="company-events-container">
+            <h3>Our Events</h3>
 
-        <!-- div is used instead of section for the "payment-form-container" as section requires a header element.
-            I wanted to include an h1 but the w3 validator would give me a warning, if I made it an h2 then I would
-            have to adjust all the sizings manually through classes which I didn't want
-        -->
-        <section class="element">
-          <h3>Payment Form</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.payment-form-container</p>
-          <h5>CSS combined element selector</h5>
-          <p>.button-nav .submit-button .form-label .form-radio-label .form-input .form-wrapper .form-container</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="payment-form-container"&gt;<br/>
-              &lt;h1&gt;Payment Form&lt;/h1&gt;
-              <br/>
-              &lt;h2&gt;How would you like to pick up?&lt;/h2&gt;<br/>
-              &lt;input type="radio" id="pick-up" name="form-pickup" value="pick-up"/&gt;<br/>
-              &lt;label class="form-radio-label" for="pick-up"&gt;Pick up in store&lt;/label&gt;<br/>
-              &lt;type="radio" id="delivery" name="form-pick-up" value="delivery"/&gt;<br/>
-              &lt;label class="form-radio-label" for="delivery"&gt;Delivery&lt;/label&gt;<br/>
-              <br/>
-              &lt;h2&gt;Payment Info&lt;/h2&gt;<br/>
-              <br/>
-              &lt;form&gt;<br/>
-                &lt;div class="form-container"&gt;
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label class="form-label" for="first-name"&gt;First Name&lt;/label&gt;<br/>
-                    &lt;input class="form-input" type="text" id="first-name"/&gt;<br/>
-                  &lt;/span&gt;
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label class="form-label" for="last-name"&gt;Last Name&lt;/label&gt;<br/>
-                    &lt;input class="form-input" type="text" id="last-name"/&gt;<br/>
-                  &lt;/span&gt;<br/>
-                &lt;/div&gt;<br/>
-                <br/>
-                &lt;div class="form-container"&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label for="text-input-field-address" class="form-label"&gt;Address: &lt;/label&gt;<br/>
-                    &lt;input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label for="text-input-field-country" class="form-label"&gt;Country: &lt;/label&gt;<br/>
-                    &lt;input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label for="text-input-field-province" class="form-label"&gt;Province: &lt;/label&gt;<br/>
-                    &lt;input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                &lt;/div&gt;<br/>
-                &lt;div class="form-container"&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label for="text-input-field-city" class="form-label"&gt;City: &lt;/label&gt;<br/>
-                    &lt;input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                  &lt;span class="form-wrapper"&gt;<br/>
-                    &lt;label for="text-input-field-city" class="form-label"&gt;Postal code: &lt;/label&gt;<br/>
-                    &lt;input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal"&gt;<br/>
-                  &lt;/span&gt;<br/>
-                &lt;/div&gt;<br/>
-                <br/>
-                &lt;div class="form-container"&gt;<br/>
-                &lt;h3&gt;Payment Method&lt;/h3&gt;<br/>
-                &lt;div class="payment-method"&gt;<br/>
-                &lt;span class="form-wrapper"&gt;
-                &lt;input type="radio" name="radio-button-payment" id="button-radio-credit"/&gt;
-                &lt;label for="button-radio-credit" class="input-radio-label"&gt;Credit Card&lt;/label&gt;<br/>
-                &lt;/span&gt;<br/>
-                &lt;span class="form-wrapper"&gt;
-                &lt;input type="radio" name="radio-button-payment" id="button-radio-debit"/&gt;
-                &lt;label for="button-radio-debit" class="input-radio-label"&gt;Debit Card&lt;/label&gt;<br/>
-                &lt;/span&gt;<br/>
-                &lt;span class="form-wrapper"&gt;
-                &lt;input type="radio" name="radio-button-payment" id="button-radio-paypal"/&gt;
-                &lt;label for="button-radio-paypal" class="input-radio-label"&gt;PayPal&lt;/label&gt;<br/>
-                &lt;/span&gt;<br/>
-                <br/>
-                &lt;div class="form-submit-wrapper"&gt;<br/>
-                  &lt;p&gt;You will have a chance to review your order before it is placed&lt;/p&gt;<br/>
-                  &lt;input class="button-nav button-md submit-button" type="submit" value="Continue"/&gt;<br/>
-                &lt;/div&gt;<br/>
-              &lt;/form&gt;<br/>
-            &lt;/div&gt;
-          </code>
-
-          <!-- Radio inputs referenced from https://www.w3schools.com/tags/att_input_type_radio.asp -->
-          <h4>Rendered element:</h4>
-          <div class="payment-form-container">
-
-            <h2>How would you like to pick up?</h2>
-            <input type="radio" id="pick-up" name="form-pick-up" value="pick-up"/>
-            <label class="form-radio-label" for="pick-up">Pick up in store</label>
-            <input type="radio" id="delivery" name="form-pick-up" value="delivery"/>
-            <label class="form-radio-label" for="delivery">Delivery</label>
-
-            <h2>Payment Info</h2>
-
-            <form>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="first-name">First name</label>
-                  <input class="form-input" type="text" id="first-name"/>
-                </span>
-                <span class="form-wrapper">
-                  <label class="form-label" for="last-name">Last name</label>
-                  <input class="form-input" type="text" id="last-name"/>
-                </span>
+            <div class="company-events-scroll-container" tabindex=0>
+              <div class="company-event">
+                <h4>Grand Opening</h4>
+                <p><time datetime="2020-11-30">Nov 30, 2020</time> - COOKIN made its grand opening to a large, socially distanced crowd. It was a very successful first day with many customers enjoying their time and food.</p>
               </div>
 
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label for="text-input-field-address" class="form-label">Address: </label>
-                  <input type="text" class="form-input" name="text-input-field-address" id="text-input-field-address">
-                </span>
-                <span class="form-wrapper">
-                  <label for="text-input-field-country" class="form-label">Country: </label>
-                  <input type="text" class="form-input" name="text-input-field-country" id="text-input-field-country">
-                </span>
-                <span class="form-wrapper">
-                  <label for="text-input-field-province" class="form-label">Province: </label>
-                  <input type="text" class="form-input" name="text-input-field-province" id="text-input-field-province">
-                </span>
-              </div>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label for="text-input-field-city" class="form-label">City: </label>
-                  <input type="text" class="form-input" name="text-input-field-city" id="text-input-field-city">
-                </span>
-                <span class="form-wrapper">
-                  <label for="text-input-field-city" class="form-label">Postal code: </label>
-                  <input type="text" class="form-input" name="text-input-field-postal" id="text-input-field-postal">
-                </span>
-              </div>
-
-              <div class="form-container">
-                <h3>Payment Method</h3>
-                <div class="payment-method">
-                  <span class="form-wrapper">
-                    <input type="radio" name="radio-button-payment" id="button-radio-credit"/>
-                    <label for="button-radio-credit" class="form-radio-label">Credit Card</label>
-                  </span>
-                  <span class="form-wrapper">
-                    <input type="radio" name="radio-button-payment" id="button-radio-debit"/>
-                    <label for="button-radio-debit" class="form-radio-label">Debit Card</label>
-                  </span>
-                  <span class="form-wrapper">
-                    <input type="radio" name="radio-button-payment" id="button-radio-paypal"/>
-                    <label for="button-radio-paypal" class="form-radio-label">PayPal</label>
-                  </span>
-                </div>
-              </div>
-
-              <div>
-                <p>You will have a chance to review your order before it is placed</p>
-                <input class="button-nav button-md submit-button" type="submit" value="Continue"/>
-              </div>
-            </form>
-          </div>
-        </section>
-
-        <section class="element">
-          <h3>Checkout Cart</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.checkout-container .checkout-item-wrapper .checkout-item-title .checkout-item-price .checkout-subtotal .checkout-taxes .checkout-fulltotal</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="checkout-container&gt;<br/>
-              &lt;article class="checkout-item"&gt;<br/>
-                &lt;img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/&gt;<br/>
-                &lt;div class="checkout-item-wrapper"&gt;<br/>
-                  &lt;p class="checkout-item-title"&gt;Product Title&lt;/p&gt;<br/>
-                  &lt;p class="checkout-item-price"&gt;$0.00&lt;/p&gt;<br/>
-                  &lt;a class="button-nav button-sm reset-button" href="#"&gt;Remove from Cart&lt;/a&gt;<br/>
-                &lt;/div&gt;<br/>
-                &lt;div class="checkout-item-wrapper"&gt;<br/>
-                  &lt;label class="form-label" for="item-quantity"&gt;Quantity&lt;/label&gt;<br/>
-                  &lt;input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/&gt;<br/>
-                &lt;/div&gt;<br/>
-              &lt;/article&gt;<br/>
-              &lt;hr/&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-subtotal"&gt;Subtotal:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-taxes"&gt;Taxes (GST/HST):&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-              &lt;p&gt;&lt;span class="checkout-fulltotal"&gt;Total amount:&lt;/span&gt; $0.00&lt;/p&gt;<br/>
-            &lt;/div&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <div class="checkout-container">
-            <article class="checkout-item">
-              <img class="image-xs" src="images/bbq-sauce.png" alt="Sample Thumbnail"/>
-              <div class="checkout-item-wrapper">
-                <h2 class="checkout-item-title">Product Title</h2>
-                <p class="checkout-item-price">$0.00</p>
-                <a class="button-nav button-sm reset-button" href="#">Remove from Cart</a>
-              </div>
-              <div class="checkout-item-wrapper">
-                <label class="form-label" for="item-quantity">Quantity</label>
-                <input class="form-input" type="number" id="item-quantity" value="1" min="1" max="99"/>
-              </div>
-            </article>
-            <hr/>
-            <p><span class="checkout-subtotal">Subtotal:</span> $0.00</p>
-            <p><span class="checkout-taxes">Taxes (GST/HST):</span> $0.00</p>
-            <p><span class="checkout-fulltotal">Total amount:</span> $0.00</p>
-          </div>
-        </section>
-
-        <section class="element">
-          <h3>Reservation Form</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.align-center-container .booking-container .phone-container</p>
-          <h5>CSS combined element selector</h5>
-          <p>.button-nav .submit-button .form-label .form-input .form-wrapper .form-container</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="align-center-container booking-container"&gt;<br/>
-            &lt;form&gt;<br/>
-            &lt;div class="form-container"&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="form-date"&gt;Date&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="date" id="form-date"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="form-time"&gt;Time&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="time" id="form-time"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="form-people"&gt;People&lt;/label&gt;<br/>
-            &lt;select class="form-input reservation-select" id="form-people"&gt;<br/>
-            &lt;option value="1"&gt;1 Person&lt;/option&gt;<br/>
-            &lt;option value="2"&gt;2 People&lt;/option&gt;<br/>
-            &lt;option value="3"&gt;3 People&lt;/option&gt;<br/>
-            &lt;option value="4"&gt;4 People&lt;/option&gt;<br/>
-            &lt;option value="5"&gt;5 People&lt;/option&gt;<br/>
-            &lt;option value="6"&gt;6 People&lt;/option&gt;<br/>
-            &lt;option value="7"&gt;7 People&lt;/option&gt;<br/>
-            &lt;option value="8+"&gt;8+ People&lt;/option&gt;<br/>
-            &lt;/select&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;input class="button-nav button-md submit-button" type="submit" value="Reserve"&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;/form&gt;<br/>
-            &lt;div class="align-center-container phone-container"&gt;<br/>
-            &lt;p&gt;Or by phone at: (604)-123-4567&lt;/p&gt;<br/>
-            &lt;/div&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <div class="align-center-container booking-container">
-            <form>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="form-date">Date</label>
-                  <input class="form-input" type="date" id="form-date"/>
-                </span>
-                <span class="form-wrapper">
-                  <label class="form-label" for="form-time">Time</label>
-                  <input class="form-input" type="time" id="form-time"/>
-                </span>
-                <span class="form-wrapper">
-                  <label class="form-label" for="form-people">People</label>
-                  <select class="form-input reservation-select" id="form-people">
-                    <option value="1">1 Person</option>
-                    <option value="2">2 People</option>
-                    <option value="3">3 People</option>
-                    <option value="4">4 People</option>
-                    <option value="5">5 People</option>
-                    <option value="6">6 People</option>
-                    <option value="7">7 People</option>
-                    <option value="8">8 People</option>
-                    <option value="8+">8+ People</option>
-                  </select>
-                </span>
-                <span class="form-wrapper">
-                  <input class="button-nav button-md submit-button" type="submit" value="Reserve"/>
-                </span>
-              </div>
-            </form>
-          </div>
-          <div class="align-center-container phone-container">
-            <p>Or by phone at: (604)-123-4567</p>
-          </div>
-        </section>
-
-        <section class="element">
-          <h3>Contact Form</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.events-section-container .company-events-scroll-container .company-event</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="events-section-container"&gt;<br/>
-            &lt;div class="company-events-container"&gt;<br/>
-            &lt;h3&gt;Our Events&lt;/h3&gt;<br/>
-            <br/>
-            &lt;div class="company-events-scroll-container" tabindex="0"&gt;<br/>
-            &lt;div class="company-event"&gt;
-            &lt;h4&gt;Lorem Ipsum&lt;/h4&gt;<br/>
-            &lt;p&gt;time datetime="2020-11-03"&gt;Nov 30, 2020&lt;/time&gt; - Duis venenatis risus ac nunc semper, vitae accumsan magna suscipit. Etiam ac massa at mi molestie aliquam in in magna.&lt;/p&gt;<br/>
-            &lt;/div&gt;<br/>
-            <br/>
-            &lt;div class="company-event"&gt;
-            &lt;h4&gt;Dolor sit amet&lt;/h4&gt;<br/>
-            &lt;p&gt;time datetime="2021-02-25"&gt;Feb 25, 2021&lt;/time&gt; - Vivamus blandit fringilla enim, ut faucibus est pellentesque sed. Maecenas elementum aliquam nibh sit amet scelerisque. Aliquam placerat gravida tristique.&lt;/p&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;/div&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <div class="events-section-container">
-            <div class="company-events-container">
-              <h3>Our Events</h3>
-
-              <div class="company-events-scroll-container" tabindex="0">
-                <div class="company-event">
-                  <h4>Lorem Ipsum</h4>
-                  <p><time datetime="2020-11-30">Nov 30, 2020</time> - Duis venenatis risus ac nunc semper, vitae accumsan magna suscipit. Etiam ac massa at mi molestie aliquam in in magna.</p>
-                </div>
-
-                <div class="company-event">
-                  <h4>Dolor sit amet</h4>
-                  <p><time datetime="2021-02-25">Feb 25, 2021</time> - Vivamus blandit fringilla enim, ut faucibus est pellentesque sed. Maecenas elementum aliquam nibh sit amet scelerisque. Aliquam placerat gravida tristique.</p>
-                </div>
+              <div class="company-event">
+                <h4>Website Launched!</h4>
+                <p><time datetime="2021-02-25">Feb 25, 2021</time> - By popular demand, we have finally launched our website! Now people are able to reserve a table online, buy our prepped meat and learn about the business.</p>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="element">
-          <h3>Events Container</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.contact-form-container</p>
-          <h5>CSS combined element selector</h5>
-          <p>.button-nav .submit-button .form-label .form-input .form-wrapper .form-container</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;div class="contact-form-container"&gt;<br/>
-            &lt;form id="comment-form"&gt;<br/>
-            &lt;div class="form-container"&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="first-name"&gt;First Name&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="text" id="first-name"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="last-name"&gt;Last Name&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="text" id="last-name"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;div class="form-container"&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="email"&gt;Email&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="email" id="email"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;div class="form-container"&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="subject"&gt;Subject&lt;/label&gt;<br/>
-            &lt;input class="form-input" type="text" id="subject" size="50"/&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;span class="form-wrapper"&gt;<br/>
-            &lt;label class="form-label" for="comment-box"&gt;Your Message&lt;/label&gt;<br/>
-            &lt;textarea name="comment" form="comment-form" id="comment-box" rows="15" cols="55" placeholder="Enter comments or questions here..."&gt;&lt;/textarea&gt;<br/>
-            &lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            &lt;a class="btton-nav button-md reset-button" href="#"&gt;Reset&lt;/a&gt;<br/>
-            &lt;a class="btton-nav button-md reset-button" href="#"&gt;Submit&lt;/a&gt;<br/>
-            &lt;/form&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <div class="contact-form-container">
-            <form id="comment-form">
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="first-name-2">First Name</label>
-                  <input class="form-input" type="text" id="first-name-2"/>
-                </span>
-                <span class="form-wrapper">
-                  <label class="form-label" for="last-name-2">Last Name</label>
-                  <input class="form-input" type="text" id="last-name-2"/>
-                </span>
-              </div>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="email">Email</label>
-                  <input class="form-input" type="email" id="email"/>
-                </span>
-              </div>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="subject">Subject</label>
-                  <!-- Usage of size attribute learned from: https://www.w3schools.com/tags/att_input_size.asp -->
-                  <input class="form-input" type="text" id="subject" size="50"/>
-                </span>
-              </div>
-              <div class="form-container">
-                <span class="form-wrapper">
-                  <label class="form-label" for="comment-box">Your Message</label>
-                  <!-- Usage of textarea tag learned from: https://www.w3schools.com/tags/att_textarea_form.asp -->
-                  <textarea name="comment" form="comment-form" id="comment-box" rows="15" cols="55" placeholder="Enter comments or questions here..."></textarea>
-                </span>
-              </div>
-              <a class="button-nav button-md reset-button" href="#">Reset</a>
-              <a class="button-nav button-md submit-button" href="#">Submit</a>
-            </form>
-          </div>
-        </section>
-
-      </section>
-      <!-- // COMBINED ELEMENTS SECTION -->
-
-      <section id="brand-components">
-        <h2>Brand Components</h2>
-
-        <section class="element">
-          <h3>Fonts</h3>
-          <p class="header-title">Site Title, Oswald</p>
-          <h1>Header 1, Bitter</h1>
-          <h2>Header 2, Bitter</h2>
-          <h3>Header 3, Bitter</h3>
-          <h4>Header 4, Bitter</h4>
-          <p>Body, Poppins</p>
-        </section>
-
-        <!-- Names generated using https://coolors.co/ -->
-        <section class="element">
-          <h3>Color Palettes</h3>
-          <h4>Primary Colors</h4>
-          <div class="pallete-wrapper">
-            <div class="color-pallete primary-red"></div>
-              <p class="pallete-title">Merlot</p>
-              <p>#811921</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete primary-white"></div>
-              <p class="pallete-title">White</p>
-              <p>#FFFFFF</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete primary-black"></div>
-              <p class="pallete-title">Black</p>
-              <p>#000000</p>
-          </div>
-          <h4>Secondary Colors</h4>
-          <div class="pallete-wrapper">
-            <div class="color-pallete secondary-orange"></div>
-              <p class="pallete-title">Tahiti Gold</p>
-              <p>#F28507</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete secondary-blue"></div>
-              <p class="pallete-title">NCS Blue</p>
-              <p>#1C90C5</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete secondary-grey"></div>
-              <p class="pallete-title">Pale Silver</p>
-              <p>#B9B3A4</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete secondary-white"></div>
-              <p class="pallete-title">Cultured</p>
-              <p>#F9F9F9</p>
-          </div>
-          <div class="pallete-wrapper">
-            <div class="color-pallete secondary-off-white"></div>
-              <p class="pallete-title">Floral White</p>
-              <p>#F4F1E9</p>
-          </div>
-        </section>
-
-        <section class="element">
-            <h3>Art Direction</h3>
-
-            <p>COOKIN's artstyle and direction is inspired by western country design patterns. For example, large, capitalized text in bold serif font, thick black lines, and silhouettes. The color scheme features warm colors and a lot of black and white usage to keep up with the barbeque and country aesthetic. However, we dont want to be stuck in the past, we take modern liberties to make the site sleek and user friendly. To make the site feel more unique, we incorporated a brush stroke aesthetic. This is a little nod to the original inspiration of the company as a Korean barbeque restaurant, but with American food. This aesthetic also lets us create those thick black lines we want for that western country aesthetic too. For inspiration, we looked towards designs that also tried to have a western country aesthetic such as barbeque sauce logos, other barbeque restaurants and country imagery</p>
-            <figure>
-              <img class="image-md" src="images/country-side-bbq-logo.png" alt="Country Side Barbeque logo"/>
-              <figcaption>Logo from a barbeque restaurant.</figcaption>
-            </figure>
-
-            <figure>
-              <img class="image-md" src="images/country-side-sauce-logo.jpg" alt="Country Side Barbeque Sauce logo"/>
-              <figcaption>Logo from a barbeque sauce, notice its color scheme, and font.</figcaption>
-            </figure>
-
-            <figure>
-              <img class="image-xs" src="images/bullseye-bbq-sauce.png" alt="Bullseye BBQ sauce container"/>
-              <figcaption>Another example of a barbeque sauce having a country aesthetic.</figcaption>
-            </figure>
-
-            <figure>
-              <img class="image-md" src="images/gyukaku-logo.png" alt="Japanese BBQ Restaurant Gyukaku Restaurant"/>
-              <figcaption>The logo for Gyu-kaku, a japanese barbeque restaurant where the paint brush idea was inspired from.</figcaption>
-            </figure>
-
-            <figure>
-              <img class="image-sm" src="images/modern-bbq-logo.jpg" alt="Modern BBQ logo vector"/>
-              <figcaption>A modern logo for a barbeque location. It keeps a thick serif font and keeps a limited color scheme.</figcaption>
-            </figure>
-
-            <p>Below are patterns that we're looking for. Black brush strokes.</p>
-
-          <figure>
-            <img class="image-md" src="images/brush-strokes.jpg" alt="Brush stroke pattern"/>
-          </figure>
-        </section>
-
-        <section id="citations">
-          <h2>Citations</h2>
-
-          <ul>
-            <li>Matas, Sol. Designer. 2010. <strong>Bitter [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/bitter">https://fonts.adobe.com/fonts/bitter</a></li>
-            <li>Pinhorn, Johnny. Designer. Kale, Ninad. Designer. 2014. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/poppins">https://fonts.adobe.com/fonts/poppins</a></li>
-            <li>Adams, Vernon. Designer. 2011. <strong>Oswald [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/oswald">https://fonts.adobe.com/fonts/oswald</a></li>
-            <li>Liu, Freeman. Designer. 2021. <strong>red-black-background [Image]</strong>. Created by us</li>
-            <li>Enola99d. Designer. 2019. <strong>Vintage Grill Barbeque Logo Design [Image]</strong> Retrieved from <a href="https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm">https://www.freepik.com/premium-vector/vintage-gril-barbeque-logo-design_3911893.htm</a></li>
-            <li>Country Side BBQ. Company. n.d. <strong>Country Side Barbeque Logo [Image]</strong> Retrieved from <a href="http://www.countrysidebbq.net/menus.php">http://www.countrysidebbq.net/menus.php</a></li>
-            <li>COUNTRYSIDE BBQ Sauce. Company. n.d. <strong>COUNTRYSIDE BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.algona.org/list/member/countryside-bbq-sauce-80">https://www.algona.org/list/member/countryside-bbq-sauce-80</a></li>
-            <li>Bull's Eye. Company. 2021. <strong>Bull's Eye Original BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.bullseyebbq.com/uk/our-products/Bulls-Eye-Original-BBQ-Sauce/76011025">https://www.bullseyebbq.com/uk/our-products/Bulls-Eye-Original-BBQ-Sauce/76011025</a></li>
-            <li>Gyu-kaku. Company. n.d. <strong>Gyu-kaku Japanese BBQ [Image]</strong> Retrieved from <a href="https://www.gyu-kaku.com/">https://www.gyu-kaku.com/</a></li>
-            <li>Enola99d. Designer. 2016. <strong>Vintage Retro Rustic BBQ Grill, Barbecue, Barbeque Label Stamp Logo [Image]</strong> Retrieved from <a href="https://www.shutterstock.com/image-vector/vintage-retro-rustic-bbq-grill-barbecue-1306559512">https://www.shutterstock.com/image-vector/vintage-retro-rustic-bbq-grill-barbecue-1306559512</a></li>
-            <li>intellson. Designer. 2020. <strong>lack set paint, ink brush, brush strokes, brushes, lines, frames, box, grungy. grungy brushes collection. brush stroke paint boxes on white background [Image]</strong> Retreived from <a href="https://www.freepik.com/premium-vector/black-set-paint-ink-brush-brush-strokes-brushes-lines-frames-box-grungy-grungy-brushes-collection-brush-stroke-paint-boxes-white-background_8197427.htm">https://www.freepik.com/premium-vector/black-set-paint-ink-brush-brush-strokes-brushes-lines-frames-box-grungy-grungy-brushes-collection-brush-stroke-paint-boxes-white-background_8197427.htm</a></li>
-            <li>Vitali, Mirko. Photographer. n.d. <strong>Young people dining and having fun drinking red wine together on balcony rooftop dinner party - Happy friends eating bbq food at restaurant patio - Millennial life style concept [Image]</strong> Retrieved from <a href="https://www.dreamstime.com/young-people-dining-having-fun-drinking-red-wine-together-balcony-rooftop-dinner-party-happy-friends-eating-bbq-food-image161958388">https://www.dreamstime.com/young-people-dining-having-fun-drinking-red-wine-together-balcony-rooftop-dinner-party-happy-friends-eating-bbq-food-image161958388</a></li>
-            <li>10'000 Hours. Photographer. n.d. <strong>Succulent steak cooking on bbq grill with vegetables - stock photo [Image]</strong> Retreived from <a href="https://www.gettyimages.ca/detail/photo/succulent-steak-cooking-on-bbq-grill-with-royalty-free-image/1145037880">https://www.gettyimages.ca/detail/photo/succulent-steak-cooking-on-bbq-grill-with-royalty-free-image/1145037880</a></li>
-            <li>Stubb's. Company. n.d. <strong>Stubb's Original BBQ Sauce [Image]</strong> Retrieved from <a href="https://www.stubbsbbq.com/en-us/products/sauces/bar-b-q-sauces/stubbs-original-bar-b-q-sauce">https://www.stubbsbbq.com/en-us/products/sauces/bar-b-q-sauces/stubbs-original-bar-b-q-sauce</a></li>
-            <li>No Name. Company. n.d. <strong>NO NAME STEAKHOUSE SEASONED STEAK BURGERS [Image]</strong> Retrieved from <a href="https://www.nonamesteaks.com/beefproducts/steakhouse-seasoned-beef-steak-burgers/">https://www.nonamesteaks.com/beefproducts/steakhouse-seasoned-beef-steak-burgers/</a></li>
-            <li>unearthed. Company. 2016. <strong>Louisiana Hot Wings, Potato Salad and Hot Sauce [Image]</strong> Retreived from <a href="https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/">https://www.foodsunearthed.co.uk/recipe/louisiana-hot-wings-potato-salad-hot-sauce/</a></li>
-            <li>Dickey's Barbeque Pit. Company. 2015. <strong>Dickey’s Barbecue Pit debuts redesigned model with plans to roll out nationwide.</strong> Retrieved from <a href="http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/">http://www.multivu.com/players/English/7434752-dickeys-barbecue-pit-redesigned/</a></li>
-            <li>Güler, Ataberk. Photographer. 2018. <strong>Homepage Overlay Background [Image]</strong> Retrieved from <a href="https://unsplash.com/photos/HH8D03HHqDI">https://unsplash.com/photos/HH8D03HHqDI</a></li>
-            <li>nito. Photographer. n.d. <strong>Meat skewers on a barbeque [Image]</strong> Retrieved from <a href="https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail">https://stock.adobe.com/ca/images/meat-skewers-in-a-barbecue/107169588?prev_url=detail</a></li>
-            <li>Raths, Alexander. Photographer. n.d. <strong>Assorted delicious grilled meat with vegetable over the coals on a barbecue [Image]</strong> Retrieved from <a href="https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html"></a>https://www.123rf.com/photo_39490829_assorted-delicious-grilled-meat-with-vegetable-over-the-coals-on-a-barbecue.html</li>
-          </ul>
-        </section>
-      </section>
-    </div>
+        </div>
+      </div>
+    </section>
+    <footer class="brush-background-flip">
+        <p><strong>&copy; 2021 COOKIN</strong></p>
+        <p>All rights reserve, COOKIN is a registered trademark by Food Royalties Limited Partnerships, used under license.</p>
+        <p>Created by Freeman Liu and EJ Nicolas for IAT339</p>
+        <a href="#top">Back to top</a>
+        <a href="style_guide.html">Style guide</a>
+        <a href="https://github.com/freemanxjl/IAT339-T15-P02" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
     <!-- Linking Javascripts -->
     <script src="js/nav.js"></script>
   </body>
+
 </html>
