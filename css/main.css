@@ -58,6 +58,7 @@ code{
   color: #171717;
   padding: 0.5rem;
   display: block;
+  word-break:break-all;
 }
 
 header{
@@ -98,6 +99,7 @@ figcaption{
 
 footer{
   padding-left: 7rem;
+  padding-right: 2rem;
   padding-bottom: 2rem;
   z-index: 1;
 }
