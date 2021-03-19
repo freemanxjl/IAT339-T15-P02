@@ -37,6 +37,7 @@ a{
   color: #FFFFFF;
   font-size: 1rem;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0.25rem 0 0.25rem 0;
   font-weight: 500;
   word-wrap: break-word;
